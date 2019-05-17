@@ -1,0 +1,2741 @@
+
+                             ..:::::::::::::::.... 
+                   .::== .#%*  +++++++++++++++++++: =##= .:.. 
+            .::=+++++++: =@@@  +++++++++++++++++++. #@@# .+++++==:. 
+          .:=+++++++++++:    .=++++++++++++++++++++.    .+++++++++=:            
+                ..:==++++++++++++++++++++++++++++++++++++++=::.
+                        ..:::====++++++++++++++===:::.. 
+                              .:+**************
+                          .:++++=. +++++++++=+++: 
+                   .+++=++++=.     +++++++++= :+++. 
+                   +++++:.         +++++++++=   =+++:=: 
+                    .::.           +++++++++=     :+++++ 
+                                   ++=::::++=      :+++: 
+                                   ++:    ++= 
+                                   ++:    ++= 
+                              .::::++:    ++=.::: 
+                             .*++++++:    +++++++* 
+
+           .,,**////////((((((((((((((((((((######################(/*..           
+.,,******///////////////((((((((((((((((((((#####################%%%%%%%%%%%%#(/,.
+                   ..,**////((((((((((((((((##########((((/*,..                   
+
+
+==================================================================================
+ If you use our program, please cite this work : 
+ Sunghwan Choi, Kwangwoo Hong, Jaewook Kim, and Woo Youn Kim,
+   "Accuracy of Lagrange-sinc functions as a basis set for electronic structure 
+    calculations of atoms and molecules"
+                               The Journal of Chemical Physics, 142, 094116 (2015)
+==================================================================================
+
+
+Epetra in Trilinos 12.10.1
+ 
+====================  Parallel Manager  =========================
+**MPI INFO
+Proccessor	0 responding. (1/4), Processor ID = 14863 on host edison25
+Proccessor	1 responding. (2/4), Processor ID = 14864 on host edison25
+Proccessor	2 responding. (3/4), Processor ID = 14865 on host edison25
+Proccessor	3 responding. (4/4), Processor ID = 14866 on host edison25
+
+**OPENMP INFO
+  openmp_num_threads: 1
+=================================================================
+
+SpinMultiplicity is not set! Defaulting to singlet.
+Polarize is not set! Defaulting to unpolarized calculation.
+center of mass is moved to 0,0,0 
+====================  Atoms  =====================
+ 6       0.589975       2.556799      -0.000002
+ 6       2.509181       0.767229      -0.000002
+ 6       1.919208      -1.789382      -0.000002
+ 6      -0.590159      -2.556610      -0.000002
+ 6      -2.509176      -0.767418      -0.000002
+ 6      -1.919014       1.789382      -0.000002
+ 1       1.046155       4.532697      -0.000002
+ 1       4.448606       1.360414       0.000187
+ 1       3.402265      -3.172472      -0.000002
+ 1      -1.046150      -4.532697      -0.000002
+ 1      -4.448602      -1.360225      -0.000002
+ 1      -3.402449       3.172283      -0.000002
+==================================================
+
+Warning:: Grid_Atoms ignores input Points and CellDimension
+Grid points on x-axis 
+-11.800000	-11.400000	-11.000000	-10.600000	-10.200000	...	10.200000	10.600000	11.000000	11.400000	11.800000	
+Grid points on y-axis 
+-11.800000	-11.400000	-11.000000	-10.600000	-10.200000	...	10.200000	10.600000	11.000000	11.400000	11.800000	
+Grid points on z-axis 
+-7.400000	-7.000000	-6.600000	-6.200000	-5.800000	...	5.800000	6.200000	6.600000	7.000000	7.400000	
+
+========== Basis ===========
+This basis is Sinc type
+Grid is 60,60,38
+x scaling factor is 0.400000
+y scaling factor is 0.400000
+z scaling factor is 0.400000
+============================
+
+====== Grid_Setting ========
+This grid_setting is Atoms type
+# of grid points on each axis are 60,60,38
+total # of grid points is 79415
+============================
+
+
+= XC Functional Information ========================
+Exchange             :    101    x1.000000
+Correlation          :    130    x1.000000
+====================================================
+101: Perdew, Burke & Ernzerhof
+Reference 1: J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 77, 3865 (1996)
+Reference 2: J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 78, 1396 (1997)
+GGA functional
+XC_FLAGS_HAVE_EXC XC_FLAGS_HAVE_VXC XC_FLAGS_HAVE_FXC XC_FLAGS_HAVE_KXC 
+====================================================
+130: Perdew, Burke & Ernzerhof
+Reference 1: J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 77, 3865 (1996)
+Reference 2: J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 78, 1396 (1997)
+GGA functional
+XC_FLAGS_HAVE_EXC XC_FLAGS_HAVE_VXC XC_FLAGS_HAVE_FXC XC_FLAGS_HAVE_KXC 
+====================================================
+= XC Functional Information ========================
+Exchange             :    101    x1.000000
+Correlation          :    130    x1.000000
+====================================================
+101: Perdew, Burke & Ernzerhof
+Reference 1: J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 77, 3865 (1996)
+Reference 2: J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 78, 1396 (1997)
+GGA functional
+XC_FLAGS_HAVE_EXC XC_FLAGS_HAVE_VXC XC_FLAGS_HAVE_FXC XC_FLAGS_HAVE_KXC 
+====================================================
+130: Perdew, Burke & Ernzerhof
+Reference 1: J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 77, 3865 (1996)
+Reference 2: J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 78, 1396 (1997)
+GGA functional
+XC_FLAGS_HAVE_EXC XC_FLAGS_HAVE_VXC XC_FLAGS_HAVE_FXC XC_FLAGS_HAVE_KXC 
+====================================================
+
+= There are 3 calculation steps
+================= Calculation Step #1/3 (Guess) =====================
+
+================= Calculation Step #2/3 (Scf) =====================
+Scf:: compute start
+
+==========================================================
+Pseudopotential file for this atom  : libraries/PSEUDOPOTENTIALS_NC/H.pbe-n-nc.UPF
+Valence charge                      : 1.000
+Number of projectors                : 0
+Number of atomic pseudo orbitals    : 1
+Number of points in mesh            : 929
+Nonlinear core correction           : 0
+==========================================================
+
+
+==========================================================
+Pseudopotential file for this atom  : libraries/PSEUDOPOTENTIALS_NC/C.pbe-n-nc.UPF
+Valence charge                      : 4.000
+Number of projectors                : 1
+     Orbital angular momentum       : 1
+Number of atomic pseudo orbitals    : 2
+Number of points in mesh            : 1073
+Nonlinear core correction           : 0
+==========================================================
+
+
+#---------------------------------------------- Upf2KB::calculate_local
+ Time to compute single-grid integration: 1.135 s
+#---------------------------------------------------------------------------
+
+#---------------------------------------------- Upf2KB::calculate_nonlocal
+ Using single-grid to represent pseudopotential
+ Nonlocal threshold = 0.000
+#---------------------------------------------------------------------------
+
+#---------------------------------------------- Upf2KB::calculate_nonlocal
+ Using single-grid to represent pseudopotential
+ Nonlocal threshold = 0.000
+#---------------------------------------------------------------------------
+
+#---------------------------------------------- Upf2KB::calculate_nonlocal
+ Using single-grid to represent pseudopotential
+ Nonlocal threshold = 0.000
+#---------------------------------------------------------------------------
+
+#---------------------------------------------- Upf2KB::calculate_nonlocal
+ Using single-grid to represent pseudopotential
+ Nonlocal threshold = 0.000
+#---------------------------------------------------------------------------
+
+#---------------------------------------------- Upf2KB::calculate_nonlocal
+ Using single-grid to represent pseudopotential
+ Nonlocal threshold = 0.000
+#---------------------------------------------------------------------------
+
+#---------------------------------------------- Upf2KB::calculate_nonlocal
+ Using single-grid to represent pseudopotential
+ Nonlocal threshold = 0.000
+#---------------------------------------------------------------------------
+
+#---------------------------------------------- Upf2KB::calculate_nonlocal
+ Using single-grid to represent pseudopotential
+ Nonlocal threshold = 0.000
+#---------------------------------------------------------------------------
+
+#---------------------------------------------- Upf2KB::calculate_nonlocal
+ Using single-grid to represent pseudopotential
+ Nonlocal threshold = 0.000
+#---------------------------------------------------------------------------
+
+#---------------------------------------------- Upf2KB::calculate_nonlocal
+ Using single-grid to represent pseudopotential
+ Nonlocal threshold = 0.000
+#---------------------------------------------------------------------------
+
+#---------------------------------------------- Upf2KB::calculate_nonlocal
+ Using single-grid to represent pseudopotential
+ Nonlocal threshold = 0.000
+#---------------------------------------------------------------------------
+
+#---------------------------------------------- Upf2KB::calculate_nonlocal
+ Using single-grid to represent pseudopotential
+ Nonlocal threshold = 0.000
+#---------------------------------------------------------------------------
+
+#---------------------------------------------- Upf2KB::calculate_nonlocal
+ Using single-grid to represent pseudopotential
+ Nonlocal threshold = 0.000
+#---------------------------------------------------------------------------
+
+#-------------------------------------------------------------- Scf::iterate
+= Mixing Parameter Informations ==================
+ Pulay(DIIS) mixing with field Potential.
+ Linear mixing until 5 steps are done.
+ Initial linear mixing coefficient: 0.3
+ Pulay mixing coefficient: 0.3
+ Previous states to mix: 4
+==================================================
+Scf NumberOfEigenvalues use default value of 15
+Scf::iterate::initialization time: 8.9270s
+#------------------------------------------------------------- Scf::iterate Step #   1
+Pure_Diagonalize::Given block size is not valid (0). It will be changed to 15
+Convergence:: convergence type: Density
+Convergence:: current_value / criteria 
+Convergence:: 2.5201e-01 / 1.0000e-03
+Convergence:: not converged yet (tolerance = 1.0000e-03)
+
+
+1th iteration (time = 17.659 s)
+#--------------------------------------------------------- Scf::iterate Step #   1 end
+#------------------------------------------------------------- Scf::iterate Step #   2
+Convergence:: convergence type: Density
+Convergence:: current_value / criteria 
+Convergence:: 7.4724e-02 / 1.0000e-03
+Convergence:: not converged yet (tolerance = 1.0000e-03)
+
+
+2th iteration (time = 16.515 s)
+#--------------------------------------------------------- Scf::iterate Step #   2 end
+#------------------------------------------------------------- Scf::iterate Step #   3
+Convergence:: convergence type: Density
+Convergence:: current_value / criteria 
+Convergence:: 2.9075e-02 / 1.0000e-03
+Convergence:: not converged yet (tolerance = 1.0000e-03)
+
+
+3th iteration (time = 16.524 s)
+#--------------------------------------------------------- Scf::iterate Step #   3 end
+#------------------------------------------------------------- Scf::iterate Step #   4
+Convergence:: convergence type: Density
+Convergence:: current_value / criteria 
+Convergence:: 1.0580e-02 / 1.0000e-03
+Convergence:: not converged yet (tolerance = 1.0000e-03)
+
+
+4th iteration (time = 16.493 s)
+#--------------------------------------------------------- Scf::iterate Step #   4 end
+#------------------------------------------------------------- Scf::iterate Step #   5
+Convergence:: convergence type: Density
+Convergence:: current_value / criteria 
+Convergence:: 4.8646e-03 / 1.0000e-03
+Convergence:: not converged yet (tolerance = 1.0000e-03)
+
+
+5th iteration (time = 16.530 s)
+#--------------------------------------------------------- Scf::iterate Step #   5 end
+#------------------------------------------------------------- Scf::iterate Step #   6
+Convergence:: convergence type: Density
+Convergence:: current_value / criteria 
+Convergence:: 2.5166e-03 / 1.0000e-03
+Convergence:: not converged yet (tolerance = 1.0000e-03)
+
+
+6th iteration (time = 16.529 s)
+#--------------------------------------------------------- Scf::iterate Step #   6 end
+#------------------------------------------------------------- Scf::iterate Step #   7
+Convergence:: convergence type: Density
+Convergence:: current_value / criteria 
+Convergence:: 3.5264e-03 / 1.0000e-03
+Convergence:: not converged yet (tolerance = 1.0000e-03)
+
+
+7th iteration (time = 16.342 s)
+#--------------------------------------------------------- Scf::iterate Step #   7 end
+#------------------------------------------------------------- Scf::iterate Step #   8
+Convergence:: convergence type: Density
+Convergence:: current_value / criteria 
+Convergence:: 3.2347e-04 / 1.0000e-03
+Convergence:: converged!
+
+==================
+Eigenvalue(s)
+ -0.783480   -0.680320   -0.679565   -0.548256   -0.548148   -0.480717   -0.414712   -0.405540   -0.381168   -0.379970   -0.334630   -0.306624   -0.305011   -0.233375   -0.231679  
+==================
+
+=============================================================
+Total energy       = -37.778149
+=============================================================
+     Ion-ion                     = 103.749941 Hartree
+     Eigenvalues                 = -13.426390 Hartree
+     Hartree energy              = 131.864044 Hartree
+     Exchange-Correlation energy = -12.626445 Hartree
+          Exchange energy        = -11.515839 Hartree
+          Correlation energy     =  -1.110606 Hartree
+     Kinetic energy              =  28.728924 Hartree
+          Spin 0                 =  28.728924 Hartree
+     External energy             = -289.494613 Hartree
+=============================================================
+
+8th iteration (time = 15.503 s)
+
+#-------------------------------------------------------------- Scf::iterate
+ Total 8 iterations.
+ Scf satisfies convergence criteria.
+#---------------------------------------------------------------------------
+Pure_Diagonalize::Given block size is not valid (0). It will be changed to 40
+
+==================
+Eigenvalue(s)
+ -0.783488   -0.680381   -0.679630   -0.548389   -0.548274   -0.480908   -0.414989   -0.405600   -0.381351   -0.380155   -0.334579   -0.306814   -0.305201   -0.233351   -0.231652   -0.040764   -0.038193    0.006751    0.035714    0.037125    0.064953    0.068441    0.068691    0.094644    0.111158    0.115667    0.116842    0.144599    0.153504    0.156328    0.157663    0.170174    0.172707    0.199963    0.210418    0.214318    0.224841    0.237453    0.244572    0.267094  
+==================
+
+=============================================================
+Total energy       = -37.778146
+=============================================================
+     Ion-ion                     = 103.749941 Hartree
+     Eigenvalues                 = -13.429521 Hartree
+     Hartree energy              = 131.861521 Hartree
+     Exchange-Correlation energy = -12.626702 Hartree
+          Exchange energy        = -11.516130 Hartree
+          Correlation energy     =  -1.110571 Hartree
+     Kinetic energy              =  28.730242 Hartree
+          Spin 0                 =  28.730242 Hartree
+     External energy             = -289.493148 Hartree
+=============================================================
+
+====== Occupations ( Zero_Temp) ========
+ Occupations:
+ 1 -  5:  2.0000   2.0000   2.0000   2.0000   2.0000  
+ 6 - 10:  2.0000   2.0000   2.0000   2.0000   2.0000  
+11 - 15:  2.0000   2.0000   2.0000   2.0000   2.0000  
+16 - 20:  0.0000   0.0000   0.0000   0.0000   0.0000  
+21 - 25:  0.0000   0.0000   0.0000   0.0000   0.0000  
+26 - 30:  0.0000   0.0000   0.0000   0.0000   0.0000  
+31 - 35:  0.0000   0.0000   0.0000   0.0000   0.0000  
+36 - 40:  0.0000   0.0000   0.0000   0.0000   0.0000  
+=======================================
+
+SCF final state occupation = 
+====== Occupations ( Zero_Temp) ========
+ Occupations:
+ 1 -  5:  2.0000   2.0000   2.0000   2.0000   2.0000  
+ 6 - 10:  2.0000   2.0000   2.0000   2.0000   2.0000  
+11 - 15:  2.0000   2.0000   2.0000   2.0000   2.0000  
+16 - 20:  0.0000   0.0000   0.0000   0.0000   0.0000  
+21 - 25:  0.0000   0.0000   0.0000   0.0000   0.0000  
+26 - 30:  0.0000   0.0000   0.0000   0.0000   0.0000  
+31 - 35:  0.0000   0.0000   0.0000   0.0000   0.0000  
+36 - 40:  0.0000   0.0000   0.0000   0.0000   0.0000  
+=======================================
+
+SCF total time:
+Computation routine 2 time profile:
+
+================= Calculation Step #3/3 (TDDFT) =====================
+
+#----------------------------------------- TDDFT::initialize_orbital_numbers
+ starting orbital: 0	number_of_orbitals[0] : 40	index_of_HOMO: 15	number_of_electrons: 15
+#---------------------------------------------------------------------------
+TDDFT::compute - Preparing for calculation......
+
+#------------------------------------------------- Exchange_Correlation::compute_fxc
+
+#------------------------------------------------------ TDDFT::compute
+ GGA-type kernel is used.
+ Theory level     : Casida
+ Matrix dimension : 375
+#---------------------------------------------------------------------
+
+#------------------------------------ TDDFT::construct_gradient_matrix
+ Total time = 0.849 s
+#---------------------------------------------------------------------
+TDDFT::get_iajb, time = 93.517
+TDDFT::get_TD_matrix index for i = 0 time = 9.653
+TDDFT::get_TD_matrix index for i = 1 time = 8.890
+TDDFT::get_TD_matrix index for i = 2 time = 8.254
+TDDFT::get_TD_matrix index for i = 3 time = 7.608
+TDDFT::get_TD_matrix index for i = 4 time = 6.940
+TDDFT::get_TD_matrix index for i = 5 time = 6.323
+TDDFT::get_TD_matrix index for i = 6 time = 5.661
+TDDFT::get_TD_matrix index for i = 7 time = 4.991
+TDDFT::get_TD_matrix index for i = 8 time = 4.319
+TDDFT::get_TD_matrix index for i = 9 time = 3.676
+TDDFT::get_TD_matrix index for i = 10 time = 3.007
+TDDFT::get_TD_matrix index for i = 11 time = 2.334
+TDDFT::get_TD_matrix index for i = 12 time = 1.651
+TDDFT::get_TD_matrix index for i = 13 time = 1.016
+TDDFT::get_TD_matrix index for i = 14 time = 0.356
+
+#------------------------------------------------------ TDDFT::compute
+
+================ Computation Time (mpi, resolution: 1.000e-06) ================
+TDDFT::construct_matrix                                     :    169.324 s (1)
+===============================================================================
+
+#---------------------------------------------------------------------
+
+================ Computation Time (mpi, resolution: 1.000e-06) ================
+Time to diagonalize                                         :    0.203 s (1)
+===============================================================================
+
+
+#------------------------------------------------------ TDDFT::compute
+ Singlet excitation information:
+TDDFT::compute - Compute oscillator strength
+
+================ Computation Time (mpi, resolution: 1.000e-06) ================
+TDDFT::compute oscillator strength                          :    3.096 s (1)
+===============================================================================
+
+
+================ Computation Time (mpi, resolution: 1.000e-06) ================
+TDDFT CTcal                                                 :    1.286 s (1)
+===============================================================================
+
+ #1: Excitation energy = 0.198787 Hartree = 5.409264 eV
+     <x> = -2.159163e-02
+     <y> = 3.207548e-02
+     <z> = 6.906598e-04
+     Oscillator strength = 9.970078e-04
+     Orbital overlap = 7.171406e-01
+     r-index = 7.449294e-02
+     (Gamma-r)-index = 4.058646e-01
+     Gamma-index = 4.803575e-01
+     Eigenvalue contribution = 1.934414e-01
+       350:   -6.989373e-01 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       326:   -6.772153e-01 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       351:   -1.609365e-01 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       325:    1.595511e-01 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       177:    2.020925e-02 (   8 to   18), (Eigval = 1.122065e+01 eV, overlap = 3.474048e-01)
+       193:    1.170387e-02 (   8 to   34), (Eigval = 1.647820e+01 eV, overlap = 3.729757e-01)
+       279:    1.061636e-02 (  12 to   20), (Eigval = 9.359055e+00 eV, overlap = 3.274451e-01)
+       303:    9.393221e-03 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       217:    7.905705e-03 (   9 to   33), (Eigval = 1.507668e+01 eV, overlap = 3.924968e-01)
+       241:    6.887459e-03 (  10 to   32), (Eigval = 1.497521e+01 eV, overlap = 4.424570e-01)
+        96:    6.447922e-03 (   4 to   37), (Eigval = 2.104067e+01 eV, overlap = 5.038488e-01)
+       206:    6.094917e-03 (   9 to   22), (Eigval = 1.223947e+01 eV, overlap = 3.414074e-01)
+       121:    5.984884e-03 (   5 to   37), (Eigval = 2.103754e+01 eV, overlap = 5.033506e-01)
+       230:   -5.795263e-03 (  10 to   21), (Eigval = 1.211200e+01 eV, overlap = 3.793914e-01)
+       220:    5.338204e-03 (   9 to   36), (Eigval = 1.620899e+01 eV, overlap = 3.984780e-01)
+       215:   -5.053348e-03 (   9 to   31), (Eigval = 1.466731e+01 eV, overlap = 3.488804e-01)
+       135:   -4.949329e-03 (   6 to   26), (Eigval = 1.623364e+01 eV, overlap = 3.505596e-01)
+        98:   -4.927514e-03 (   4 to   39), (Eigval = 2.157759e+01 eV, overlap = 4.555136e-01)
+       119:    4.754024e-03 (   5 to   35), (Eigval = 2.064507e+01 eV, overlap = 4.151956e-01)
+       231:    4.587307e-03 (  10 to   22), (Eigval = 1.220692e+01 eV, overlap = 3.570427e-01)
+       195:   -4.520479e-03 (   8 to   36), (Eigval = 1.686884e+01 eV, overlap = 3.591439e-01)
+       122:   -4.309107e-03 (   5 to   38), (Eigval = 2.138073e+01 eV, overlap = 4.832810e-01)
+       205:    4.131277e-03 (   9 to   21), (Eigval = 1.214454e+01 eV, overlap = 3.837332e-01)
+       247:    4.044197e-03 (  10 to   38), (Eigval = 1.680598e+01 eV, overlap = 4.464852e-01)
+       232:    3.695929e-03 (  10 to   23), (Eigval = 1.221372e+01 eV, overlap = 3.796729e-01)
+       250:   -3.543200e-03 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       124:   -3.354190e-03 (   5 to   40), (Eigval = 2.218729e+01 eV, overlap = 3.875181e-01)
+       103:    2.959626e-03 (   5 to   19), (Eigval = 1.589113e+01 eV, overlap = 3.086077e-01)
+        72:    2.940572e-03 (   3 to   38), (Eigval = 2.495513e+01 eV, overlap = 4.535558e-01)
+       196:   -2.929798e-03 (   8 to   37), (Eigval = 1.715518e+01 eV, overlap = 4.661884e-01)
+ #2: Excitation energy = 0.238709 Hartree = 6.495619 eV
+     <x> = -2.633977e-02
+     <y> = 1.475140e-02
+     <z> = -1.783650e-03
+     Oscillator strength = 6.097125e-04
+     Orbital overlap = 3.658793e-01
+     r-index = 7.326627e-01
+     (Gamma-r)-index = 3.358162e+00
+     Gamma-index = 4.090824e+00
+     Eigenvalue contribution = 2.378948e-01
+       352:    9.907103e-01 (  15 to   18), (Eigval = 6.487302e+00 eV, overlap = 3.593864e-01)
+       351:    8.547467e-02 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       325:   -8.406197e-02 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       327:    4.484629e-02 (  14 to   18), (Eigval = 6.533518e+00 eV, overlap = 3.643171e-01)
+       350:   -3.107081e-02 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       251:    1.125522e-02 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       357:    1.053818e-02 (  15 to   23), (Eigval = 8.172765e+00 eV, overlap = 4.323797e-01)
+       151:    1.026635e-02 (   7 to   17), (Eigval = 1.025315e+01 eV, overlap = 5.631129e-01)
+       262:   -1.020724e-02 (  11 to   28), (Eigval = 1.303909e+01 eV, overlap = 6.093685e-01)
+       261:   -7.128006e-03 (  11 to   27), (Eigval = 1.228379e+01 eV, overlap = 4.178433e-01)
+       304:    6.847281e-03 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       362:    6.714417e-03 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       278:   -6.574023e-03 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       326:   -6.164727e-03 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       264:   -5.877704e-03 (  11 to   30), (Eigval = 1.335826e+01 eV, overlap = 4.856655e-01)
+       175:   -5.565748e-03 (   8 to   16), (Eigval = 9.927696e+00 eV, overlap = 5.591618e-01)
+       368:   -4.736900e-03 (  15 to   34), (Eigval = 1.174485e+01 eV, overlap = 3.731078e-01)
+       250:   -4.591829e-03 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       152:    4.480340e-03 (   7 to   18), (Eigval = 1.147614e+01 eV, overlap = 4.721769e-01)
+       356:   -4.331551e-03 (  15 to   22), (Eigval = 8.165967e+00 eV, overlap = 2.826162e-01)
+       369:   -4.132570e-03 (  15 to   35), (Eigval = 1.202935e+01 eV, overlap = 3.924205e-01)
+       364:    3.672451e-03 (  15 to   30), (Eigval = 1.055750e+01 eV, overlap = 4.291519e-01)
+       259:   -3.303478e-03 (  11 to   25), (Eigval = 1.212913e+01 eV, overlap = 3.646034e-01)
+       330:   -3.292934e-03 (  14 to   21), (Eigval = 8.117262e+00 eV, overlap = 3.586532e-01)
+       355:    3.206602e-03 (  15 to   21), (Eigval = 8.071046e+00 eV, overlap = 3.666709e-01)
+       344:   -3.090703e-03 (  14 to   35), (Eigval = 1.207557e+01 eV, overlap = 3.986931e-01)
+       347:    3.080632e-03 (  14 to   38), (Eigval = 1.281124e+01 eV, overlap = 4.523022e-01)
+       328:    3.057836e-03 (  14 to   19), (Eigval = 7.321631e+00 eV, overlap = 2.349939e-01)
+        51:   -2.956961e-03 (   3 to   17), (Eigval = 1.745442e+01 eV, overlap = 6.195798e-01)
+        25:   -2.847653e-03 (   2 to   16), (Eigval = 1.740488e+01 eV, overlap = 5.899401e-01)
+ #3: Excitation energy = 0.239645 Hartree = 6.521082 eV
+     <x> = 2.820148e-02
+     <y> = -4.939800e-02
+     <z> = -2.001864e-03
+     Oscillator strength = 2.159662e-03
+     Orbital overlap = 7.108865e-01
+     r-index = 2.854680e-01
+     (Gamma-r)-index = 1.315092e+00
+     Gamma-index = 1.600560e+00
+     Eigenvalue contribution = 2.103667e-01
+       325:    5.984727e-01 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       351:   -5.935010e-01 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       327:   -4.556101e-01 (  14 to   18), (Eigval = 6.533518e+00 eV, overlap = 3.643171e-01)
+       350:    1.501972e-01 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       352:    1.314972e-01 (  15 to   18), (Eigval = 6.487302e+00 eV, overlap = 3.593864e-01)
+       326:    1.273878e-01 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       262:    7.203102e-02 (  11 to   28), (Eigval = 1.303909e+01 eV, overlap = 6.093685e-01)
+       261:    5.176278e-02 (  11 to   27), (Eigval = 1.228379e+01 eV, overlap = 4.178433e-01)
+       304:   -4.858662e-02 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       278:    4.834601e-02 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       264:    3.354258e-02 (  11 to   30), (Eigval = 1.335826e+01 eV, overlap = 4.856655e-01)
+       152:   -3.241564e-02 (   7 to   18), (Eigval = 1.147614e+01 eV, overlap = 4.721769e-01)
+       259:    2.564237e-02 (  11 to   25), (Eigval = 1.212913e+01 eV, overlap = 3.646034e-01)
+       328:   -2.552199e-02 (  14 to   19), (Eigval = 7.321631e+00 eV, overlap = 2.349939e-01)
+       362:   -2.525777e-02 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       369:    2.373257e-02 (  15 to   35), (Eigval = 1.202935e+01 eV, overlap = 3.924205e-01)
+       364:   -1.806329e-02 (  15 to   30), (Eigval = 1.055750e+01 eV, overlap = 4.291519e-01)
+       251:    1.797860e-02 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       296:    1.721217e-02 (  12 to   37), (Eigval = 1.446707e+01 eV, overlap = 4.983934e-01)
+       344:    1.592758e-02 (  14 to   35), (Eigval = 1.207557e+01 eV, overlap = 3.986931e-01)
+       340:    1.525547e-02 (  14 to   31), (Eigval = 1.064002e+01 eV, overlap = 3.624559e-01)
+       265:    1.501959e-02 (  11 to   31), (Eigval = 1.339457e+01 eV, overlap = 3.825510e-01)
+        78:   -1.497330e-02 (   4 to   19), (Eigval = 1.589426e+01 eV, overlap = 3.566571e-01)
+       269:    1.491853e-02 (  11 to   35), (Eigval = 1.483012e+01 eV, overlap = 4.103363e-01)
+       104:    1.477136e-02 (   5 to   20), (Eigval = 1.592953e+01 eV, overlap = 3.397690e-01)
+       136:   -1.342040e-02 (   6 to   27), (Eigval = 1.626562e+01 eV, overlap = 4.498699e-01)
+        56:    1.311266e-02 (   3 to   22), (Eigval = 2.035608e+01 eV, overlap = 3.119943e-01)
+       323:    1.308225e-02 (  13 to   39), (Eigval = 1.496010e+01 eV, overlap = 4.741826e-01)
+       336:    1.275559e-02 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+        47:    1.265088e-02 (   2 to   38), (Eigval = 2.497556e+01 eV, overlap = 5.146473e-01)
+ #4: Excitation energy = 0.240609 Hartree = 6.547295 eV
+     <x> = -4.339455e-02
+     <y> = 7.193786e-04
+     <z> = -1.661738e-03
+     Oscillator strength = 1.257577e-03
+     Orbital overlap = 4.493921e-01
+     r-index = 6.294575e-01
+     (Gamma-r)-index = 2.888395e+00
+     Gamma-index = 3.517853e+00
+     Eigenvalue contribution = 2.322249e-01
+       327:   -8.884600e-01 (  14 to   18), (Eigval = 6.533518e+00 eV, overlap = 3.643171e-01)
+       351:    3.229849e-01 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       325:   -2.962246e-01 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       350:   -7.973150e-02 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       326:   -6.361052e-02 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       262:   -3.733611e-02 (  11 to   28), (Eigval = 1.303909e+01 eV, overlap = 6.093685e-01)
+       261:   -2.775672e-02 (  11 to   27), (Eigval = 1.228379e+01 eV, overlap = 4.178433e-01)
+       278:   -2.621211e-02 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       304:    2.596348e-02 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       264:   -1.975041e-02 (  11 to   30), (Eigval = 1.335826e+01 eV, overlap = 4.856655e-01)
+       152:    1.756525e-02 (   7 to   18), (Eigval = 1.147614e+01 eV, overlap = 4.721769e-01)
+       352:   -1.752743e-02 (  15 to   18), (Eigval = 6.487302e+00 eV, overlap = 3.593864e-01)
+       362:    1.414824e-02 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       259:   -1.394395e-02 (  11 to   25), (Eigval = 1.212913e+01 eV, overlap = 3.646034e-01)
+       328:    1.291014e-02 (  14 to   19), (Eigval = 7.321631e+00 eV, overlap = 2.349939e-01)
+       250:    1.250551e-02 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       369:   -1.222743e-02 (  15 to   35), (Eigval = 1.202935e+01 eV, overlap = 3.924205e-01)
+       332:   -1.069414e-02 (  14 to   23), (Eigval = 8.218981e+00 eV, overlap = 4.356707e-01)
+       364:    1.046677e-02 (  15 to   30), (Eigval = 1.055750e+01 eV, overlap = 4.291519e-01)
+       344:   -9.819479e-03 (  14 to   35), (Eigval = 1.207557e+01 eV, overlap = 3.986931e-01)
+       150:    9.173608e-03 (   7 to   16), (Eigval = 1.018319e+01 eV, overlap = 5.437109e-01)
+       296:   -8.501272e-03 (  12 to   37), (Eigval = 1.446707e+01 eV, overlap = 4.983934e-01)
+       340:   -8.462587e-03 (  14 to   31), (Eigval = 1.064002e+01 eV, overlap = 3.624559e-01)
+       336:   -8.357573e-03 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       331:   -8.285268e-03 (  14 to   22), (Eigval = 8.212183e+00 eV, overlap = 3.185617e-01)
+        78:    8.115025e-03 (   4 to   19), (Eigval = 1.589426e+01 eV, overlap = 3.566571e-01)
+       269:   -7.988651e-03 (  11 to   35), (Eigval = 1.483012e+01 eV, overlap = 4.103363e-01)
+       265:   -7.614239e-03 (  11 to   31), (Eigval = 1.339457e+01 eV, overlap = 3.825510e-01)
+       104:   -7.520200e-03 (   5 to   20), (Eigval = 1.592953e+01 eV, overlap = 3.397690e-01)
+       323:   -7.451124e-03 (  13 to   39), (Eigval = 1.496010e+01 eV, overlap = 4.741826e-01)
+ #5: Excitation energy = 0.266240 Hartree = 7.244774 eV
+     <x> = -3.674192e-02
+     <y> = 3.071988e-02
+     <z> = 5.303909e-03
+     Oscillator strength = 1.547874e-03
+     Orbital overlap = 5.077378e-01
+     r-index = 6.270187e-02
+     (Gamma-r)-index = 1.340683e-01
+     Gamma-index = 1.967701e-01
+     Eigenvalue contribution = 2.662223e-01
+       275:    7.195308e-01 (  12 to   16), (Eigval = 7.239587e+00 eV, overlap = 4.868564e-01)
+       301:    5.876712e-01 (  13 to   17), (Eigval = 7.265674e+00 eV, overlap = 5.212280e-01)
+       300:   -3.434415e-01 (  13 to   16), (Eigval = 7.195707e+00 eV, overlap = 5.572963e-01)
+       276:    1.237944e-01 (  12 to   17), (Eigval = 7.309554e+00 eV, overlap = 5.593694e-01)
+       353:    5.034138e-02 (  15 to   19), (Eigval = 7.275415e+00 eV, overlap = 3.535350e-01)
+       329:    2.144311e-02 (  14 to   20), (Eigval = 7.360030e+00 eV, overlap = 3.548151e-01)
+       326:    1.368295e-02 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       350:   -1.292486e-02 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       354:   -1.181487e-02 (  15 to   20), (Eigval = 7.313815e+00 eV, overlap = 2.286779e-01)
+       328:    8.408718e-03 (  14 to   19), (Eigval = 7.321631e+00 eV, overlap = 2.349939e-01)
+       125:    2.881040e-03 (   6 to   16), (Eigval = 1.197695e+01 eV, overlap = 5.446863e-01)
+       325:   -2.536328e-03 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       351:   -2.490749e-03 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       336:    2.191234e-03 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       339:   -2.027268e-03 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+         0:    1.971877e-03 (   1 to   16), (Eigval = 2.021055e+01 eV, overlap = 6.655682e-01)
+       330:   -1.905734e-03 (  14 to   21), (Eigval = 8.117262e+00 eV, overlap = 3.586532e-01)
+       365:   -1.718627e-03 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       334:   -1.671926e-03 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       337:    1.420680e-03 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       344:   -1.291044e-03 (  14 to   35), (Eigval = 1.207557e+01 eV, overlap = 3.986931e-01)
+       363:   -1.264906e-03 (  15 to   29), (Eigval = 1.048063e+01 eV, overlap = 4.649330e-01)
+       308:    1.237698e-03 (  13 to   24), (Eigval = 1.088035e+01 eV, overlap = 2.459497e-01)
+       333:    1.189901e-03 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+       358:    1.130028e-03 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       367:   -1.114618e-03 (  15 to   33), (Eigval = 1.100319e+01 eV, overlap = 3.677354e-01)
+       321:    1.055624e-03 (  13 to   37), (Eigval = 1.442319e+01 eV, overlap = 5.060925e-01)
+       341:   -1.037353e-03 (  14 to   32), (Eigval = 1.098047e+01 eV, overlap = 3.299040e-01)
+       155:    9.708633e-04 (   7 to   21), (Eigval = 1.305988e+01 eV, overlap = 4.100412e-01)
+       310:    9.599657e-04 (  13 to   26), (Eigval = 1.145240e+01 eV, overlap = 3.241792e-01)
+ #6: Excitation energy = 0.267120 Hartree = 7.268717 eV
+     <x> = 2.404745e-01
+     <y> = -2.957395e-01
+     <z> = 3.585917e-01
+     Oscillator strength = 1.825852e-01
+     Orbital overlap = 3.617186e-01
+     r-index = 4.061783e-01
+     (Gamma-r)-index = 3.662720e+00
+     Gamma-index = 4.068898e+00
+     Eigenvalue contribution = 2.659077e-01
+       353:   -9.685858e-01 (  15 to   19), (Eigval = 7.275415e+00 eV, overlap = 3.535350e-01)
+       329:   -1.331927e-01 (  14 to   20), (Eigval = 7.360030e+00 eV, overlap = 3.548151e-01)
+       326:   -1.166761e-01 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       350:    1.079207e-01 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       276:    8.763864e-02 (  12 to   17), (Eigval = 7.309554e+00 eV, overlap = 5.593694e-01)
+       354:    7.776132e-02 (  15 to   20), (Eigval = 7.313815e+00 eV, overlap = 2.286779e-01)
+       301:    4.512097e-02 (  13 to   17), (Eigval = 7.265674e+00 eV, overlap = 5.212280e-01)
+       300:   -2.283759e-02 (  13 to   16), (Eigval = 7.195707e+00 eV, overlap = 5.572963e-01)
+       328:   -1.501815e-02 (  14 to   19), (Eigval = 7.321631e+00 eV, overlap = 2.349939e-01)
+       275:    1.476157e-02 (  12 to   16), (Eigval = 7.239587e+00 eV, overlap = 4.868564e-01)
+       351:    1.206747e-02 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       358:   -1.136305e-02 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       339:   -9.973920e-03 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+       365:    9.560696e-03 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       321:   -9.311596e-03 (  13 to   37), (Eigval = 1.442319e+01 eV, overlap = 5.060925e-01)
+       155:   -8.844191e-03 (   7 to   21), (Eigval = 1.305988e+01 eV, overlap = 4.100412e-01)
+       310:   -8.192932e-03 (  13 to   26), (Eigval = 1.145240e+01 eV, overlap = 3.241792e-01)
+       252:   -8.013387e-03 (  11 to   18), (Eigval = 9.288070e+00 eV, overlap = 3.787867e-01)
+       367:    7.459482e-03 (  15 to   33), (Eigval = 1.100319e+01 eV, overlap = 3.677354e-01)
+       251:    7.017629e-03 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       257:   -6.992002e-03 (  11 to   23), (Eigval = 1.097353e+01 eV, overlap = 4.853923e-01)
+       241:    6.127389e-03 (  10 to   32), (Eigval = 1.497521e+01 eV, overlap = 4.424570e-01)
+       369:    6.059403e-03 (  15 to   35), (Eigval = 1.202935e+01 eV, overlap = 3.924205e-01)
+       181:    6.012852e-03 (   8 to   22), (Eigval = 1.289932e+01 eV, overlap = 2.803534e-01)
+       344:    6.006501e-03 (  14 to   35), (Eigval = 1.207557e+01 eV, overlap = 3.986931e-01)
+       303:    5.989341e-03 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       340:    5.891795e-03 (  14 to   31), (Eigval = 1.064002e+01 eV, overlap = 3.624559e-01)
+       128:   -5.861454e-03 (   6 to   19), (Eigval = 1.405801e+01 eV, overlap = 4.201836e-01)
+       294:   -5.663773e-03 (  12 to   35), (Eigval = 1.407459e+01 eV, overlap = 4.193247e-01)
+       259:   -5.659481e-03 (  11 to   25), (Eigval = 1.212913e+01 eV, overlap = 3.646034e-01)
+ #7: Excitation energy = 0.268315 Hartree = 7.301226 eV
+     <x> = 1.093693e-01
+     <y> = -1.689195e-01
+     <z> = 1.092964e-02
+     Oscillator strength = 2.707660e-02
+     Orbital overlap = 2.443405e-01
+     r-index = 5.623778e-01
+     (Gamma-r)-index = 3.616856e+00
+     Gamma-index = 4.179234e+00
+     Eigenvalue contribution = 2.682521e-01
+       354:    8.640174e-01 (  15 to   20), (Eigval = 7.313815e+00 eV, overlap = 2.286779e-01)
+       328:   -4.466770e-01 (  14 to   19), (Eigval = 7.321631e+00 eV, overlap = 2.349939e-01)
+       275:   -1.162239e-01 (  12 to   16), (Eigval = 7.239587e+00 eV, overlap = 4.868564e-01)
+       301:    1.091788e-01 (  13 to   17), (Eigval = 7.265674e+00 eV, overlap = 5.212280e-01)
+       300:   -9.312661e-02 (  13 to   16), (Eigval = 7.195707e+00 eV, overlap = 5.572963e-01)
+       353:    8.740162e-02 (  15 to   19), (Eigval = 7.275415e+00 eV, overlap = 3.535350e-01)
+       326:   -6.491006e-02 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       329:    5.529828e-02 (  14 to   20), (Eigval = 7.360030e+00 eV, overlap = 3.548151e-01)
+       350:    5.324114e-02 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       351:    3.103398e-02 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       276:   -1.961626e-02 (  12 to   17), (Eigval = 7.309554e+00 eV, overlap = 5.593694e-01)
+       358:   -6.792791e-03 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       251:   -6.630682e-03 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       250:   -5.431985e-03 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       310:   -5.068684e-03 (  13 to   26), (Eigval = 1.145240e+01 eV, overlap = 3.241792e-01)
+       259:   -5.032451e-03 (  11 to   25), (Eigval = 1.212913e+01 eV, overlap = 3.646034e-01)
+       357:    5.002269e-03 (  15 to   23), (Eigval = 8.172765e+00 eV, overlap = 4.323797e-01)
+       367:    4.884960e-03 (  15 to   33), (Eigval = 1.100319e+01 eV, overlap = 3.677354e-01)
+       155:   -4.738552e-03 (   7 to   21), (Eigval = 1.305988e+01 eV, overlap = 4.100412e-01)
+       339:   -4.462212e-03 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+       364:    4.428557e-03 (  15 to   30), (Eigval = 1.055750e+01 eV, overlap = 4.291519e-01)
+       262:   -4.330465e-03 (  11 to   28), (Eigval = 1.303909e+01 eV, overlap = 6.093685e-01)
+       321:   -4.276561e-03 (  13 to   37), (Eigval = 1.442319e+01 eV, overlap = 5.060925e-01)
+       355:   -4.189896e-03 (  15 to   21), (Eigval = 8.071046e+00 eV, overlap = 3.666709e-01)
+       325:   -4.178787e-03 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       303:    4.141436e-03 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       128:   -3.672102e-03 (   6 to   19), (Eigval = 1.405801e+01 eV, overlap = 4.201836e-01)
+       331:   -3.502331e-03 (  14 to   22), (Eigval = 8.212183e+00 eV, overlap = 3.185617e-01)
+       365:    3.486388e-03 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       294:   -3.419805e-03 (  12 to   35), (Eigval = 1.407459e+01 eV, overlap = 4.193247e-01)
+ #8: Excitation energy = 0.268787 Hartree = 7.314064 eV
+     <x> = -3.415465e-01
+     <y> = -1.121071e-01
+     <z> = 4.421261e-03
+     Oscillator strength = 8.616106e-02
+     Orbital overlap = 2.472752e-01
+     r-index = 4.493364e-01
+     (Gamma-r)-index = 3.678711e+00
+     Gamma-index = 4.128048e+00
+     Eigenvalue contribution = 2.674155e-01
+       328:   -8.686810e-01 (  14 to   19), (Eigval = 7.321631e+00 eV, overlap = 2.349939e-01)
+       354:   -4.578422e-01 (  15 to   20), (Eigval = 7.313815e+00 eV, overlap = 2.286779e-01)
+       351:    1.111370e-01 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       325:    8.932999e-02 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       301:    6.584470e-02 (  13 to   17), (Eigval = 7.265674e+00 eV, overlap = 5.212280e-01)
+       350:   -4.961427e-02 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       275:   -4.770818e-02 (  12 to   16), (Eigval = 7.239587e+00 eV, overlap = 4.868564e-01)
+       326:    4.656389e-02 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       353:   -3.437544e-02 (  15 to   19), (Eigval = 7.275415e+00 eV, overlap = 3.535350e-01)
+       329:    3.026131e-02 (  14 to   20), (Eigval = 7.360030e+00 eV, overlap = 3.548151e-01)
+       276:    1.220574e-02 (  12 to   17), (Eigval = 7.309554e+00 eV, overlap = 5.593694e-01)
+       333:    1.165456e-02 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+       300:    1.086125e-02 (  13 to   16), (Eigval = 7.195707e+00 eV, overlap = 5.572963e-01)
+       331:    9.648326e-03 (  14 to   22), (Eigval = 8.212183e+00 eV, overlap = 3.185617e-01)
+       285:   -9.449624e-03 (  12 to   26), (Eigval = 1.149628e+01 eV, overlap = 3.138865e-01)
+       156:    8.977835e-03 (   7 to   22), (Eigval = 1.315481e+01 eV, overlap = 4.026696e-01)
+       342:   -8.889013e-03 (  14 to   33), (Eigval = 1.104940e+01 eV, overlap = 3.631872e-01)
+       251:   -7.949546e-03 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       278:   -7.909466e-03 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       369:   -7.534577e-03 (  15 to   35), (Eigval = 1.202935e+01 eV, overlap = 3.924205e-01)
+       129:   -7.388542e-03 (   6 to   20), (Eigval = 1.409641e+01 eV, overlap = 4.268766e-01)
+       296:    7.033402e-03 (  12 to   37), (Eigval = 1.446707e+01 eV, overlap = 4.983934e-01)
+       345:    6.966542e-03 (  14 to   36), (Eigval = 1.218170e+01 eV, overlap = 4.424313e-01)
+       362:    6.932079e-03 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       250:   -6.493263e-03 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       364:    6.291238e-03 (  15 to   30), (Eigval = 1.055750e+01 eV, overlap = 4.291519e-01)
+       216:   -6.248897e-03 (   9 to   32), (Eigval = 1.500775e+01 eV, overlap = 3.960239e-01)
+       258:    6.080114e-03 (  11 to   24), (Eigval = 1.167976e+01 eV, overlap = 3.342388e-01)
+       197:   -5.938320e-03 (   8 to   38), (Eigval = 1.749837e+01 eV, overlap = 4.436055e-01)
+       323:   -5.622377e-03 (  13 to   39), (Eigval = 1.496010e+01 eV, overlap = 4.741826e-01)
+ #9: Excitation energy = 0.269248 Hartree = 7.326610 eV
+     <x> = 3.088636e-02
+     <y> = -1.571358e-01
+     <z> = 2.949027e-01
+     Oscillator strength = 7.507549e-02
+     Orbital overlap = 5.180913e-01
+     r-index = 1.296193e-01
+     (Gamma-r)-index = 7.190973e-01
+     Gamma-index = 8.487166e-01
+     Eigenvalue contribution = 2.655377e-01
+       300:   -8.520769e-01 (  13 to   16), (Eigval = 7.195707e+00 eV, overlap = 5.572963e-01)
+       329:    3.736374e-01 (  14 to   20), (Eigval = 7.360030e+00 eV, overlap = 3.548151e-01)
+       275:   -2.559019e-01 (  12 to   16), (Eigval = 7.239587e+00 eV, overlap = 4.868564e-01)
+       301:   -1.657910e-01 (  13 to   17), (Eigval = 7.265674e+00 eV, overlap = 5.212280e-01)
+       276:   -1.374019e-01 (  12 to   17), (Eigval = 7.309554e+00 eV, overlap = 5.593694e-01)
+       354:   -1.021988e-01 (  15 to   20), (Eigval = 7.313815e+00 eV, overlap = 2.286779e-01)
+       328:    6.014729e-02 (  14 to   19), (Eigval = 7.321631e+00 eV, overlap = 2.349939e-01)
+       353:   -5.456737e-02 (  15 to   19), (Eigval = 7.275415e+00 eV, overlap = 3.535350e-01)
+       326:   -3.852866e-02 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       350:    3.658075e-02 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       351:    2.904314e-02 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       325:    2.429504e-02 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       339:   -1.188407e-02 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+       336:    9.785511e-03 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       126:    9.636728e-03 (   6 to   17), (Eigval = 1.204691e+01 eV, overlap = 5.551712e-01)
+       125:    7.614272e-03 (   6 to   16), (Eigval = 1.197695e+01 eV, overlap = 5.446863e-01)
+       358:   -7.158630e-03 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       338:    6.794078e-03 (  14 to   29), (Eigval = 1.052685e+01 eV, overlap = 3.369317e-01)
+         1:    6.651472e-03 (   1 to   17), (Eigval = 2.028052e+01 eV, overlap = 6.743333e-01)
+       340:    6.496480e-03 (  14 to   31), (Eigval = 1.064002e+01 eV, overlap = 3.624559e-01)
+       361:   -6.028751e-03 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       365:    5.767428e-03 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+         0:    5.379713e-03 (   1 to   16), (Eigval = 2.021055e+01 eV, overlap = 6.655682e-01)
+       334:   -4.880742e-03 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+        76:   -4.430161e-03 (   4 to   17), (Eigval = 1.388316e+01 eV, overlap = 6.551802e-01)
+       250:    4.330108e-03 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       310:   -4.266975e-03 (  13 to   26), (Eigval = 1.145240e+01 eV, overlap = 3.241792e-01)
+       341:   -4.254811e-03 (  14 to   32), (Eigval = 1.098047e+01 eV, overlap = 3.299040e-01)
+       303:    3.880758e-03 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       256:   -3.735505e-03 (  11 to   22), (Eigval = 1.096674e+01 eV, overlap = 3.032173e-01)
+ #10: Excitation energy = 0.270712 Hartree = 7.366462 eV
+     <x> = 7.213086e-02
+     <y> = -3.433832e-01
+     <z> = 3.808617e-01
+     Oscillator strength = 1.787803e-01
+     Orbital overlap = 4.058001e-01
+     r-index = 4.707713e-01
+     (Gamma-r)-index = 2.753333e+00
+     Gamma-index = 3.224104e+00
+     Eigenvalue contribution = 2.680431e-01
+       329:    8.373498e-01 (  14 to   20), (Eigval = 7.360030e+00 eV, overlap = 3.548151e-01)
+       300:    3.117057e-01 (  13 to   16), (Eigval = 7.195707e+00 eV, overlap = 5.572963e-01)
+       275:    3.060841e-01 (  12 to   16), (Eigval = 7.239587e+00 eV, overlap = 4.868564e-01)
+       301:   -2.371124e-01 (  13 to   17), (Eigval = 7.265674e+00 eV, overlap = 5.212280e-01)
+       276:    1.305524e-01 (  12 to   17), (Eigval = 7.309554e+00 eV, overlap = 5.593694e-01)
+       353:   -9.168038e-02 (  15 to   19), (Eigval = 7.275415e+00 eV, overlap = 3.535350e-01)
+       326:   -8.585952e-02 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       350:    7.965476e-02 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       351:    6.889458e-02 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       325:    5.468900e-02 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       354:    4.214099e-02 (  15 to   20), (Eigval = 7.313815e+00 eV, overlap = 2.286779e-01)
+       358:   -1.299408e-02 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       328:   -1.288260e-02 (  14 to   19), (Eigval = 7.321631e+00 eV, overlap = 2.349939e-01)
+       364:    1.267200e-02 (  15 to   30), (Eigval = 1.055750e+01 eV, overlap = 4.291519e-01)
+       359:   -1.090509e-02 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       252:   -1.073964e-02 (  11 to   18), (Eigval = 9.288070e+00 eV, overlap = 3.787867e-01)
+       126:   -1.008309e-02 (   6 to   17), (Eigval = 1.204691e+01 eV, overlap = 5.551712e-01)
+       367:    9.948022e-03 (  15 to   33), (Eigval = 1.100319e+01 eV, overlap = 3.677354e-01)
+       257:   -9.250844e-03 (  11 to   23), (Eigval = 1.097353e+01 eV, overlap = 4.853923e-01)
+       310:   -9.227272e-03 (  13 to   26), (Eigval = 1.145240e+01 eV, overlap = 3.241792e-01)
+       361:    8.687059e-03 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       344:    8.642618e-03 (  14 to   35), (Eigval = 1.207557e+01 eV, overlap = 3.986931e-01)
+       259:   -8.561203e-03 (  11 to   25), (Eigval = 1.212913e+01 eV, overlap = 3.646034e-01)
+       355:   -8.467245e-03 (  15 to   21), (Eigval = 8.071046e+00 eV, overlap = 3.666709e-01)
+       363:    8.127857e-03 (  15 to   29), (Eigval = 1.048063e+01 eV, overlap = 4.649330e-01)
+       155:   -7.401361e-03 (   7 to   21), (Eigval = 1.305988e+01 eV, overlap = 4.100412e-01)
+       255:   -7.401248e-03 (  11 to   21), (Eigval = 1.087181e+01 eV, overlap = 3.755869e-01)
+       250:    7.376408e-03 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       337:   -7.366134e-03 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       365:    7.207343e-03 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+ #11: Excitation energy = 0.271119 Hartree = 7.377515 eV
+     <x> = 1.268639e-02
+     <y> = -7.788489e-02
+     <z> = 1.339368e-01
+     Oscillator strength = 1.611071e-02
+     Orbital overlap = 4.861481e-01
+     r-index = 1.568543e-01
+     (Gamma-r)-index = 6.242949e-01
+     Gamma-index = 7.811492e-01
+     Eigenvalue contribution = 2.673608e-01
+       301:    7.309339e-01 (  13 to   17), (Eigval = 7.265674e+00 eV, overlap = 5.212280e-01)
+       275:   -5.383551e-01 (  12 to   16), (Eigval = 7.239587e+00 eV, overlap = 4.868564e-01)
+       329:    3.248027e-01 (  14 to   20), (Eigval = 7.360030e+00 eV, overlap = 3.548151e-01)
+       300:    1.738678e-01 (  13 to   16), (Eigval = 7.195707e+00 eV, overlap = 5.572963e-01)
+       328:    1.486535e-01 (  14 to   19), (Eigval = 7.321631e+00 eV, overlap = 2.349939e-01)
+       354:   -8.911473e-02 (  15 to   20), (Eigval = 7.313815e+00 eV, overlap = 2.286779e-01)
+       276:    8.141318e-02 (  12 to   17), (Eigval = 7.309554e+00 eV, overlap = 5.593694e-01)
+       353:   -2.005688e-02 (  15 to   19), (Eigval = 7.275415e+00 eV, overlap = 3.535350e-01)
+       326:   -1.946276e-02 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       350:    1.826454e-02 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       125:   -1.559712e-02 (   6 to   16), (Eigval = 1.197695e+01 eV, overlap = 5.446863e-01)
+       351:    1.497861e-02 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       325:    1.469479e-02 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       336:   -1.146119e-02 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       338:    1.086788e-02 (  14 to   29), (Eigval = 1.052685e+01 eV, overlap = 3.369317e-01)
+       361:   -1.053572e-02 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+         0:   -1.038007e-02 (   1 to   16), (Eigval = 2.021055e+01 eV, overlap = 6.655682e-01)
+       365:    9.877085e-03 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       126:    9.855852e-03 (   6 to   17), (Eigval = 1.204691e+01 eV, overlap = 5.551712e-01)
+       339:    8.762095e-03 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+       363:    8.643140e-03 (  15 to   29), (Eigval = 1.048063e+01 eV, overlap = 4.649330e-01)
+       362:    8.063497e-03 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       359:    6.899991e-03 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+         1:    6.295998e-03 (   1 to   17), (Eigval = 2.028052e+01 eV, overlap = 6.743333e-01)
+       257:   -6.273979e-03 (  11 to   23), (Eigval = 1.097353e+01 eV, overlap = 4.853923e-01)
+       273:   -5.831811e-03 (  11 to   39), (Eigval = 1.575951e+01 eV, overlap = 4.569134e-01)
+       308:   -5.467966e-03 (  13 to   24), (Eigval = 1.088035e+01 eV, overlap = 2.459497e-01)
+       283:   -5.416767e-03 (  12 to   24), (Eigval = 1.092423e+01 eV, overlap = 2.341344e-01)
+       334:    5.189066e-03 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       358:   -5.018223e-03 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+ #12: Excitation energy = 0.273471 Hartree = 7.441537 eV
+     <x> = -8.969325e-02
+     <y> = 1.169698e-01
+     <z> = 8.577543e-02
+     Oscillator strength = 1.938950e-02
+     Orbital overlap = 5.550229e-01
+     r-index = 1.210217e-01
+     (Gamma-r)-index = 1.516850e-01
+     Gamma-index = 2.727067e-01
+     Eigenvalue contribution = 2.684990e-01
+       276:    9.650975e-01 (  12 to   17), (Eigval = 7.309554e+00 eV, overlap = 5.593694e-01)
+       300:   -1.347859e-01 (  13 to   16), (Eigval = 7.195707e+00 eV, overlap = 5.572963e-01)
+       301:   -1.315857e-01 (  13 to   17), (Eigval = 7.265674e+00 eV, overlap = 5.212280e-01)
+       275:   -1.277796e-01 (  12 to   16), (Eigval = 7.239587e+00 eV, overlap = 4.868564e-01)
+       353:    8.331811e-02 (  15 to   19), (Eigval = 7.275415e+00 eV, overlap = 3.535350e-01)
+       329:   -7.357144e-02 (  14 to   20), (Eigval = 7.360030e+00 eV, overlap = 3.548151e-01)
+       326:    3.939368e-02 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       350:   -3.799453e-02 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       363:    1.164940e-02 (  15 to   29), (Eigval = 1.048063e+01 eV, overlap = 4.649330e-01)
+       354:    9.759526e-03 (  15 to   20), (Eigval = 7.313815e+00 eV, overlap = 2.286779e-01)
+       336:   -9.255290e-03 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       125:   -8.379244e-03 (   6 to   16), (Eigval = 1.197695e+01 eV, overlap = 5.446863e-01)
+       126:   -7.672633e-03 (   6 to   17), (Eigval = 1.204691e+01 eV, overlap = 5.551712e-01)
+       257:    7.115683e-03 (  11 to   23), (Eigval = 1.097353e+01 eV, overlap = 4.853923e-01)
+       252:    6.682650e-03 (  11 to   18), (Eigval = 9.288070e+00 eV, overlap = 3.787867e-01)
+       371:   -6.653550e-03 (  15 to   37), (Eigval = 1.242183e+01 eV, overlap = 4.196338e-01)
+       100:    6.305826e-03 (   5 to   16), (Eigval = 1.381006e+01 eV, overlap = 6.502661e-01)
+       339:    6.213635e-03 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+       369:   -5.965460e-03 (  15 to   35), (Eigval = 1.202935e+01 eV, overlap = 3.924205e-01)
+       358:    5.875072e-03 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+         0:   -5.228820e-03 (   1 to   16), (Eigval = 2.021055e+01 eV, overlap = 6.655682e-01)
+       274:   -5.121653e-03 (  11 to   40), (Eigval = 1.637234e+01 eV, overlap = 4.431270e-01)
+       351:   -4.666006e-03 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+         1:   -4.574376e-03 (   1 to   17), (Eigval = 2.028052e+01 eV, overlap = 6.743333e-01)
+       370:    4.307489e-03 (  15 to   36), (Eigval = 1.213549e+01 eV, overlap = 3.762408e-01)
+       334:    4.273730e-03 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+        75:    4.097884e-03 (   4 to   16), (Eigval = 1.381319e+01 eV, overlap = 5.915211e-01)
+       344:   -4.024987e-03 (  14 to   35), (Eigval = 1.207557e+01 eV, overlap = 3.986931e-01)
+       355:   -3.992261e-03 (  15 to   21), (Eigval = 8.071046e+00 eV, overlap = 3.666709e-01)
+       346:    3.918990e-03 (  14 to   37), (Eigval = 1.246804e+01 eV, overlap = 4.410135e-01)
+ #13: Excitation energy = 0.275553 Hartree = 7.498187 eV
+     <x> = -2.202743e+00
+     <y> = 9.250256e-01
+     <z> = 1.254594e-01
+     Oscillator strength = 3.815661e+00
+     Orbital overlap = 6.535817e-01
+     r-index = 2.588780e-01
+     (Gamma-r)-index = 1.016594e+00
+     Gamma-index = 1.275472e+00
+     Eigenvalue contribution = 2.170738e-01
+       326:    6.247571e-01 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       350:   -5.991517e-01 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       325:    2.593147e-01 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       351:    2.335608e-01 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       353:   -1.526407e-01 (  15 to   19), (Eigval = 7.275415e+00 eV, overlap = 3.535350e-01)
+       354:    1.304113e-01 (  15 to   20), (Eigval = 7.313815e+00 eV, overlap = 2.286779e-01)
+       329:    7.393536e-02 (  14 to   20), (Eigval = 7.360030e+00 eV, overlap = 3.548151e-01)
+       328:    7.249258e-02 (  14 to   19), (Eigval = 7.321631e+00 eV, overlap = 2.349939e-01)
+       333:    6.905400e-02 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+       331:    6.420833e-02 (  14 to   22), (Eigval = 8.212183e+00 eV, overlap = 3.185617e-01)
+       358:    6.405790e-02 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       321:    5.916565e-02 (  13 to   37), (Eigval = 1.442319e+01 eV, overlap = 5.060925e-01)
+       155:    5.641719e-02 (   7 to   21), (Eigval = 1.305988e+01 eV, overlap = 4.100412e-01)
+       285:   -5.187933e-02 (  12 to   26), (Eigval = 1.149628e+01 eV, overlap = 3.138865e-01)
+       365:   -5.165716e-02 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       337:    4.791355e-02 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       342:   -4.519391e-02 (  14 to   33), (Eigval = 1.104940e+01 eV, overlap = 3.631872e-01)
+       369:   -4.412461e-02 (  15 to   35), (Eigval = 1.202935e+01 eV, overlap = 3.924205e-01)
+       129:   -4.385406e-02 (   6 to   20), (Eigval = 1.409641e+01 eV, overlap = 4.268766e-01)
+       345:    4.174764e-02 (  14 to   36), (Eigval = 1.218170e+01 eV, overlap = 4.424313e-01)
+       258:    3.951631e-02 (  11 to   24), (Eigval = 1.167976e+01 eV, overlap = 3.342388e-01)
+       310:    3.907748e-02 (  13 to   26), (Eigval = 1.145240e+01 eV, overlap = 3.241792e-01)
+       303:   -3.807584e-02 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       294:    3.784711e-02 (  12 to   35), (Eigval = 1.407459e+01 eV, overlap = 4.193247e-01)
+       181:   -3.717676e-02 (   8 to   22), (Eigval = 1.289932e+01 eV, overlap = 2.803534e-01)
+       276:   -3.499602e-02 (  12 to   17), (Eigval = 7.309554e+00 eV, overlap = 5.593694e-01)
+       197:   -3.471811e-02 (   8 to   38), (Eigval = 1.749837e+01 eV, overlap = 4.436055e-01)
+       362:    3.370156e-02 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       241:   -3.370037e-02 (  10 to   32), (Eigval = 1.497521e+01 eV, overlap = 4.424570e-01)
+       361:   -3.320294e-02 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+ #14: Excitation energy = 0.277223 Hartree = 7.543638 eV
+     <x> = -1.001814e+00
+     <y> = -2.187551e+00
+     <z> = -1.233004e-01
+     Oscillator strength = 3.869475e+00
+     Orbital overlap = 7.428846e-01
+     r-index = 2.359394e-01
+     (Gamma-r)-index = 1.022726e+00
+     Gamma-index = 1.258666e+00
+     Eigenvalue contribution = 2.174606e-01
+       325:    6.209039e-01 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       351:    6.123170e-01 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       326:   -2.406883e-01 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       350:    2.338956e-01 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       329:   -1.409034e-01 (  14 to   20), (Eigval = 7.360030e+00 eV, overlap = 3.548151e-01)
+       328:    1.150466e-01 (  14 to   19), (Eigval = 7.321631e+00 eV, overlap = 2.349939e-01)
+       353:    8.802751e-02 (  15 to   19), (Eigval = 7.275415e+00 eV, overlap = 3.535350e-01)
+       358:   -7.427617e-02 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       331:    6.452537e-02 (  14 to   22), (Eigval = 8.212183e+00 eV, overlap = 3.185617e-01)
+       367:    6.246540e-02 (  15 to   33), (Eigval = 1.100319e+01 eV, overlap = 3.677354e-01)
+       296:    6.108599e-02 (  12 to   37), (Eigval = 1.446707e+01 eV, overlap = 4.983934e-01)
+       156:    6.065087e-02 (   7 to   22), (Eigval = 1.315481e+01 eV, overlap = 4.026696e-01)
+       259:   -5.704174e-02 (  11 to   25), (Eigval = 1.212913e+01 eV, overlap = 3.646034e-01)
+       310:   -5.422794e-02 (  13 to   26), (Eigval = 1.145240e+01 eV, overlap = 3.241792e-01)
+       355:   -5.208385e-02 (  15 to   21), (Eigval = 8.071046e+00 eV, overlap = 3.666709e-01)
+       356:   -4.681113e-02 (  15 to   22), (Eigval = 8.165967e+00 eV, overlap = 2.826162e-01)
+       128:   -4.507484e-02 (   6 to   19), (Eigval = 1.405801e+01 eV, overlap = 4.201836e-01)
+       344:    4.444753e-02 (  14 to   35), (Eigval = 1.207557e+01 eV, overlap = 3.986931e-01)
+       304:   -4.438522e-02 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       342:   -4.414844e-02 (  14 to   33), (Eigval = 1.104940e+01 eV, overlap = 3.631872e-01)
+       364:    4.393285e-02 (  15 to   30), (Eigval = 1.055750e+01 eV, overlap = 4.291519e-01)
+       285:   -3.976806e-02 (  12 to   26), (Eigval = 1.149628e+01 eV, overlap = 3.138865e-01)
+       365:    3.866301e-02 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       216:   -3.816315e-02 (   9 to   32), (Eigval = 1.500775e+01 eV, overlap = 3.960239e-01)
+       336:    3.748079e-02 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       333:    3.701806e-02 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+       180:    3.674929e-02 (   8 to   21), (Eigval = 1.280440e+01 eV, overlap = 2.858484e-01)
+       278:   -3.525413e-02 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       319:   -3.401298e-02 (  13 to   35), (Eigval = 1.403072e+01 eV, overlap = 4.150360e-01)
+       362:    3.256533e-02 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+ #15: Excitation energy = 0.297303 Hartree = 8.090021 eV
+     <x> = -7.546793e-02
+     <y> = -1.012972e-01
+     <z> = -1.276036e-02
+     Oscillator strength = 1.074624e-02
+     Orbital overlap = 3.655885e-01
+     r-index = 6.204906e-01
+     (Gamma-r)-index = 3.509118e+00
+     Gamma-index = 4.129609e+00
+     Eigenvalue contribution = 2.967466e-01
+       355:    9.623051e-01 (  15 to   21), (Eigval = 8.071046e+00 eV, overlap = 3.666709e-01)
+       356:    2.018094e-01 (  15 to   22), (Eigval = 8.165967e+00 eV, overlap = 2.826162e-01)
+       330:   -1.186615e-01 (  14 to   21), (Eigval = 8.117262e+00 eV, overlap = 3.586532e-01)
+       332:    9.853355e-02 (  14 to   23), (Eigval = 8.218981e+00 eV, overlap = 4.356707e-01)
+       357:   -5.570800e-02 (  15 to   23), (Eigval = 8.172765e+00 eV, overlap = 4.323797e-01)
+       351:    4.681532e-02 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       325:    3.265161e-02 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       151:   -1.852673e-02 (   7 to   17), (Eigval = 1.025315e+01 eV, overlap = 5.631129e-01)
+       358:   -1.544732e-02 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       326:   -1.520822e-02 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       175:    1.430823e-02 (   8 to   16), (Eigval = 9.927696e+00 eV, overlap = 5.591618e-01)
+       251:   -1.361686e-02 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       350:    1.172232e-02 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       372:    1.043954e-02 (  15 to   38), (Eigval = 1.276502e+01 eV, overlap = 5.132141e-01)
+        26:    9.909367e-03 (   2 to   17), (Eigval = 1.747485e+01 eV, overlap = 7.100174e-01)
+       259:   -9.005289e-03 (  11 to   25), (Eigval = 1.212913e+01 eV, overlap = 3.646034e-01)
+       250:    8.926713e-03 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       226:    8.908502e-03 (  10 to   17), (Eigval = 9.305269e+00 eV, overlap = 4.507636e-01)
+       278:   -8.828201e-03 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       150:   -8.742877e-03 (   7 to   16), (Eigval = 1.018319e+01 eV, overlap = 5.437109e-01)
+       225:    7.171452e-03 (  10 to   16), (Eigval = 9.235302e+00 eV, overlap = 5.584002e-01)
+       367:    6.895834e-03 (  15 to   33), (Eigval = 1.100319e+01 eV, overlap = 3.677354e-01)
+       373:    6.664304e-03 (  15 to   39), (Eigval = 1.295874e+01 eV, overlap = 4.141572e-01)
+       359:   -6.538055e-03 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       303:    6.312593e-03 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       342:   -6.146301e-03 (  14 to   33), (Eigval = 1.104940e+01 eV, overlap = 3.631872e-01)
+       362:    5.938823e-03 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       156:    5.898312e-03 (   7 to   22), (Eigval = 1.315481e+01 eV, overlap = 4.026696e-01)
+       285:   -5.481960e-03 (  12 to   26), (Eigval = 1.149628e+01 eV, overlap = 3.138865e-01)
+       279:   -5.440691e-03 (  12 to   20), (Eigval = 9.359055e+00 eV, overlap = 3.274451e-01)
+ #16: Excitation energy = 0.298511 Hartree = 8.122911 eV
+     <x> = -3.785256e-02
+     <y> = 5.373404e-02
+     <z> = -5.039073e-02
+     Oscillator strength = 4.572926e-03
+     Orbital overlap = 3.599117e-01
+     r-index = 6.141899e-01
+     (Gamma-r)-index = 3.495124e+00
+     Gamma-index = 4.109314e+00
+     Eigenvalue contribution = 2.984873e-01
+       330:    9.532734e-01 (  14 to   21), (Eigval = 8.117262e+00 eV, overlap = 3.586532e-01)
+       355:    1.623298e-01 (  15 to   21), (Eigval = 8.071046e+00 eV, overlap = 3.666709e-01)
+       331:   -1.408359e-01 (  14 to   22), (Eigval = 8.212183e+00 eV, overlap = 3.185617e-01)
+       332:   -1.271390e-01 (  14 to   23), (Eigval = 8.218981e+00 eV, overlap = 4.356707e-01)
+       357:    1.205852e-01 (  15 to   23), (Eigval = 8.172765e+00 eV, overlap = 4.323797e-01)
+       356:   -1.105886e-01 (  15 to   22), (Eigval = 8.165967e+00 eV, overlap = 2.826162e-01)
+       326:    1.999461e-02 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       350:   -1.836001e-02 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       150:    1.363243e-02 (   7 to   16), (Eigval = 1.018319e+01 eV, overlap = 5.437109e-01)
+       251:    1.235013e-02 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       200:   -1.155095e-02 (   9 to   16), (Eigval = 9.267845e+00 eV, overlap = 4.362740e-01)
+       176:    1.114927e-02 (   8 to   17), (Eigval = 9.997663e+00 eV, overlap = 5.593376e-01)
+       358:    8.155073e-03 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+        50:    7.041999e-03 (   3 to   16), (Eigval = 1.738446e+01 eV, overlap = 6.835135e-01)
+       151:    6.626850e-03 (   7 to   17), (Eigval = 1.025315e+01 eV, overlap = 5.631129e-01)
+       348:    6.604452e-03 (  14 to   39), (Eigval = 1.300495e+01 eV, overlap = 4.567951e-01)
+       201:   -6.551643e-03 (   9 to   17), (Eigval = 9.337812e+00 eV, overlap = 5.552965e-01)
+       367:   -5.361862e-03 (  15 to   33), (Eigval = 1.100319e+01 eV, overlap = 3.677354e-01)
+       351:   -5.282227e-03 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       225:    5.201610e-03 (  10 to   16), (Eigval = 9.235302e+00 eV, overlap = 5.584002e-01)
+       345:   -5.191788e-03 (  14 to   36), (Eigval = 1.218170e+01 eV, overlap = 4.424313e-01)
+       226:    4.630860e-03 (  10 to   17), (Eigval = 9.305269e+00 eV, overlap = 4.507636e-01)
+       344:   -4.444262e-03 (  14 to   35), (Eigval = 1.207557e+01 eV, overlap = 3.986931e-01)
+       303:   -3.953692e-03 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       311:   -3.901278e-03 (  13 to   27), (Eigval = 1.148438e+01 eV, overlap = 4.473996e-01)
+       308:    3.884459e-03 (  13 to   24), (Eigval = 1.088035e+01 eV, overlap = 2.459497e-01)
+       250:   -3.853680e-03 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       310:    3.798781e-03 (  13 to   26), (Eigval = 1.145240e+01 eV, overlap = 3.241792e-01)
+       361:   -3.588848e-03 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       342:   -3.468375e-03 (  14 to   33), (Eigval = 1.104940e+01 eV, overlap = 3.631872e-01)
+ #17: Excitation energy = 0.300231 Hartree = 8.169699 eV
+     <x> = 1.782255e-02
+     <y> = -3.728909e-02
+     <z> = 1.161115e-02
+     Oscillator strength = 1.228626e-03
+     Orbital overlap = 3.038539e-01
+     r-index = 4.575410e-01
+     (Gamma-r)-index = 3.617057e+00
+     Gamma-index = 4.074598e+00
+     Eigenvalue contribution = 3.001643e-01
+       356:   -9.055943e-01 (  15 to   22), (Eigval = 8.165967e+00 eV, overlap = 2.826162e-01)
+       357:   -3.099350e-01 (  15 to   23), (Eigval = 8.172765e+00 eV, overlap = 4.323797e-01)
+       331:   -1.978436e-01 (  14 to   22), (Eigval = 8.212183e+00 eV, overlap = 3.185617e-01)
+       355:    1.521555e-01 (  15 to   21), (Eigval = 8.071046e+00 eV, overlap = 3.666709e-01)
+       330:   -1.131963e-01 (  14 to   21), (Eigval = 8.117262e+00 eV, overlap = 3.586532e-01)
+       332:    6.795244e-02 (  14 to   23), (Eigval = 8.218981e+00 eV, overlap = 4.356707e-01)
+       251:    4.167430e-02 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       250:   -3.096602e-02 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       358:    1.309860e-02 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       225:    1.267242e-02 (  10 to   16), (Eigval = 9.235302e+00 eV, overlap = 5.584002e-01)
+       326:    1.138218e-02 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       350:   -1.061985e-02 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       151:   -1.038446e-02 (   7 to   17), (Eigval = 1.025315e+01 eV, overlap = 5.631129e-01)
+       372:    9.050550e-03 (  15 to   38), (Eigval = 1.276502e+01 eV, overlap = 5.132141e-01)
+       277:   -7.824269e-03 (  12 to   18), (Eigval = 8.532542e+00 eV, overlap = 4.386912e-01)
+        26:    6.924643e-03 (   2 to   17), (Eigval = 1.747485e+01 eV, overlap = 7.100174e-01)
+       150:   -6.394338e-03 (   7 to   16), (Eigval = 1.018319e+01 eV, overlap = 5.437109e-01)
+       303:   -5.948918e-03 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       361:   -5.463648e-03 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       226:   -5.421806e-03 (  10 to   17), (Eigval = 9.305269e+00 eV, overlap = 4.507636e-01)
+       279:    5.322417e-03 (  12 to   20), (Eigval = 9.359055e+00 eV, overlap = 3.274451e-01)
+       366:    4.899590e-03 (  15 to   32), (Eigval = 1.093425e+01 eV, overlap = 2.918212e-01)
+       368:    4.825174e-03 (  15 to   34), (Eigval = 1.174485e+01 eV, overlap = 3.731078e-01)
+       374:   -4.580237e-03 (  15 to   40), (Eigval = 1.357158e+01 eV, overlap = 3.902328e-01)
+       202:   -4.077379e-03 (   9 to   18), (Eigval = 1.056080e+01 eV, overlap = 4.476689e-01)
+       354:    3.821650e-03 (  15 to   20), (Eigval = 7.313815e+00 eV, overlap = 2.286779e-01)
+       175:    3.631406e-03 (   8 to   16), (Eigval = 9.927696e+00 eV, overlap = 5.591618e-01)
+       284:    3.619319e-03 (  12 to   25), (Eigval = 1.137360e+01 eV, overlap = 3.101717e-01)
+       341:   -3.230406e-03 (  14 to   32), (Eigval = 1.098047e+01 eV, overlap = 3.299040e-01)
+       176:   -3.057093e-03 (   8 to   17), (Eigval = 9.997663e+00 eV, overlap = 5.593376e-01)
+ #18: Excitation energy = 0.302081 Hartree = 8.220035 eV
+     <x> = 2.436115e-02
+     <y> = 2.414245e-02
+     <z> = -4.551606e-03
+     Oscillator strength = 7.980272e-04
+     Orbital overlap = 4.183184e-01
+     r-index = 2.000701e-01
+     (Gamma-r)-index = 2.463451e+00
+     Gamma-index = 2.663521e+00
+     Eigenvalue contribution = 3.010351e-01
+       357:    9.154599e-01 (  15 to   23), (Eigval = 8.172765e+00 eV, overlap = 4.323797e-01)
+       356:   -2.846128e-01 (  15 to   22), (Eigval = 8.165967e+00 eV, overlap = 2.826162e-01)
+       330:   -1.869142e-01 (  14 to   21), (Eigval = 8.117262e+00 eV, overlap = 3.586532e-01)
+       332:   -1.608742e-01 (  14 to   23), (Eigval = 8.218981e+00 eV, overlap = 4.356707e-01)
+       355:    1.058513e-01 (  15 to   21), (Eigval = 8.071046e+00 eV, overlap = 3.666709e-01)
+       151:   -6.202424e-02 (   7 to   17), (Eigval = 1.025315e+01 eV, overlap = 5.631129e-01)
+       175:    4.752800e-02 (   8 to   16), (Eigval = 9.927696e+00 eV, overlap = 5.591618e-01)
+       351:   -1.677269e-02 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       368:    1.498696e-02 (  15 to   34), (Eigval = 1.174485e+01 eV, overlap = 3.731078e-01)
+        50:   -1.146378e-02 (   3 to   16), (Eigval = 1.738446e+01 eV, overlap = 6.835135e-01)
+       325:   -1.127824e-02 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+        25:    1.081865e-02 (   2 to   16), (Eigval = 1.740488e+01 eV, overlap = 5.899401e-01)
+       287:   -1.025770e-02 (  12 to   28), (Eigval = 1.228356e+01 eV, overlap = 4.506288e-01)
+        51:    1.022220e-02 (   3 to   17), (Eigval = 1.745442e+01 eV, overlap = 6.195798e-01)
+       352:   -1.013639e-02 (  15 to   18), (Eigval = 6.487302e+00 eV, overlap = 3.593864e-01)
+       208:    9.870532e-03 (   9 to   24), (Eigval = 1.295249e+01 eV, overlap = 2.629503e-01)
+       348:   -9.851470e-03 (  14 to   39), (Eigval = 1.300495e+01 eV, overlap = 4.567951e-01)
+       347:   -8.938785e-03 (  14 to   38), (Eigval = 1.281124e+01 eV, overlap = 4.523022e-01)
+       225:   -8.515640e-03 (  10 to   16), (Eigval = 9.235302e+00 eV, overlap = 5.584002e-01)
+       326:    8.416824e-03 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       331:    8.363067e-03 (  14 to   22), (Eigval = 8.212183e+00 eV, overlap = 3.185617e-01)
+        26:    8.018402e-03 (   2 to   17), (Eigval = 1.747485e+01 eV, overlap = 7.100174e-01)
+       358:    7.765778e-03 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       350:   -6.933348e-03 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       263:    6.683928e-03 (  11 to   29), (Eigval = 1.328140e+01 eV, overlap = 4.186372e-01)
+        87:    5.821196e-03 (   4 to   28), (Eigval = 1.885717e+01 eV, overlap = 4.804612e-01)
+       277:    5.709575e-03 (  12 to   18), (Eigval = 8.532542e+00 eV, overlap = 4.386912e-01)
+       370:    5.596879e-03 (  15 to   36), (Eigval = 1.213549e+01 eV, overlap = 3.762408e-01)
+       150:    5.402204e-03 (   7 to   16), (Eigval = 1.018319e+01 eV, overlap = 5.437109e-01)
+       289:   -5.278439e-03 (  12 to   30), (Eigval = 1.260274e+01 eV, overlap = 3.695463e-01)
+ #19: Excitation energy = 0.302881 Hartree = 8.241821 eV
+     <x> = 6.844111e-02
+     <y> = 5.927716e-02
+     <z> = 8.374719e-03
+     Oscillator strength = 5.512069e-03
+     Orbital overlap = 3.347812e-01
+     r-index = 4.476626e-01
+     (Gamma-r)-index = 3.588089e+00
+     Gamma-index = 4.035751e+00
+     Eigenvalue contribution = 3.015042e-01
+       331:    9.095007e-01 (  14 to   22), (Eigval = 8.212183e+00 eV, overlap = 3.185617e-01)
+       332:   -3.263505e-01 (  14 to   23), (Eigval = 8.218981e+00 eV, overlap = 4.356707e-01)
+       356:   -1.781382e-01 (  15 to   22), (Eigval = 8.165967e+00 eV, overlap = 2.826162e-01)
+       357:   -1.166292e-01 (  15 to   23), (Eigval = 8.172765e+00 eV, overlap = 4.323797e-01)
+       355:    7.692904e-02 (  15 to   21), (Eigval = 8.071046e+00 eV, overlap = 3.666709e-01)
+       330:    7.190110e-02 (  14 to   21), (Eigval = 8.117262e+00 eV, overlap = 3.586532e-01)
+       325:   -5.908480e-02 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       351:   -4.242450e-02 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       304:    2.077538e-02 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       326:   -1.873864e-02 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       251:    1.733886e-02 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       201:   -1.679933e-02 (   9 to   17), (Eigval = 9.337812e+00 eV, overlap = 5.552965e-01)
+       345:   -1.581430e-02 (  14 to   36), (Eigval = 1.218170e+01 eV, overlap = 4.424313e-01)
+       333:   -1.579779e-02 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+       350:    1.529547e-02 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       278:    1.247247e-02 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       372:    1.228164e-02 (  15 to   38), (Eigval = 1.276502e+01 eV, overlap = 5.132141e-01)
+       359:    1.052282e-02 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       176:   -9.614533e-03 (   8 to   17), (Eigval = 9.997663e+00 eV, overlap = 5.593376e-01)
+        26:    9.271775e-03 (   2 to   17), (Eigval = 1.747485e+01 eV, overlap = 7.100174e-01)
+       150:   -8.895558e-03 (   7 to   16), (Eigval = 1.018319e+01 eV, overlap = 5.437109e-01)
+       200:    8.706385e-03 (   9 to   16), (Eigval = 9.267845e+00 eV, overlap = 4.362740e-01)
+       364:   -8.263645e-03 (  15 to   30), (Eigval = 1.055750e+01 eV, overlap = 4.291519e-01)
+       284:    8.199450e-03 (  12 to   25), (Eigval = 1.137360e+01 eV, overlap = 3.101717e-01)
+       156:   -8.159731e-03 (   7 to   22), (Eigval = 1.315481e+01 eV, overlap = 4.026696e-01)
+       129:    8.117708e-03 (   6 to   20), (Eigval = 1.409641e+01 eV, overlap = 4.268766e-01)
+       285:    8.065812e-03 (  12 to   26), (Eigval = 1.149628e+01 eV, overlap = 3.138865e-01)
+       262:   -7.620958e-03 (  11 to   28), (Eigval = 1.303909e+01 eV, overlap = 6.093685e-01)
+       227:    7.411028e-03 (  10 to   18), (Eigval = 1.052826e+01 eV, overlap = 4.413902e-01)
+        50:    7.371244e-03 (   3 to   16), (Eigval = 1.738446e+01 eV, overlap = 6.835135e-01)
+ #20: Excitation energy = 0.303792 Hartree = 8.266613 eV
+     <x> = 5.275651e-02
+     <y> = 1.780262e-02
+     <z> = 8.100159e-02
+     Oscillator strength = 6.440961e-03
+     Orbital overlap = 4.222220e-01
+     r-index = 1.988017e-01
+     (Gamma-r)-index = 2.478737e+00
+     Gamma-index = 2.677539e+00
+     Eigenvalue contribution = 3.026372e-01
+       332:    9.105487e-01 (  14 to   23), (Eigval = 8.218981e+00 eV, overlap = 4.356707e-01)
+       331:    3.205499e-01 (  14 to   22), (Eigval = 8.212183e+00 eV, overlap = 3.185617e-01)
+       357:    1.639797e-01 (  15 to   23), (Eigval = 8.172765e+00 eV, overlap = 4.323797e-01)
+       330:    1.444445e-01 (  14 to   21), (Eigval = 8.117262e+00 eV, overlap = 3.586532e-01)
+       356:   -8.525802e-02 (  15 to   22), (Eigval = 8.165967e+00 eV, overlap = 2.826162e-01)
+       150:    6.630512e-02 (   7 to   16), (Eigval = 1.018319e+01 eV, overlap = 5.437109e-01)
+       176:    4.693848e-02 (   8 to   17), (Eigval = 9.997663e+00 eV, overlap = 5.593376e-01)
+       355:   -4.538354e-02 (  15 to   21), (Eigval = 8.071046e+00 eV, overlap = 3.666709e-01)
+       325:   -2.791796e-02 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       351:   -1.940875e-02 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       345:   -1.621508e-02 (  14 to   36), (Eigval = 1.218170e+01 eV, overlap = 4.424313e-01)
+       250:    1.227048e-02 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       326:   -1.222621e-02 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+        50:    1.114550e-02 (   3 to   16), (Eigval = 1.738446e+01 eV, overlap = 6.835135e-01)
+       304:    1.093940e-02 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       225:    1.089144e-02 (  10 to   16), (Eigval = 9.235302e+00 eV, overlap = 5.584002e-01)
+        51:    1.085506e-02 (   3 to   17), (Eigval = 1.745442e+01 eV, overlap = 6.195798e-01)
+        25:    1.084758e-02 (   2 to   16), (Eigval = 1.740488e+01 eV, overlap = 5.899401e-01)
+       327:   -1.011632e-02 (  14 to   18), (Eigval = 6.533518e+00 eV, overlap = 3.643171e-01)
+       350:    9.926430e-03 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       309:   -9.903578e-03 (  13 to   25), (Eigval = 1.132972e+01 eV, overlap = 3.305548e-01)
+       233:    9.609220e-03 (  10 to   24), (Eigval = 1.291995e+01 eV, overlap = 2.588976e-01)
+       302:    9.237939e-03 (  13 to   18), (Eigval = 8.488663e+00 eV, overlap = 4.592261e-01)
+       347:   -9.140087e-03 (  14 to   38), (Eigval = 1.281124e+01 eV, overlap = 4.523022e-01)
+       346:   -8.666948e-03 (  14 to   37), (Eigval = 1.246804e+01 eV, overlap = 4.410135e-01)
+       277:    8.634110e-03 (  12 to   18), (Eigval = 8.532542e+00 eV, overlap = 4.386912e-01)
+       311:   -8.067345e-03 (  13 to   27), (Eigval = 1.148438e+01 eV, overlap = 4.473996e-01)
+        26:   -7.965618e-03 (   2 to   17), (Eigval = 1.747485e+01 eV, overlap = 7.100174e-01)
+       373:   -7.580963e-03 (  15 to   39), (Eigval = 1.295874e+01 eV, overlap = 4.141572e-01)
+       359:    7.552120e-03 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+ #21: Excitation energy = 0.314811 Hartree = 8.566451 eV
+     <x> = 1.809392e-02
+     <y> = -8.271572e-03
+     <z> = -1.787775e-02
+     Oscillator strength = 4.769484e-04
+     Orbital overlap = 4.737427e-01
+     r-index = 7.232335e-01
+     (Gamma-r)-index = 2.789931e+00
+     Gamma-index = 3.513165e+00
+     Eigenvalue contribution = 3.122019e-01
+       302:    9.714683e-01 (  13 to   18), (Eigval = 8.488663e+00 eV, overlap = 4.592261e-01)
+       250:    1.850720e-01 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       251:    8.468444e-02 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       337:    5.821379e-02 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       336:    4.479779e-02 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       333:    4.098059e-02 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+       359:   -3.587129e-02 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       358:   -3.363449e-02 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       307:    2.422231e-02 (  13 to   23), (Eigval = 1.017413e+01 eV, overlap = 3.483840e-01)
+       277:   -2.407211e-02 (  12 to   18), (Eigval = 8.532542e+00 eV, overlap = 4.386912e-01)
+       339:    2.290051e-02 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+       318:   -1.894527e-02 (  13 to   34), (Eigval = 1.374621e+01 eV, overlap = 4.937308e-01)
+       229:   -1.697769e-02 (  10 to   20), (Eigval = 1.135477e+01 eV, overlap = 4.585779e-01)
+       154:   -1.676226e-02 (   7 to   20), (Eigval = 1.230265e+01 eV, overlap = 3.968588e-01)
+       361:   -1.623398e-02 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       203:   -1.515814e-02 (   9 to   19), (Eigval = 1.134891e+01 eV, overlap = 4.622633e-01)
+       334:    1.265411e-02 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       335:    1.257869e-02 (  14 to   26), (Eigval = 9.497256e+00 eV, overlap = 2.587717e-01)
+       362:   -1.076428e-02 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       305:    9.856368e-03 (  13 to   21), (Eigval = 1.007241e+01 eV, overlap = 3.670984e-01)
+       236:   -8.835990e-03 (  10 to   27), (Eigval = 1.352398e+01 eV, overlap = 4.156100e-01)
+       131:    8.492236e-03 (   6 to   22), (Eigval = 1.494857e+01 eV, overlap = 3.994937e-01)
+       344:    8.200407e-03 (  14 to   35), (Eigval = 1.207557e+01 eV, overlap = 3.986931e-01)
+       239:    7.779498e-03 (  10 to   30), (Eigval = 1.459845e+01 eV, overlap = 4.451692e-01)
+       360:    7.740233e-03 (  15 to   26), (Eigval = 9.451040e+00 eV, overlap = 2.728609e-01)
+       332:   -7.655963e-03 (  14 to   23), (Eigval = 8.218981e+00 eV, overlap = 4.356707e-01)
+       228:   -7.265544e-03 (  10 to   19), (Eigval = 1.131637e+01 eV, overlap = 3.002503e-01)
+       164:    7.139068e-03 (   7 to   30), (Eigval = 1.554634e+01 eV, overlap = 4.277166e-01)
+       317:   -6.898605e-03 (  13 to   33), (Eigval = 1.300455e+01 eV, overlap = 3.710352e-01)
+       204:    6.846428e-03 (   9 to   20), (Eigval = 1.138731e+01 eV, overlap = 3.117998e-01)
+ #22: Excitation energy = 0.316145 Hartree = 8.602749 eV
+     <x> = 1.408232e-02
+     <y> = 2.093609e-02
+     <z> = 1.004694e-02
+     Oscillator strength = 4.917151e-04
+     Orbital overlap = 4.714212e-01
+     r-index = 7.107218e-01
+     (Gamma-r)-index = 2.706159e+00
+     Gamma-index = 3.416881e+00
+     Eigenvalue contribution = 3.135700e-01
+       277:    9.349043e-01 (  12 to   18), (Eigval = 8.532542e+00 eV, overlap = 4.386912e-01)
+       251:   -2.894525e-01 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       361:    1.007964e-01 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       358:   -8.119453e-02 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       359:    7.967820e-02 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       250:    7.210178e-02 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       362:    6.288629e-02 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       333:   -3.871508e-02 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+       302:    3.863143e-02 (  13 to   18), (Eigval = 8.488663e+00 eV, overlap = 4.592261e-01)
+       334:   -3.347757e-02 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       364:    2.843258e-02 (  15 to   30), (Eigval = 1.055750e+01 eV, overlap = 4.291519e-01)
+       282:    2.201209e-02 (  12 to   23), (Eigval = 1.021801e+01 eV, overlap = 3.370533e-01)
+       356:   -2.069943e-02 (  15 to   22), (Eigval = 8.165967e+00 eV, overlap = 2.826162e-01)
+       153:    1.999158e-02 (   7 to   19), (Eigval = 1.226425e+01 eV, overlap = 3.964638e-01)
+       365:    1.787919e-02 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       228:   -1.604032e-02 (  10 to   19), (Eigval = 1.131637e+01 eV, overlap = 3.002503e-01)
+       204:    1.598978e-02 (   9 to   20), (Eigval = 1.138731e+01 eV, overlap = 3.117998e-01)
+       293:   -1.388290e-02 (  12 to   34), (Eigval = 1.379009e+01 eV, overlap = 4.693563e-01)
+       357:   -1.285870e-02 (  15 to   23), (Eigval = 8.172765e+00 eV, overlap = 4.323797e-01)
+       335:    1.183346e-02 (  14 to   26), (Eigval = 9.497256e+00 eV, overlap = 2.587717e-01)
+       332:   -1.042666e-02 (  14 to   23), (Eigval = 8.218981e+00 eV, overlap = 4.356707e-01)
+       363:   -9.995723e-03 (  15 to   29), (Eigval = 1.048063e+01 eV, overlap = 4.649330e-01)
+       340:    9.395141e-03 (  14 to   31), (Eigval = 1.064002e+01 eV, overlap = 3.624559e-01)
+       279:    8.176879e-03 (  12 to   20), (Eigval = 9.359055e+00 eV, overlap = 3.274451e-01)
+       331:   -8.157997e-03 (  14 to   22), (Eigval = 8.212183e+00 eV, overlap = 3.185617e-01)
+       280:    7.958803e-03 (  12 to   21), (Eigval = 1.011629e+01 eV, overlap = 3.631052e-01)
+       369:    7.931292e-03 (  15 to   35), (Eigval = 1.202935e+01 eV, overlap = 3.924205e-01)
+       229:    7.737634e-03 (  10 to   20), (Eigval = 1.135477e+01 eV, overlap = 4.585779e-01)
+       130:    7.578648e-03 (   6 to   21), (Eigval = 1.485364e+01 eV, overlap = 4.231711e-01)
+       211:   -7.461219e-03 (   9 to   27), (Eigval = 1.355652e+01 eV, overlap = 4.130082e-01)
+ #23: Excitation energy = 0.321109 Hartree = 8.737818 eV
+     <x> = 2.571099e-02
+     <y> = 4.242345e-02
+     <z> = 4.150971e-02
+     Oscillator strength = 2.789240e-03
+     Orbital overlap = 6.773827e-01
+     r-index = 5.387808e-01
+     (Gamma-r)-index = 1.566386e+00
+     Gamma-index = 2.105167e+00
+     Eigenvalue contribution = 3.119257e-01
+       251:   -7.979325e-01 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       277:   -3.405851e-01 (  12 to   18), (Eigval = 8.532542e+00 eV, overlap = 4.386912e-01)
+       361:    2.643280e-01 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       359:    2.194052e-01 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       362:    1.738230e-01 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       333:   -1.719061e-01 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+       358:   -1.643722e-01 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       334:   -8.953056e-02 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       302:    8.370446e-02 (  13 to   18), (Eigval = 8.488663e+00 eV, overlap = 4.592261e-01)
+       364:    7.278303e-02 (  15 to   30), (Eigval = 1.055750e+01 eV, overlap = 4.291519e-01)
+       336:   -5.462793e-02 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       337:   -4.797963e-02 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       356:   -3.688547e-02 (  15 to   22), (Eigval = 8.165967e+00 eV, overlap = 2.826162e-01)
+       365:    3.235939e-02 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       293:    3.087089e-02 (  12 to   34), (Eigval = 1.379009e+01 eV, overlap = 4.693563e-01)
+       326:    3.051638e-02 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       350:   -2.735651e-02 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       305:   -2.400410e-02 (  13 to   21), (Eigval = 1.007241e+01 eV, overlap = 3.670984e-01)
+       303:   -2.270643e-02 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       153:    2.162323e-02 (   7 to   19), (Eigval = 1.226425e+01 eV, overlap = 3.964638e-01)
+       363:   -2.122760e-02 (  15 to   29), (Eigval = 1.048063e+01 eV, overlap = 4.649330e-01)
+       369:    2.122542e-02 (  15 to   35), (Eigval = 1.202935e+01 eV, overlap = 3.924205e-01)
+       235:   -2.056924e-02 (  10 to   26), (Eigval = 1.349200e+01 eV, overlap = 3.303333e-01)
+       281:   -2.046283e-02 (  12 to   22), (Eigval = 1.021121e+01 eV, overlap = 3.293397e-01)
+       282:   -2.026943e-02 (  12 to   23), (Eigval = 1.021801e+01 eV, overlap = 3.370533e-01)
+       351:   -1.898531e-02 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       198:   -1.720621e-02 (   8 to   39), (Eigval = 1.769209e+01 eV, overlap = 4.037247e-01)
+       171:   -1.695840e-02 (   7 to   37), (Eigval = 1.741066e+01 eV, overlap = 4.940136e-01)
+       307:    1.624280e-02 (  13 to   23), (Eigval = 1.017413e+01 eV, overlap = 3.483840e-01)
+       194:   -1.528472e-02 (   8 to   35), (Eigval = 1.676270e+01 eV, overlap = 3.576791e-01)
+ #24: Excitation energy = 0.322107 Hartree = 8.764985 eV
+     <x> = -3.789058e-02
+     <y> = 1.589604e-02
+     <z> = 5.573759e-02
+     Oscillator strength = 3.196706e-03
+     Orbital overlap = 7.222915e-01
+     r-index = 4.266997e-01
+     (Gamma-r)-index = 1.263900e+00
+     Gamma-index = 1.690600e+00
+     Eigenvalue contribution = 3.095467e-01
+       250:   -8.598520e-01 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       337:   -2.452033e-01 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       336:   -2.309443e-01 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       358:    2.127970e-01 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       302:    2.096507e-01 (  13 to   18), (Eigval = 8.488663e+00 eV, overlap = 4.592261e-01)
+       339:   -1.020558e-01 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+       334:   -8.236933e-02 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       277:    7.438394e-02 (  12 to   18), (Eigval = 8.532542e+00 eV, overlap = 4.386912e-01)
+       333:   -6.588721e-02 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+       361:   -6.245849e-02 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       335:   -4.831874e-02 (  14 to   26), (Eigval = 9.497256e+00 eV, overlap = 2.587717e-01)
+       362:   -3.932342e-02 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       196:   -3.444256e-02 (   8 to   37), (Eigval = 1.715518e+01 eV, overlap = 4.661884e-01)
+       338:    3.273489e-02 (  14 to   29), (Eigval = 1.052685e+01 eV, overlap = 3.369317e-01)
+       251:   -3.035554e-02 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       325:    2.964023e-02 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       154:    2.846080e-02 (   7 to   20), (Eigval = 1.230265e+01 eV, overlap = 3.968588e-01)
+       365:   -2.772190e-02 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       318:   -2.695214e-02 (  13 to   34), (Eigval = 1.374621e+01 eV, overlap = 4.937308e-01)
+       356:    2.688257e-02 (  15 to   22), (Eigval = 8.165967e+00 eV, overlap = 2.826162e-01)
+       340:   -2.681235e-02 (  14 to   31), (Eigval = 1.064002e+01 eV, overlap = 3.624559e-01)
+       306:   -2.601927e-02 (  13 to   22), (Eigval = 1.016733e+01 eV, overlap = 3.666131e-01)
+       280:    2.577318e-02 (  12 to   21), (Eigval = 1.011629e+01 eV, overlap = 3.631052e-01)
+       344:   -2.559815e-02 (  14 to   35), (Eigval = 1.207557e+01 eV, overlap = 3.986931e-01)
+       342:   -2.493659e-02 (  14 to   33), (Eigval = 1.104940e+01 eV, overlap = 3.631872e-01)
+       360:   -2.457304e-02 (  15 to   26), (Eigval = 9.451040e+00 eV, overlap = 2.728609e-01)
+       229:    2.392603e-02 (  10 to   20), (Eigval = 1.135477e+01 eV, overlap = 4.585779e-01)
+       363:    2.335369e-02 (  15 to   29), (Eigval = 1.048063e+01 eV, overlap = 4.649330e-01)
+       364:   -2.230472e-02 (  15 to   30), (Eigval = 1.055750e+01 eV, overlap = 4.291519e-01)
+       210:   -2.192008e-02 (   9 to   26), (Eigval = 1.352454e+01 eV, overlap = 3.403843e-01)
+ #25: Excitation energy = 0.328074 Hartree = 8.927356 eV
+     <x> = -9.928025e-02
+     <y> = -2.154665e-01
+     <z> = -5.255406e-02
+     Oscillator strength = 3.936287e-02
+     Orbital overlap = 3.501040e-01
+     r-index = 3.254365e+00
+     (Gamma-r)-index = 2.602993e+00
+     Gamma-index = 5.857357e+00
+     Eigenvalue contribution = 3.262603e-01
+       358:   -8.968404e-01 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       333:    3.168463e-01 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+       250:   -1.957040e-01 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       336:   -9.145726e-02 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       251:    8.609300e-02 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       361:   -8.107108e-02 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       303:   -7.342008e-02 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       279:    6.463567e-02 (  12 to   20), (Eigval = 9.359055e+00 eV, overlap = 3.274451e-01)
+       337:   -5.626422e-02 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       362:   -5.427468e-02 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       304:    4.770096e-02 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       278:    4.254792e-02 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       326:    3.696264e-02 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       350:   -3.604158e-02 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       359:   -3.061231e-02 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       351:   -2.974309e-02 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       325:   -2.942428e-02 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       202:   -2.910363e-02 (   9 to   18), (Eigval = 1.056080e+01 eV, overlap = 4.476689e-01)
+       364:   -2.832984e-02 (  15 to   30), (Eigval = 1.055750e+01 eV, overlap = 4.291519e-01)
+       334:   -2.676109e-02 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       365:   -2.561448e-02 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       335:   -2.278717e-02 (  14 to   26), (Eigval = 9.497256e+00 eV, overlap = 2.587717e-01)
+       339:   -1.943339e-02 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+       340:   -1.899835e-02 (  14 to   31), (Eigval = 1.064002e+01 eV, overlap = 3.624559e-01)
+       310:    1.861817e-02 (  13 to   26), (Eigval = 1.145240e+01 eV, overlap = 3.241792e-01)
+       344:   -1.817595e-02 (  14 to   35), (Eigval = 1.207557e+01 eV, overlap = 3.986931e-01)
+       207:    1.479998e-02 (   9 to   23), (Eigval = 1.224626e+01 eV, overlap = 3.727623e-01)
+       259:    1.460665e-02 (  11 to   25), (Eigval = 1.212913e+01 eV, overlap = 3.646034e-01)
+       128:    1.376388e-02 (   6 to   19), (Eigval = 1.405801e+01 eV, overlap = 4.201836e-01)
+       367:   -1.316044e-02 (  15 to   33), (Eigval = 1.100319e+01 eV, overlap = 3.677354e-01)
+ #26: Excitation energy = 0.330756 Hartree = 9.000332 eV
+     <x> = -1.531833e-01
+     <y> = 1.267398e-02
+     <z> = 7.727014e-03
+     Oscillator strength = 1.579030e-02
+     Orbital overlap = 3.463367e-01
+     r-index = 3.261708e+00
+     (Gamma-r)-index = 2.629750e+00
+     Gamma-index = 5.891458e+00
+     Eigenvalue contribution = 3.285037e-01
+       333:    9.084702e-01 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+       358:    2.841916e-01 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       251:   -1.881062e-01 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       361:    1.237013e-01 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       278:    8.162945e-02 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       303:    6.962662e-02 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       362:    6.049866e-02 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       304:    5.992366e-02 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       279:   -5.928132e-02 (  12 to   20), (Eigval = 9.359055e+00 eV, overlap = 3.274451e-01)
+       337:   -4.415390e-02 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       360:    3.687645e-02 (  15 to   26), (Eigval = 9.451040e+00 eV, overlap = 2.728609e-01)
+       350:    3.604843e-02 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       229:    3.515288e-02 (  10 to   20), (Eigval = 1.135477e+01 eV, overlap = 4.585779e-01)
+       326:   -3.451296e-02 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       365:    3.351332e-02 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       351:   -3.343545e-02 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       227:    3.054368e-02 (  10 to   18), (Eigval = 1.052826e+01 eV, overlap = 4.413902e-01)
+       258:   -2.956595e-02 (  11 to   24), (Eigval = 1.167976e+01 eV, overlap = 3.342388e-01)
+       364:    2.804523e-02 (  15 to   30), (Eigval = 1.055750e+01 eV, overlap = 4.291519e-01)
+       305:   -2.340335e-02 (  13 to   21), (Eigval = 1.007241e+01 eV, overlap = 3.670984e-01)
+       325:   -2.275730e-02 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       306:   -2.186872e-02 (  13 to   22), (Eigval = 1.016733e+01 eV, overlap = 3.666131e-01)
+       203:   -2.180890e-02 (   9 to   19), (Eigval = 1.134891e+01 eV, overlap = 4.622633e-01)
+       369:    1.945766e-02 (  15 to   35), (Eigval = 1.202935e+01 eV, overlap = 3.924205e-01)
+       285:    1.871826e-02 (  12 to   26), (Eigval = 1.149628e+01 eV, overlap = 3.138865e-01)
+       280:   -1.871157e-02 (  12 to   21), (Eigval = 1.011629e+01 eV, overlap = 3.631052e-01)
+       340:    1.696242e-02 (  14 to   31), (Eigval = 1.064002e+01 eV, overlap = 3.624559e-01)
+       282:    1.684161e-02 (  12 to   23), (Eigval = 1.021801e+01 eV, overlap = 3.370533e-01)
+       127:    1.678047e-02 (   6 to   18), (Eigval = 1.326990e+01 eV, overlap = 5.040118e-01)
+       277:   -1.508637e-02 (  12 to   18), (Eigval = 8.532542e+00 eV, overlap = 4.386912e-01)
+ #27: Excitation energy = 0.341704 Hartree = 9.298243 eV
+     <x> = 1.696060e-03
+     <y> = 1.423585e-03
+     <z> = 5.917428e-03
+     Oscillator strength = 2.661278e-05
+     Orbital overlap = 4.474945e-01
+     r-index = 5.583146e-02
+     (Gamma-r)-index = 4.918244e-02
+     Gamma-index = 1.050139e-01
+     Eigenvalue contribution = 3.409802e-01
+       200:    7.991770e-01 (   9 to   16), (Eigval = 9.267845e+00 eV, overlap = 4.362740e-01)
+       226:    5.511165e-01 (  10 to   17), (Eigval = 9.305269e+00 eV, overlap = 4.507636e-01)
+       225:   -2.298799e-01 (  10 to   16), (Eigval = 9.235302e+00 eV, overlap = 5.584002e-01)
+       201:    5.870813e-02 (   9 to   17), (Eigval = 9.337812e+00 eV, overlap = 5.552965e-01)
+       150:    1.436139e-02 (   7 to   16), (Eigval = 1.018319e+01 eV, overlap = 5.437109e-01)
+       278:   -1.333660e-02 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       304:   -1.286827e-02 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       303:    1.250201e-02 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       279:   -9.982976e-03 (  12 to   20), (Eigval = 9.359055e+00 eV, overlap = 3.274451e-01)
+       330:    7.003743e-03 (  14 to   21), (Eigval = 8.117262e+00 eV, overlap = 3.586532e-01)
+       356:   -6.331106e-03 (  15 to   22), (Eigval = 8.165967e+00 eV, overlap = 2.826162e-01)
+       360:   -6.302151e-03 (  15 to   26), (Eigval = 9.451040e+00 eV, overlap = 2.728609e-01)
+       252:    6.300326e-03 (  11 to   18), (Eigval = 9.288070e+00 eV, overlap = 3.787867e-01)
+       176:   -5.864815e-03 (   8 to   17), (Eigval = 9.997663e+00 eV, overlap = 5.593376e-01)
+       336:   -5.172155e-03 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       359:   -4.717711e-03 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       335:   -4.616781e-03 (  14 to   26), (Eigval = 9.497256e+00 eV, overlap = 2.587717e-01)
+       331:   -4.251291e-03 (  14 to   22), (Eigval = 8.212183e+00 eV, overlap = 3.185617e-01)
+        25:   -4.239181e-03 (   2 to   16), (Eigval = 1.740488e+01 eV, overlap = 5.899401e-01)
+        51:    4.218034e-03 (   3 to   17), (Eigval = 1.745442e+01 eV, overlap = 6.195798e-01)
+       254:    3.786734e-03 (  11 to   20), (Eigval = 1.011458e+01 eV, overlap = 2.950128e-01)
+       151:   -3.189557e-03 (   7 to   17), (Eigval = 1.025315e+01 eV, overlap = 5.631129e-01)
+       339:   -3.072292e-03 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+       341:    2.980649e-03 (  14 to   32), (Eigval = 1.098047e+01 eV, overlap = 3.299040e-01)
+       283:   -2.868035e-03 (  12 to   24), (Eigval = 1.092423e+01 eV, overlap = 2.341344e-01)
+       361:   -2.817703e-03 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       312:   -2.775108e-03 (  13 to   28), (Eigval = 1.223968e+01 eV, overlap = 4.329017e-01)
+       309:    2.700847e-03 (  13 to   25), (Eigval = 1.132972e+01 eV, overlap = 3.305548e-01)
+       287:   -2.351973e-03 (  12 to   28), (Eigval = 1.228356e+01 eV, overlap = 4.506288e-01)
+       366:    2.221802e-03 (  15 to   32), (Eigval = 1.093425e+01 eV, overlap = 2.918212e-01)
+ #28: Excitation energy = 0.342447 Hartree = 9.318463 eV
+     <x> = 3.724524e-02
+     <y> = -5.112643e-02
+     <z> = -3.104083e-01
+     Oscillator strength = 6.690295e-02
+     Orbital overlap = 3.780230e-01
+     r-index = 7.112720e-01
+     (Gamma-r)-index = 3.521549e+00
+     Gamma-index = 4.232820e+00
+     Eigenvalue contribution = 3.413886e-01
+       252:   -9.517855e-01 (  11 to   18), (Eigval = 9.288070e+00 eV, overlap = 3.787867e-01)
+       303:    2.631985e-01 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       225:    9.556543e-02 (  10 to   16), (Eigval = 9.235302e+00 eV, overlap = 5.584002e-01)
+       304:    6.939665e-02 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       279:    5.626929e-02 (  12 to   20), (Eigval = 9.359055e+00 eV, overlap = 3.274451e-01)
+       278:   -5.419292e-02 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       335:   -2.437088e-02 (  14 to   26), (Eigval = 9.497256e+00 eV, overlap = 2.587717e-01)
+       358:   -2.272526e-02 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       359:    2.240247e-02 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       226:    2.168920e-02 (  10 to   17), (Eigval = 9.305269e+00 eV, overlap = 4.507636e-01)
+       257:    1.770505e-02 (  11 to   23), (Eigval = 1.097353e+01 eV, overlap = 4.853923e-01)
+       200:    1.589896e-02 (   9 to   16), (Eigval = 9.267845e+00 eV, overlap = 4.362740e-01)
+       361:   -1.522810e-02 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       201:    1.200481e-02 (   9 to   17), (Eigval = 9.337812e+00 eV, overlap = 5.552965e-01)
+       363:   -1.184326e-02 (  15 to   29), (Eigval = 1.048063e+01 eV, overlap = 4.649330e-01)
+       360:   -1.167613e-02 (  15 to   26), (Eigval = 9.451040e+00 eV, overlap = 2.728609e-01)
+       329:   -1.002019e-02 (  14 to   20), (Eigval = 7.360030e+00 eV, overlap = 3.548151e-01)
+       337:   -9.613954e-03 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       353:    9.538203e-03 (  15 to   19), (Eigval = 7.275415e+00 eV, overlap = 3.535350e-01)
+       255:    8.823673e-03 (  11 to   21), (Eigval = 1.087181e+01 eV, overlap = 3.755869e-01)
+       202:   -8.201999e-03 (   9 to   18), (Eigval = 1.056080e+01 eV, overlap = 4.476689e-01)
+       339:    7.792411e-03 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+       251:    7.401212e-03 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       334:   -6.511375e-03 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       369:   -6.464863e-03 (  15 to   35), (Eigval = 1.202935e+01 eV, overlap = 3.924205e-01)
+       365:   -6.294203e-03 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       340:   -6.234074e-03 (  14 to   31), (Eigval = 1.064002e+01 eV, overlap = 3.624559e-01)
+       326:    6.085220e-03 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       250:   -6.018772e-03 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       333:   -5.680386e-03 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+ #29: Excitation energy = 0.342636 Hartree = 9.323593 eV
+     <x> = -1.026905e-01
+     <y> = 1.706440e-01
+     <z> = -9.852463e-02
+     Oscillator strength = 3.291454e-02
+     Orbital overlap = 3.445886e-01
+     r-index = 4.622316e-01
+     (Gamma-r)-index = 3.265411e+00
+     Gamma-index = 3.727642e+00
+     Eigenvalue contribution = 3.412702e-01
+       303:   -9.236600e-01 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       252:   -2.669698e-01 (  11 to   18), (Eigval = 9.288070e+00 eV, overlap = 3.787867e-01)
+       279:   -2.212382e-01 (  12 to   20), (Eigval = 9.359055e+00 eV, overlap = 3.274451e-01)
+       304:    8.365538e-02 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       358:    6.175577e-02 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       359:   -5.556623e-02 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       278:   -5.374006e-02 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       334:    3.446675e-02 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       361:    3.288674e-02 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       326:   -3.159227e-02 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       202:    3.056061e-02 (   9 to   18), (Eigval = 1.056080e+01 eV, overlap = 4.476689e-01)
+       225:   -2.925127e-02 (  10 to   16), (Eigval = 9.235302e+00 eV, overlap = 5.584002e-01)
+       333:    2.582318e-02 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+       337:   -2.376961e-02 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       177:    2.182653e-02 (   8 to   18), (Eigval = 1.122065e+01 eV, overlap = 3.474048e-01)
+       350:    1.585083e-02 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       201:   -1.413695e-02 (   9 to   17), (Eigval = 9.337812e+00 eV, overlap = 5.552965e-01)
+       227:    1.395310e-02 (  10 to   18), (Eigval = 1.052826e+01 eV, overlap = 4.413902e-01)
+       128:   -1.139686e-02 (   6 to   19), (Eigval = 1.405801e+01 eV, overlap = 4.201836e-01)
+       206:    1.103603e-02 (   9 to   22), (Eigval = 1.223947e+01 eV, overlap = 3.414074e-01)
+       259:   -1.037875e-02 (  11 to   25), (Eigval = 1.212913e+01 eV, overlap = 3.646034e-01)
+       339:   -9.246380e-03 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+       207:   -9.086085e-03 (   9 to   23), (Eigval = 1.224626e+01 eV, overlap = 3.727623e-01)
+       336:    9.057161e-03 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       155:   -9.035905e-03 (   7 to   21), (Eigval = 1.305988e+01 eV, overlap = 4.100412e-01)
+       286:    8.611477e-03 (  12 to   27), (Eigval = 1.152826e+01 eV, overlap = 4.064867e-01)
+       367:    8.456054e-03 (  15 to   33), (Eigval = 1.100319e+01 eV, overlap = 3.677354e-01)
+       241:    8.360591e-03 (  10 to   32), (Eigval = 1.497521e+01 eV, overlap = 4.424570e-01)
+       365:    8.116243e-03 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       344:    7.618279e-03 (  14 to   35), (Eigval = 1.207557e+01 eV, overlap = 3.986931e-01)
+ #30: Excitation energy = 0.342977 Hartree = 9.332893 eV
+     <x> = -8.447914e-03
+     <y> = 9.664749e-03
+     <z> = 3.777731e-02
+     Oscillator strength = 1.061266e-03
+     Orbital overlap = 5.491951e-01
+     r-index = 3.881563e-02
+     (Gamma-r)-index = 1.008412e-01
+     Gamma-index = 1.396568e-01
+     Eigenvalue contribution = 3.396743e-01
+       225:    9.638173e-01 (  10 to   16), (Eigval = 9.235302e+00 eV, overlap = 5.584002e-01)
+       200:    2.177858e-01 (   9 to   16), (Eigval = 9.267845e+00 eV, overlap = 4.362740e-01)
+       252:    8.946688e-02 (  11 to   18), (Eigval = 9.288070e+00 eV, overlap = 3.787867e-01)
+       226:    8.914836e-02 (  10 to   17), (Eigval = 9.305269e+00 eV, overlap = 4.507636e-01)
+       303:   -5.111119e-02 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       151:   -3.120953e-02 (   7 to   17), (Eigval = 1.025315e+01 eV, overlap = 5.631129e-01)
+       150:   -2.547736e-02 (   7 to   16), (Eigval = 1.018319e+01 eV, overlap = 5.437109e-01)
+       175:   -2.020662e-02 (   8 to   16), (Eigval = 9.927696e+00 eV, overlap = 5.591618e-01)
+       360:    2.020465e-02 (  15 to   26), (Eigval = 9.451040e+00 eV, overlap = 2.728609e-01)
+       201:   -1.827431e-02 (   9 to   17), (Eigval = 9.337812e+00 eV, overlap = 5.552965e-01)
+       359:    1.577459e-02 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       278:   -1.324412e-02 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       279:   -1.095748e-02 (  12 to   20), (Eigval = 9.359055e+00 eV, overlap = 3.274451e-01)
+       357:    1.059675e-02 (  15 to   23), (Eigval = 8.172765e+00 eV, overlap = 4.323797e-01)
+       304:    1.040440e-02 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       356:    9.709918e-03 (  15 to   22), (Eigval = 8.165967e+00 eV, overlap = 2.826162e-01)
+       366:   -8.858796e-03 (  15 to   32), (Eigval = 1.093425e+01 eV, overlap = 2.918212e-01)
+       253:   -8.721804e-03 (  11 to   19), (Eigval = 1.007618e+01 eV, overlap = 2.873233e-01)
+       355:   -8.706021e-03 (  15 to   21), (Eigval = 8.071046e+00 eV, overlap = 3.666709e-01)
+       332:   -8.447186e-03 (  14 to   23), (Eigval = 8.218981e+00 eV, overlap = 4.356707e-01)
+       342:   -8.195959e-03 (  14 to   33), (Eigval = 1.104940e+01 eV, overlap = 3.631872e-01)
+       311:    7.735821e-03 (  13 to   27), (Eigval = 1.148438e+01 eV, overlap = 4.473996e-01)
+       335:   -7.628425e-03 (  14 to   26), (Eigval = 9.497256e+00 eV, overlap = 2.587717e-01)
+       176:    7.498478e-03 (   8 to   17), (Eigval = 9.997663e+00 eV, overlap = 5.593376e-01)
+       372:   -7.063679e-03 (  15 to   38), (Eigval = 1.276502e+01 eV, overlap = 5.132141e-01)
+       362:   -6.990854e-03 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       254:   -6.958289e-03 (  11 to   20), (Eigval = 1.011458e+01 eV, overlap = 2.950128e-01)
+       331:   -6.662969e-03 (  14 to   22), (Eigval = 8.212183e+00 eV, overlap = 3.185617e-01)
+       312:    6.608505e-03 (  13 to   28), (Eigval = 1.223968e+01 eV, overlap = 4.329017e-01)
+       284:   -6.601157e-03 (  12 to   25), (Eigval = 1.137360e+01 eV, overlap = 3.101717e-01)
+ #31: Excitation energy = 0.344191 Hartree = 9.365905 eV
+     <x> = 9.712575e-02
+     <y> = 6.690318e-02
+     <z> = -3.048590e-02
+     Oscillator strength = 9.892557e-03
+     Orbital overlap = 3.585141e-01
+     r-index = 6.979890e-01
+     (Gamma-r)-index = 3.592620e+00
+     Gamma-index = 4.290609e+00
+     Eigenvalue contribution = 3.441404e-01
+       334:   -7.483053e-01 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       359:   -5.940811e-01 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       304:    1.535351e-01 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       361:    1.324609e-01 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       360:   -1.129437e-01 (  15 to   26), (Eigval = 9.451040e+00 eV, overlap = 2.728609e-01)
+       278:    1.057121e-01 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       279:    1.007334e-01 (  12 to   20), (Eigval = 9.359055e+00 eV, overlap = 3.274451e-01)
+       337:    3.761753e-02 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       250:    3.727119e-02 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       362:    3.463669e-02 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       333:   -3.247779e-02 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+       307:   -3.246124e-02 (  13 to   23), (Eigval = 1.017413e+01 eV, overlap = 3.483840e-01)
+       201:   -2.829385e-02 (   9 to   17), (Eigval = 9.337812e+00 eV, overlap = 5.552965e-01)
+       335:    2.522747e-02 (  14 to   26), (Eigval = 9.497256e+00 eV, overlap = 2.587717e-01)
+       251:   -2.496930e-02 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       358:    2.450278e-02 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       339:    1.850332e-02 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+       302:   -1.407008e-02 (  13 to   18), (Eigval = 8.488663e+00 eV, overlap = 4.592261e-01)
+       282:   -1.373586e-02 (  12 to   23), (Eigval = 1.021801e+01 eV, overlap = 3.370533e-01)
+       203:    1.338056e-02 (   9 to   19), (Eigval = 1.134891e+01 eV, overlap = 4.622633e-01)
+       226:    1.209001e-02 (  10 to   17), (Eigval = 9.305269e+00 eV, overlap = 4.507636e-01)
+       306:    1.102299e-02 (  13 to   22), (Eigval = 1.016733e+01 eV, overlap = 3.666131e-01)
+       227:   -1.052948e-02 (  10 to   18), (Eigval = 1.052826e+01 eV, overlap = 4.413902e-01)
+       305:   -1.027874e-02 (  13 to   21), (Eigval = 1.007241e+01 eV, overlap = 3.670984e-01)
+       225:    9.924321e-03 (  10 to   16), (Eigval = 9.235302e+00 eV, overlap = 5.584002e-01)
+       365:    9.557169e-03 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       229:   -9.286087e-03 (  10 to   20), (Eigval = 1.135477e+01 eV, overlap = 4.585779e-01)
+       255:    8.966226e-03 (  11 to   21), (Eigval = 1.087181e+01 eV, overlap = 3.755869e-01)
+       281:   -7.162697e-03 (  12 to   22), (Eigval = 1.021121e+01 eV, overlap = 3.293397e-01)
+       202:    7.150180e-03 (   9 to   18), (Eigval = 1.056080e+01 eV, overlap = 4.476689e-01)
+ #32: Excitation energy = 0.344947 Hartree = 9.386501 eV
+     <x> = -1.146164e-01
+     <y> = -4.587704e-02
+     <z> = -1.264340e-02
+     Oscillator strength = 1.026766e-02
+     Orbital overlap = 4.421394e-01
+     r-index = 1.386995e-01
+     (Gamma-r)-index = 4.169018e-01
+     Gamma-index = 5.556013e-01
+     Eigenvalue contribution = 3.419234e-01
+       226:   -7.806757e-01 (  10 to   17), (Eigval = 9.305269e+00 eV, overlap = 4.507636e-01)
+       200:    5.167995e-01 (   9 to   16), (Eigval = 9.267845e+00 eV, overlap = 4.362740e-01)
+       278:   -3.002299e-01 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       304:   -1.291708e-01 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       334:   -5.142313e-02 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       225:   -4.587300e-02 (  10 to   16), (Eigval = 9.235302e+00 eV, overlap = 5.584002e-01)
+       150:    4.530645e-02 (   7 to   16), (Eigval = 1.018319e+01 eV, overlap = 5.437109e-01)
+       333:    3.465619e-02 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+       359:   -2.922608e-02 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       175:   -2.824331e-02 (   8 to   16), (Eigval = 9.927696e+00 eV, overlap = 5.591618e-01)
+       335:   -2.815195e-02 (  14 to   26), (Eigval = 9.497256e+00 eV, overlap = 2.587717e-01)
+       361:    2.390944e-02 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       360:   -2.324254e-02 (  15 to   26), (Eigval = 9.451040e+00 eV, overlap = 2.728609e-01)
+       151:   -2.284413e-02 (   7 to   17), (Eigval = 1.025315e+01 eV, overlap = 5.631129e-01)
+       176:   -2.235502e-02 (   8 to   17), (Eigval = 9.997663e+00 eV, overlap = 5.593376e-01)
+       336:   -1.833291e-02 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       227:    1.794155e-02 (  10 to   18), (Eigval = 1.052826e+01 eV, overlap = 4.413902e-01)
+       351:   -1.739990e-02 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       279:    1.569557e-02 (  12 to   20), (Eigval = 9.359055e+00 eV, overlap = 3.274451e-01)
+       367:   -1.556869e-02 (  15 to   33), (Eigval = 1.100319e+01 eV, overlap = 3.677354e-01)
+       365:    1.435980e-02 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       341:    1.307061e-02 (  14 to   32), (Eigval = 1.098047e+01 eV, overlap = 3.299040e-01)
+       362:   -1.215736e-02 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       253:   -1.110846e-02 (  11 to   19), (Eigval = 1.007618e+01 eV, overlap = 2.873233e-01)
+       286:   -9.840637e-03 (  12 to   27), (Eigval = 1.152826e+01 eV, overlap = 4.064867e-01)
+       303:    9.780070e-03 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       254:    9.434608e-03 (  11 to   20), (Eigval = 1.011458e+01 eV, overlap = 2.950128e-01)
+       337:    9.312303e-03 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       330:    9.246708e-03 (  14 to   21), (Eigval = 8.117262e+00 eV, overlap = 3.586532e-01)
+       312:   -8.489810e-03 (  13 to   28), (Eigval = 1.223968e+01 eV, overlap = 4.329017e-01)
+ #33: Excitation energy = 0.345116 Hartree = 9.391075 eV
+     <x> = 3.396764e-01
+     <y> = 1.017822e-01
+     <z> = 1.773531e-02
+     Oscillator strength = 8.403613e-02
+     Orbital overlap = 4.118008e-01
+     r-index = 5.448618e-01
+     (Gamma-r)-index = 2.977625e+00
+     Gamma-index = 3.522487e+00
+     Eigenvalue contribution = 3.427213e-01
+       304:    7.292745e-01 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       278:    5.364490e-01 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       226:   -2.343088e-01 (  10 to   17), (Eigval = 9.305269e+00 eV, overlap = 4.507636e-01)
+       200:    1.726687e-01 (   9 to   16), (Eigval = 9.267845e+00 eV, overlap = 4.362740e-01)
+       359:    1.716850e-01 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       279:   -1.364898e-01 (  12 to   20), (Eigval = 9.359055e+00 eV, overlap = 3.274451e-01)
+       361:   -1.155897e-01 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       333:   -8.741807e-02 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+       336:    6.646780e-02 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       227:   -5.846469e-02 (  10 to   18), (Eigval = 1.052826e+01 eV, overlap = 4.413902e-01)
+       334:    5.339628e-02 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       303:    4.762918e-02 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       325:    4.687550e-02 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       351:    3.310588e-02 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       360:   -3.023700e-02 (  15 to   26), (Eigval = 9.451040e+00 eV, overlap = 2.728609e-01)
+       252:    2.966651e-02 (  11 to   18), (Eigval = 9.288070e+00 eV, overlap = 3.787867e-01)
+       225:   -2.219218e-02 (  10 to   16), (Eigval = 9.235302e+00 eV, overlap = 5.584002e-01)
+       311:   -2.184243e-02 (  13 to   27), (Eigval = 1.148438e+01 eV, overlap = 4.473996e-01)
+       129:   -2.084676e-02 (   6 to   20), (Eigval = 1.409641e+01 eV, overlap = 4.268766e-01)
+       331:   -2.058159e-02 (  14 to   22), (Eigval = 8.212183e+00 eV, overlap = 3.185617e-01)
+       202:    1.955689e-02 (   9 to   18), (Eigval = 1.056080e+01 eV, overlap = 4.476689e-01)
+       335:   -1.952960e-02 (  14 to   26), (Eigval = 9.497256e+00 eV, overlap = 2.587717e-01)
+       156:    1.676782e-02 (   7 to   22), (Eigval = 1.315481e+01 eV, overlap = 4.026696e-01)
+       342:   -1.625453e-02 (  14 to   33), (Eigval = 1.104940e+01 eV, overlap = 3.631872e-01)
+       150:    1.559643e-02 (   7 to   16), (Eigval = 1.018319e+01 eV, overlap = 5.437109e-01)
+       358:    1.471267e-02 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       232:    1.405503e-02 (  10 to   23), (Eigval = 1.221372e+01 eV, overlap = 3.796729e-01)
+       362:    1.373302e-02 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       364:    1.370883e-02 (  15 to   30), (Eigval = 1.055750e+01 eV, overlap = 4.291519e-01)
+       258:    1.365446e-02 (  11 to   24), (Eigval = 1.167976e+01 eV, overlap = 3.342388e-01)
+ #34: Excitation energy = 0.345183 Hartree = 9.392916 eV
+     <x> = -3.740763e-03
+     <y> = 1.454489e-01
+     <z> = -3.888592e-02
+     Oscillator strength = 1.512100e-02
+     Orbital overlap = 3.875704e-01
+     r-index = 5.702680e-01
+     (Gamma-r)-index = 3.259497e+00
+     Gamma-index = 3.829765e+00
+     Eigenvalue contribution = 3.436072e-01
+       278:    6.532281e-01 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       304:   -4.199056e-01 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       334:    3.268765e-01 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       279:    3.003463e-01 (  12 to   20), (Eigval = 9.359055e+00 eV, overlap = 3.274451e-01)
+       359:   -2.763421e-01 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       360:   -2.172851e-01 (  15 to   26), (Eigval = 9.451040e+00 eV, overlap = 2.728609e-01)
+       361:    1.280530e-01 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       226:   -1.187209e-01 (  10 to   17), (Eigval = 9.305269e+00 eV, overlap = 4.507636e-01)
+       200:    9.423004e-02 (   9 to   16), (Eigval = 9.267845e+00 eV, overlap = 4.362740e-01)
+       303:   -8.819056e-02 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       336:   -8.535137e-02 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       252:   -8.281120e-02 (  11 to   18), (Eigval = 9.288070e+00 eV, overlap = 3.787867e-01)
+       362:    5.146704e-02 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       351:    3.596067e-02 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       251:   -3.228722e-02 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       335:    3.154778e-02 (  14 to   26), (Eigval = 9.497256e+00 eV, overlap = 2.587717e-01)
+       152:    3.148287e-02 (   7 to   18), (Eigval = 1.147614e+01 eV, overlap = 4.721769e-01)
+       333:   -3.015647e-02 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+       325:   -2.601543e-02 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       262:   -2.377367e-02 (  11 to   28), (Eigval = 1.303909e+01 eV, overlap = 6.093685e-01)
+       364:    2.063887e-02 (  15 to   30), (Eigval = 1.055750e+01 eV, overlap = 4.291519e-01)
+       225:    2.021178e-02 (  10 to   16), (Eigval = 9.235302e+00 eV, overlap = 5.584002e-01)
+       261:   -2.006935e-02 (  11 to   27), (Eigval = 1.228379e+01 eV, overlap = 4.178433e-01)
+       202:    1.900924e-02 (   9 to   18), (Eigval = 1.056080e+01 eV, overlap = 4.476689e-01)
+       358:    1.777777e-02 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       340:   -1.423040e-02 (  14 to   31), (Eigval = 1.064002e+01 eV, overlap = 3.624559e-01)
+       339:   -1.387617e-02 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+       259:   -1.337691e-02 (  11 to   25), (Eigval = 1.212913e+01 eV, overlap = 3.646034e-01)
+       201:   -1.179543e-02 (   9 to   17), (Eigval = 9.337812e+00 eV, overlap = 5.552965e-01)
+       337:   -1.169342e-02 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+ #35: Excitation energy = 0.345744 Hartree = 9.408188 eV
+     <x> = 1.120781e-01
+     <y> = -2.164139e-01
+     <z> = -1.070431e-02
+     Oscillator strength = 3.967404e-02
+     Orbital overlap = 3.623366e-01
+     r-index = 6.282191e-01
+     (Gamma-r)-index = 3.304841e+00
+     Gamma-index = 3.933060e+00
+     Eigenvalue contribution = 3.439675e-01
+       279:   -6.643896e-01 (  12 to   20), (Eigval = 9.359055e+00 eV, overlap = 3.274451e-01)
+       304:   -4.480987e-01 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       334:   -3.447995e-01 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       278:    3.426826e-01 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       359:    1.997330e-01 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       361:   -1.960363e-01 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       360:    9.603595e-02 (  15 to   26), (Eigval = 9.451040e+00 eV, overlap = 2.728609e-01)
+       335:   -8.370725e-02 (  14 to   26), (Eigval = 9.497256e+00 eV, overlap = 2.587717e-01)
+       303:    7.634807e-02 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       252:   -5.764484e-02 (  11 to   18), (Eigval = 9.288070e+00 eV, overlap = 3.787867e-01)
+       358:   -4.541879e-02 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       226:   -4.485448e-02 (  10 to   17), (Eigval = 9.305269e+00 eV, overlap = 4.507636e-01)
+       325:   -4.224837e-02 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       337:    4.023870e-02 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       202:   -3.206547e-02 (   9 to   18), (Eigval = 1.056080e+01 eV, overlap = 4.476689e-01)
+       251:    2.892709e-02 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       250:    2.798346e-02 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       152:    2.770392e-02 (   7 to   18), (Eigval = 1.147614e+01 eV, overlap = 4.721769e-01)
+       336:    2.746664e-02 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       200:    2.297803e-02 (   9 to   16), (Eigval = 9.267845e+00 eV, overlap = 4.362740e-01)
+       262:   -2.247316e-02 (  11 to   28), (Eigval = 1.303909e+01 eV, overlap = 6.093685e-01)
+       350:   -2.132766e-02 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       351:    1.751329e-02 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       339:    1.739696e-02 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+       261:   -1.559908e-02 (  11 to   27), (Eigval = 1.228379e+01 eV, overlap = 4.178433e-01)
+       369:   -1.393717e-02 (  15 to   35), (Eigval = 1.202935e+01 eV, overlap = 3.924205e-01)
+       230:   -1.294866e-02 (  10 to   21), (Eigval = 1.211200e+01 eV, overlap = 3.793914e-01)
+       338:   -1.289615e-02 (  14 to   29), (Eigval = 1.052685e+01 eV, overlap = 3.369317e-01)
+       264:   -1.211525e-02 (  11 to   30), (Eigval = 1.335826e+01 eV, overlap = 4.856655e-01)
+       296:   -1.198767e-02 (  12 to   37), (Eigval = 1.446707e+01 eV, overlap = 4.983934e-01)
+ #36: Excitation energy = 0.346205 Hartree = 9.420711 eV
+     <x> = 8.697317e-02
+     <y> = -1.689913e-01
+     <z> = 2.150413e-02
+     Oscillator strength = 2.438987e-02
+     Orbital overlap = 3.233371e-01
+     r-index = 8.867189e-01
+     (Gamma-r)-index = 3.436865e+00
+     Gamma-index = 4.323584e+00
+     Eigenvalue contribution = 3.453132e-01
+       360:   -6.184700e-01 (  15 to   26), (Eigval = 9.451040e+00 eV, overlap = 2.728609e-01)
+       279:   -5.470831e-01 (  12 to   20), (Eigval = 9.359055e+00 eV, overlap = 3.274451e-01)
+       359:   -3.073568e-01 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       334:    2.949767e-01 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       361:    1.934947e-01 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       278:   -1.798250e-01 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       303:    1.670667e-01 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       304:    1.013908e-01 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       336:   -9.223137e-02 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       358:   -6.011410e-02 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       335:    5.227324e-02 (  14 to   26), (Eigval = 9.497256e+00 eV, overlap = 2.587717e-01)
+       200:   -3.678578e-02 (   9 to   16), (Eigval = 9.267845e+00 eV, overlap = 4.362740e-01)
+       202:   -3.428473e-02 (   9 to   18), (Eigval = 1.056080e+01 eV, overlap = 4.476689e-01)
+       226:    3.331720e-02 (  10 to   17), (Eigval = 9.305269e+00 eV, overlap = 4.507636e-01)
+       252:    3.070332e-02 (  11 to   18), (Eigval = 9.288070e+00 eV, overlap = 3.787867e-01)
+       251:   -3.011917e-02 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       326:    2.744659e-02 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       201:    2.679734e-02 (   9 to   17), (Eigval = 9.337812e+00 eV, overlap = 5.552965e-01)
+       333:   -2.662382e-02 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+       350:   -2.629530e-02 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       351:   -2.524523e-02 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       225:    2.165399e-02 (  10 to   16), (Eigval = 9.235302e+00 eV, overlap = 5.584002e-01)
+       259:    1.760534e-02 (  11 to   25), (Eigval = 1.212913e+01 eV, overlap = 3.646034e-01)
+       250:   -1.547415e-02 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       362:    1.469969e-02 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       280:    1.442668e-02 (  12 to   21), (Eigval = 1.011629e+01 eV, overlap = 3.631052e-01)
+       128:    1.353287e-02 (   6 to   19), (Eigval = 1.405801e+01 eV, overlap = 4.201836e-01)
+       365:   -1.295602e-02 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       227:   -1.292695e-02 (  10 to   18), (Eigval = 1.052826e+01 eV, overlap = 4.413902e-01)
+       203:    1.277502e-02 (   9 to   19), (Eigval = 1.134891e+01 eV, overlap = 4.622633e-01)
+ #37: Excitation energy = 0.346619 Hartree = 9.432000 eV
+     <x> = -1.209033e-02
+     <y> = 2.037013e-02
+     <z> = 1.149310e-02
+     Oscillator strength = 4.621398e-04
+     Orbital overlap = 5.538994e-01
+     r-index = 1.193365e-01
+     (Gamma-r)-index = 4.513439e-02
+     Gamma-index = 1.644709e-01
+     Eigenvalue contribution = 3.433422e-01
+       201:    9.943934e-01 (   9 to   17), (Eigval = 9.337812e+00 eV, overlap = 5.552965e-01)
+       200:   -3.876313e-02 (   9 to   16), (Eigval = 9.267845e+00 eV, overlap = 4.362740e-01)
+       226:   -3.705360e-02 (  10 to   17), (Eigval = 9.305269e+00 eV, overlap = 4.507636e-01)
+       360:    3.185833e-02 (  15 to   26), (Eigval = 9.451040e+00 eV, overlap = 2.728609e-01)
+       175:   -3.018827e-02 (   8 to   16), (Eigval = 9.927696e+00 eV, overlap = 5.591618e-01)
+       150:   -2.956134e-02 (   7 to   16), (Eigval = 1.018319e+01 eV, overlap = 5.437109e-01)
+       225:    2.638529e-02 (  10 to   16), (Eigval = 9.235302e+00 eV, overlap = 5.584002e-01)
+       359:   -2.509616e-02 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       151:   -2.436434e-02 (   7 to   17), (Eigval = 1.025315e+01 eV, overlap = 5.631129e-01)
+       303:   -2.114771e-02 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       335:   -2.012301e-02 (  14 to   26), (Eigval = 9.497256e+00 eV, overlap = 2.587717e-01)
+       334:   -1.822328e-02 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       176:    1.503366e-02 (   8 to   17), (Eigval = 9.997663e+00 eV, overlap = 5.593376e-01)
+       361:    1.426310e-02 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       331:    1.422414e-02 (  14 to   22), (Eigval = 8.212183e+00 eV, overlap = 3.185617e-01)
+       279:    1.226548e-02 (  12 to   20), (Eigval = 9.359055e+00 eV, overlap = 3.274451e-01)
+       366:   -1.194383e-02 (  15 to   32), (Eigval = 1.093425e+01 eV, overlap = 2.918212e-01)
+       278:    9.425648e-03 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       336:   -9.297049e-03 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       312:    9.077181e-03 (  13 to   28), (Eigval = 1.223968e+01 eV, overlap = 4.329017e-01)
+       342:   -9.053169e-03 (  14 to   33), (Eigval = 1.104940e+01 eV, overlap = 3.631872e-01)
+       254:   -8.818714e-03 (  11 to   20), (Eigval = 1.011458e+01 eV, overlap = 2.950128e-01)
+       332:   -8.251705e-03 (  14 to   23), (Eigval = 8.218981e+00 eV, overlap = 4.356707e-01)
+       253:   -8.083343e-03 (  11 to   19), (Eigval = 1.007618e+01 eV, overlap = 2.873233e-01)
+       345:   -7.319541e-03 (  14 to   36), (Eigval = 1.218170e+01 eV, overlap = 4.424313e-01)
+        50:    7.209269e-03 (   3 to   16), (Eigval = 1.738446e+01 eV, overlap = 6.835135e-01)
+       330:    7.114065e-03 (  14 to   21), (Eigval = 8.117262e+00 eV, overlap = 3.586532e-01)
+       252:    7.080189e-03 (  11 to   18), (Eigval = 9.288070e+00 eV, overlap = 3.787867e-01)
+       304:   -6.799582e-03 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       340:    6.598529e-03 (  14 to   31), (Eigval = 1.064002e+01 eV, overlap = 3.624559e-01)
+ #38: Excitation energy = 0.347546 Hartree = 9.457220 eV
+     <x> = 8.676487e-02
+     <y> = -7.797608e-02
+     <z> = -6.301262e-02
+     Oscillator strength = 1.171934e-02
+     Orbital overlap = 3.192229e-01
+     r-index = 1.026861e+00
+     (Gamma-r)-index = 3.522093e+00
+     Gamma-index = 4.548954e+00
+     Eigenvalue contribution = 3.469735e-01
+       360:    7.100065e-01 (  15 to   26), (Eigval = 9.451040e+00 eV, overlap = 2.728609e-01)
+       359:   -3.758230e-01 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       335:    2.639405e-01 (  14 to   26), (Eigval = 9.497256e+00 eV, overlap = 2.587717e-01)
+       279:   -2.604144e-01 (  12 to   20), (Eigval = 9.359055e+00 eV, overlap = 3.274451e-01)
+       336:   -2.582984e-01 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       361:    2.409824e-01 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       334:    2.329113e-01 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       303:    1.014655e-01 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       333:   -7.269673e-02 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+       304:    6.824641e-02 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       358:   -4.589059e-02 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       280:    3.442252e-02 (  12 to   21), (Eigval = 1.011629e+01 eV, overlap = 3.631052e-01)
+       203:    3.423659e-02 (   9 to   19), (Eigval = 1.134891e+01 eV, overlap = 4.622633e-01)
+       226:   -3.250799e-02 (  10 to   17), (Eigval = 9.305269e+00 eV, overlap = 4.507636e-01)
+       306:    2.835446e-02 (  13 to   22), (Eigval = 1.016733e+01 eV, overlap = 3.666131e-01)
+       278:    2.684145e-02 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       350:   -2.573525e-02 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       258:    2.524549e-02 (  11 to   24), (Eigval = 1.167976e+01 eV, overlap = 3.342388e-01)
+       326:    2.499217e-02 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       229:   -2.393794e-02 (  10 to   20), (Eigval = 1.135477e+01 eV, overlap = 4.585779e-01)
+       340:   -2.372396e-02 (  14 to   31), (Eigval = 1.064002e+01 eV, overlap = 3.624559e-01)
+       201:   -2.343826e-02 (   9 to   17), (Eigval = 9.337812e+00 eV, overlap = 5.552965e-01)
+       200:    2.282305e-02 (   9 to   16), (Eigval = 9.267845e+00 eV, overlap = 4.362740e-01)
+       365:   -2.246250e-02 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       227:   -2.054976e-02 (  10 to   18), (Eigval = 1.052826e+01 eV, overlap = 4.413902e-01)
+       307:   -1.909635e-02 (  13 to   23), (Eigval = 1.017413e+01 eV, overlap = 3.483840e-01)
+       250:   -1.827490e-02 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       202:   -1.807991e-02 (   9 to   18), (Eigval = 1.056080e+01 eV, overlap = 4.476689e-01)
+       362:    1.767554e-02 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       251:   -1.715414e-02 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+ #39: Excitation energy = 0.348660 Hartree = 9.487519 eV
+     <x> = 3.099304e-04
+     <y> = -1.094997e-02
+     <z> = 6.723221e-02
+     Oscillator strength = 3.093445e-03
+     Orbital overlap = 2.701718e-01
+     r-index = 1.230363e+00
+     (Gamma-r)-index = 3.569922e+00
+     Gamma-index = 4.800285e+00
+     Eigenvalue contribution = 3.489278e-01
+       335:   -9.480295e-01 (  14 to   26), (Eigval = 9.497256e+00 eV, overlap = 2.587717e-01)
+       361:    1.804386e-01 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       360:    1.526374e-01 (  15 to   26), (Eigval = 9.451040e+00 eV, overlap = 2.728609e-01)
+       359:   -1.523491e-01 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       334:    1.042579e-01 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       279:   -3.733249e-02 (  12 to   20), (Eigval = 9.359055e+00 eV, overlap = 3.274451e-01)
+       333:   -3.628966e-02 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+       304:    3.491847e-02 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       337:    3.010183e-02 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       201:   -2.741518e-02 (   9 to   17), (Eigval = 9.337812e+00 eV, overlap = 5.552965e-01)
+       280:    2.304153e-02 (  12 to   21), (Eigval = 1.011629e+01 eV, overlap = 3.631052e-01)
+       252:    2.011877e-02 (  11 to   18), (Eigval = 9.288070e+00 eV, overlap = 3.787867e-01)
+       336:    2.004879e-02 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       303:    1.965015e-02 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       229:   -1.856268e-02 (  10 to   20), (Eigval = 1.135477e+01 eV, overlap = 4.585779e-01)
+       306:    1.817613e-02 (  13 to   22), (Eigval = 1.016733e+01 eV, overlap = 3.666131e-01)
+       203:    1.696492e-02 (   9 to   19), (Eigval = 1.134891e+01 eV, overlap = 4.622633e-01)
+       200:   -1.681000e-02 (   9 to   16), (Eigval = 9.267845e+00 eV, overlap = 4.362740e-01)
+       226:    1.668815e-02 (  10 to   17), (Eigval = 9.305269e+00 eV, overlap = 4.507636e-01)
+       358:   -1.352310e-02 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       305:    1.325718e-02 (  13 to   21), (Eigval = 1.007241e+01 eV, overlap = 3.670984e-01)
+       258:    1.221741e-02 (  11 to   24), (Eigval = 1.167976e+01 eV, overlap = 3.342388e-01)
+       338:    1.080097e-02 (  14 to   29), (Eigval = 1.052685e+01 eV, overlap = 3.369317e-01)
+       281:   -1.071715e-02 (  12 to   22), (Eigval = 1.021121e+01 eV, overlap = 3.293397e-01)
+       250:    1.049390e-02 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       127:   -8.992897e-03 (   6 to   18), (Eigval = 1.326990e+01 eV, overlap = 5.040118e-01)
+       363:    8.971043e-03 (  15 to   29), (Eigval = 1.048063e+01 eV, overlap = 4.649330e-01)
+       282:    8.733045e-03 (  12 to   23), (Eigval = 1.021801e+01 eV, overlap = 3.370533e-01)
+       362:    8.158945e-03 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       307:    7.712713e-03 (  13 to   23), (Eigval = 1.017413e+01 eV, overlap = 3.483840e-01)
+ #40: Excitation energy = 0.355096 Hartree = 9.662665 eV
+     <x> = -1.454791e-02
+     <y> = 2.710845e-02
+     <z> = 4.895439e-02
+     Oscillator strength = 2.228695e-03
+     Orbital overlap = 4.366691e-01
+     r-index = 6.525616e-01
+     (Gamma-r)-index = 3.279223e+00
+     Gamma-index = 3.931784e+00
+     Eigenvalue contribution = 3.513994e-01
+       336:    8.187597e-01 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       361:    4.043970e-01 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       337:   -2.266399e-01 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       250:   -1.747905e-01 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       362:   -1.297269e-01 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       335:    1.052107e-01 (  14 to   26), (Eigval = 9.497256e+00 eV, overlap = 2.587717e-01)
+       360:    7.575135e-02 (  15 to   26), (Eigval = 9.451040e+00 eV, overlap = 2.728609e-01)
+       251:    6.292267e-02 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       339:   -6.222391e-02 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+       365:   -6.221873e-02 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       364:   -6.156450e-02 (  15 to   30), (Eigval = 1.055750e+01 eV, overlap = 4.291519e-01)
+       363:    5.728742e-02 (  15 to   29), (Eigval = 1.048063e+01 eV, overlap = 4.649330e-01)
+       358:   -5.602995e-02 (  15 to   24), (Eigval = 8.878991e+00 eV, overlap = 3.230392e-01)
+       279:   -5.455305e-02 (  12 to   20), (Eigval = 9.359055e+00 eV, overlap = 3.274451e-01)
+       304:   -4.891225e-02 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       340:   -4.840124e-02 (  14 to   31), (Eigval = 1.064002e+01 eV, overlap = 3.624559e-01)
+       280:    4.180809e-02 (  12 to   21), (Eigval = 1.011629e+01 eV, overlap = 3.631052e-01)
+       307:    3.779952e-02 (  13 to   23), (Eigval = 1.017413e+01 eV, overlap = 3.483840e-01)
+       338:    3.299213e-02 (  14 to   29), (Eigval = 1.052685e+01 eV, overlap = 3.369317e-01)
+       278:    3.206789e-02 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       303:    3.143394e-02 (  13 to   19), (Eigval = 9.276776e+00 eV, overlap = 3.405679e-01)
+       305:    2.952318e-02 (  13 to   21), (Eigval = 1.007241e+01 eV, overlap = 3.670984e-01)
+       344:   -2.713206e-02 (  14 to   35), (Eigval = 1.207557e+01 eV, overlap = 3.986931e-01)
+       350:   -2.649319e-02 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       325:   -2.639019e-02 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       367:   -2.405095e-02 (  15 to   33), (Eigval = 1.100319e+01 eV, overlap = 3.677354e-01)
+       203:    2.173449e-02 (   9 to   19), (Eigval = 1.134891e+01 eV, overlap = 4.622633e-01)
+       326:    2.158728e-02 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       154:    2.123989e-02 (   7 to   20), (Eigval = 1.230265e+01 eV, overlap = 3.968588e-01)
+       306:   -2.030983e-02 (  13 to   22), (Eigval = 1.016733e+01 eV, overlap = 3.666131e-01)
+ #41: Excitation energy = 0.359535 Hartree = 9.783459 eV
+     <x> = -8.740315e-02
+     <y> = -2.939543e-02
+     <z> = 1.386318e-02
+     Oscillator strength = 5.797060e-03
+     Orbital overlap = 4.607371e-01
+     r-index = 7.429269e-01
+     (Gamma-r)-index = 3.127469e+00
+     Gamma-index = 3.870396e+00
+     Eigenvalue contribution = 3.530605e-01
+       361:    6.505875e-01 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       362:   -3.948138e-01 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       359:    3.562785e-01 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       336:   -3.396134e-01 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       251:    2.394730e-01 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       337:    1.612010e-01 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       334:   -1.572889e-01 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       364:   -1.035313e-01 (  15 to   30), (Eigval = 1.055750e+01 eV, overlap = 4.291519e-01)
+       280:   -8.169309e-02 (  12 to   21), (Eigval = 1.011629e+01 eV, overlap = 3.631052e-01)
+       203:   -7.874051e-02 (   9 to   19), (Eigval = 1.134891e+01 eV, overlap = 4.622633e-01)
+       360:   -7.747333e-02 (  15 to   26), (Eigval = 9.451040e+00 eV, overlap = 2.728609e-01)
+       278:    7.273835e-02 (  12 to   19), (Eigval = 9.320656e+00 eV, overlap = 4.081525e-01)
+       281:    5.985515e-02 (  12 to   22), (Eigval = 1.021121e+01 eV, overlap = 3.293397e-01)
+       351:    5.701773e-02 (  15 to   17), (Eigval = 5.264313e+00 eV, overlap = 8.707609e-01)
+       306:   -4.811681e-02 (  13 to   22), (Eigval = 1.016733e+01 eV, overlap = 3.666131e-01)
+       369:   -3.872142e-02 (  15 to   35), (Eigval = 1.202935e+01 eV, overlap = 3.924205e-01)
+       339:    3.594566e-02 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+       153:   -3.484219e-02 (   7 to   19), (Eigval = 1.226425e+01 eV, overlap = 3.964638e-01)
+       365:   -3.244716e-02 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       340:    3.085576e-02 (  14 to   31), (Eigval = 1.064002e+01 eV, overlap = 3.624559e-01)
+       250:    3.022168e-02 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       259:   -2.876522e-02 (  11 to   25), (Eigval = 1.212913e+01 eV, overlap = 3.646034e-01)
+       366:   -2.861620e-02 (  15 to   32), (Eigval = 1.093425e+01 eV, overlap = 2.918212e-01)
+       256:   -2.784048e-02 (  11 to   22), (Eigval = 1.096674e+01 eV, overlap = 3.032173e-01)
+       204:   -2.745392e-02 (   9 to   20), (Eigval = 1.138731e+01 eV, overlap = 3.117998e-01)
+       279:    2.541032e-02 (  12 to   20), (Eigval = 9.359055e+00 eV, overlap = 3.274451e-01)
+       229:    2.481348e-02 (  10 to   20), (Eigval = 1.135477e+01 eV, overlap = 4.585779e-01)
+       325:    2.425429e-02 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       291:   -2.423011e-02 (  12 to   32), (Eigval = 1.297949e+01 eV, overlap = 3.788140e-01)
+       335:    2.396031e-02 (  14 to   26), (Eigval = 9.497256e+00 eV, overlap = 2.587717e-01)
+ #42: Excitation energy = 0.368574 Hartree = 10.029424 eV
+     <x> = -4.426945e-03
+     <y> = 2.717781e-04
+     <z> = -3.869025e-03
+     Oscillator strength = 2.309404e-05
+     Orbital overlap = 5.536117e-01
+     r-index = 4.471366e-02
+     (Gamma-r)-index = 6.520006e-01
+     Gamma-index = 6.967142e-01
+     Eigenvalue contribution = 3.657369e-01
+       175:   -9.604612e-01 (   8 to   16), (Eigval = 9.927696e+00 eV, overlap = 5.591618e-01)
+       151:   -2.288587e-01 (   7 to   17), (Eigval = 1.025315e+01 eV, overlap = 5.631129e-01)
+       253:    1.321684e-01 (  11 to   19), (Eigval = 1.007618e+01 eV, overlap = 2.873233e-01)
+       201:   -3.257745e-02 (   9 to   17), (Eigval = 9.337812e+00 eV, overlap = 5.552965e-01)
+       357:    2.603630e-02 (  15 to   23), (Eigval = 8.172765e+00 eV, overlap = 4.323797e-01)
+       226:    2.474320e-02 (  10 to   17), (Eigval = 9.305269e+00 eV, overlap = 4.507636e-01)
+       225:   -2.417477e-02 (  10 to   16), (Eigval = 9.235302e+00 eV, overlap = 5.584002e-01)
+       200:   -2.267766e-02 (   9 to   16), (Eigval = 9.267845e+00 eV, overlap = 4.362740e-01)
+       368:    2.019331e-02 (  15 to   34), (Eigval = 1.174485e+01 eV, overlap = 3.731078e-01)
+       366:    1.636983e-02 (  15 to   32), (Eigval = 1.093425e+01 eV, overlap = 2.918212e-01)
+       341:   -1.630967e-02 (  14 to   32), (Eigval = 1.098047e+01 eV, overlap = 3.299040e-01)
+       367:    1.624996e-02 (  15 to   33), (Eigval = 1.100319e+01 eV, overlap = 3.677354e-01)
+       306:    1.376881e-02 (  13 to   22), (Eigval = 1.016733e+01 eV, overlap = 3.666131e-01)
+       355:    1.189140e-02 (  15 to   21), (Eigval = 8.071046e+00 eV, overlap = 3.666709e-01)
+       308:   -1.085682e-02 (  13 to   24), (Eigval = 1.088035e+01 eV, overlap = 2.459497e-01)
+       348:   -1.037382e-02 (  14 to   39), (Eigval = 1.300495e+01 eV, overlap = 4.567951e-01)
+       208:    1.020698e-02 (   9 to   24), (Eigval = 1.295249e+01 eV, overlap = 2.629503e-01)
+       281:    1.014526e-02 (  12 to   22), (Eigval = 1.021121e+01 eV, overlap = 3.293397e-01)
+       347:   -1.011189e-02 (  14 to   38), (Eigval = 1.281124e+01 eV, overlap = 4.523022e-01)
+        50:   -9.994019e-03 (   3 to   16), (Eigval = 1.738446e+01 eV, overlap = 6.835135e-01)
+       263:    9.954838e-03 (  11 to   29), (Eigval = 1.328140e+01 eV, overlap = 4.186372e-01)
+       283:   -9.880287e-03 (  12 to   24), (Eigval = 1.092423e+01 eV, overlap = 2.341344e-01)
+       365:   -9.834193e-03 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+        26:    9.820763e-03 (   2 to   17), (Eigval = 1.747485e+01 eV, overlap = 7.100174e-01)
+       287:   -9.178334e-03 (  12 to   28), (Eigval = 1.228356e+01 eV, overlap = 4.506288e-01)
+       342:    8.922942e-03 (  14 to   33), (Eigval = 1.104940e+01 eV, overlap = 3.631872e-01)
+       372:    8.769854e-03 (  15 to   38), (Eigval = 1.276502e+01 eV, overlap = 5.132141e-01)
+        51:    8.666155e-03 (   3 to   17), (Eigval = 1.745442e+01 eV, overlap = 6.195798e-01)
+       370:    8.636567e-03 (  15 to   36), (Eigval = 1.213549e+01 eV, overlap = 3.762408e-01)
+        25:    8.604048e-03 (   2 to   16), (Eigval = 1.740488e+01 eV, overlap = 5.899401e-01)
+ #43: Excitation energy = 0.370442 Hartree = 10.080247 eV
+     <x> = 6.209244e-03
+     <y> = -3.485482e-03
+     <z> = 1.124609e-02
+     Oscillator strength = 1.181186e-04
+     Orbital overlap = 3.308936e-01
+     r-index = 3.655084e-01
+     (Gamma-r)-index = 3.418988e+00
+     Gamma-index = 3.784497e+00
+     Eigenvalue contribution = 3.699349e-01
+       253:   -9.064451e-01 (  11 to   19), (Eigval = 1.007618e+01 eV, overlap = 2.873233e-01)
+       176:    3.556847e-01 (   8 to   17), (Eigval = 9.997663e+00 eV, overlap = 5.593376e-01)
+       175:   -1.246411e-01 (   8 to   16), (Eigval = 9.927696e+00 eV, overlap = 5.591618e-01)
+       150:   -1.211905e-01 (   7 to   16), (Eigval = 1.018319e+01 eV, overlap = 5.437109e-01)
+       254:    9.541428e-02 (  11 to   20), (Eigval = 1.011458e+01 eV, overlap = 2.950128e-01)
+       305:   -8.507224e-02 (  13 to   21), (Eigval = 1.007241e+01 eV, overlap = 3.670984e-01)
+       280:    4.651728e-02 (  12 to   21), (Eigval = 1.011629e+01 eV, overlap = 3.631052e-01)
+       337:   -2.425977e-02 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       201:   -1.818118e-02 (   9 to   17), (Eigval = 9.337812e+00 eV, overlap = 5.552965e-01)
+       306:    1.629225e-02 (  13 to   22), (Eigval = 1.016733e+01 eV, overlap = 3.666131e-01)
+       225:   -1.599554e-02 (  10 to   16), (Eigval = 9.235302e+00 eV, overlap = 5.584002e-01)
+       307:    1.199731e-02 (  13 to   23), (Eigval = 1.017413e+01 eV, overlap = 3.483840e-01)
+       339:   -1.178364e-02 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+       151:    1.086152e-02 (   7 to   17), (Eigval = 1.025315e+01 eV, overlap = 5.631129e-01)
+       281:    1.051443e-02 (  12 to   22), (Eigval = 1.021121e+01 eV, overlap = 3.293397e-01)
+       336:    9.261496e-03 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       364:   -9.234919e-03 (  15 to   30), (Eigval = 1.055750e+01 eV, overlap = 4.291519e-01)
+       363:    8.144723e-03 (  15 to   29), (Eigval = 1.048063e+01 eV, overlap = 4.649330e-01)
+       332:   -8.120368e-03 (  14 to   23), (Eigval = 8.218981e+00 eV, overlap = 4.356707e-01)
+       366:    7.805809e-03 (  15 to   32), (Eigval = 1.093425e+01 eV, overlap = 2.918212e-01)
+       282:   -7.719271e-03 (  12 to   23), (Eigval = 1.021801e+01 eV, overlap = 3.370533e-01)
+       338:    7.396065e-03 (  14 to   29), (Eigval = 1.052685e+01 eV, overlap = 3.369317e-01)
+       340:   -7.245168e-03 (  14 to   31), (Eigval = 1.064002e+01 eV, overlap = 3.624559e-01)
+       250:   -6.247675e-03 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       304:    6.075772e-03 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       345:    5.021001e-03 (  14 to   36), (Eigval = 1.218170e+01 eV, overlap = 4.424313e-01)
+       227:   -5.002636e-03 (  10 to   18), (Eigval = 1.052826e+01 eV, overlap = 4.413902e-01)
+       284:    4.989817e-03 (  12 to   25), (Eigval = 1.137360e+01 eV, overlap = 3.101717e-01)
+       341:   -4.909019e-03 (  14 to   32), (Eigval = 1.098047e+01 eV, overlap = 3.299040e-01)
+       368:   -4.731464e-03 (  15 to   34), (Eigval = 1.174485e+01 eV, overlap = 3.731078e-01)
+ #44: Excitation energy = 0.370590 Hartree = 10.084258 eV
+     <x> = -8.925329e-03
+     <y> = 1.074369e-02
+     <z> = 2.933606e-02
+     Oscillator strength = 7.037950e-04
+     Orbital overlap = 5.027080e-01
+     r-index = 1.828907e-01
+     (Gamma-r)-index = 1.294799e+00
+     Gamma-index = 1.477690e+00
+     Eigenvalue contribution = 3.686368e-01
+       176:   -8.463407e-01 (   8 to   17), (Eigval = 9.997663e+00 eV, overlap = 5.593376e-01)
+       253:   -3.884576e-01 (  11 to   19), (Eigval = 1.007618e+01 eV, overlap = 2.873233e-01)
+       150:    2.719429e-01 (   7 to   16), (Eigval = 1.018319e+01 eV, overlap = 5.437109e-01)
+       254:   -2.247967e-01 (  11 to   20), (Eigval = 1.011458e+01 eV, overlap = 2.950128e-01)
+       175:   -5.523255e-02 (   8 to   16), (Eigval = 9.927696e+00 eV, overlap = 5.591618e-01)
+       200:   -2.643845e-02 (   9 to   16), (Eigval = 9.267845e+00 eV, overlap = 4.362740e-01)
+       305:    2.604804e-02 (  13 to   21), (Eigval = 1.007241e+01 eV, overlap = 3.670984e-01)
+       226:    2.598935e-02 (  10 to   17), (Eigval = 9.305269e+00 eV, overlap = 4.507636e-01)
+       332:    1.884917e-02 (  14 to   23), (Eigval = 8.218981e+00 eV, overlap = 4.356707e-01)
+       201:    1.358683e-02 (   9 to   17), (Eigval = 9.337812e+00 eV, overlap = 5.552965e-01)
+       306:   -1.346107e-02 (  13 to   22), (Eigval = 1.016733e+01 eV, overlap = 3.666131e-01)
+       225:    1.135677e-02 (  10 to   16), (Eigval = 9.235302e+00 eV, overlap = 5.584002e-01)
+       339:    1.066847e-02 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+       366:   -1.039162e-02 (  15 to   32), (Eigval = 1.093425e+01 eV, overlap = 2.918212e-01)
+       309:   -1.035516e-02 (  13 to   25), (Eigval = 1.132972e+01 eV, overlap = 3.305548e-01)
+       283:   -1.023586e-02 (  12 to   24), (Eigval = 1.092423e+01 eV, overlap = 2.341344e-01)
+       345:   -1.020874e-02 (  14 to   36), (Eigval = 1.218170e+01 eV, overlap = 4.424313e-01)
+       343:    9.976140e-03 (  14 to   34), (Eigval = 1.179107e+01 eV, overlap = 3.805682e-01)
+       365:   -9.423481e-03 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       367:    8.716109e-03 (  15 to   33), (Eigval = 1.100319e+01 eV, overlap = 3.677354e-01)
+       307:   -8.609360e-03 (  13 to   23), (Eigval = 1.017413e+01 eV, overlap = 3.483840e-01)
+       308:    8.477352e-03 (  13 to   24), (Eigval = 1.088035e+01 eV, overlap = 2.459497e-01)
+       357:    8.027095e-03 (  15 to   23), (Eigval = 8.172765e+00 eV, overlap = 4.323797e-01)
+       340:    8.012985e-03 (  14 to   31), (Eigval = 1.064002e+01 eV, overlap = 3.624559e-01)
+       311:   -7.810835e-03 (  13 to   27), (Eigval = 1.148438e+01 eV, overlap = 4.473996e-01)
+       337:   -7.724024e-03 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       347:   -7.498490e-03 (  14 to   38), (Eigval = 1.281124e+01 eV, overlap = 4.523022e-01)
+       233:    7.437969e-03 (  10 to   24), (Eigval = 1.291995e+01 eV, overlap = 2.588976e-01)
+       284:   -7.376523e-03 (  12 to   25), (Eigval = 1.137360e+01 eV, overlap = 3.101717e-01)
+        25:    7.353058e-03 (   2 to   16), (Eigval = 1.740488e+01 eV, overlap = 5.899401e-01)
+ #45: Excitation energy = 0.370718 Hartree = 10.087765 eV
+     <x> = 1.050015e-01
+     <y> = 1.120619e-03
+     <z> = -9.191169e-03
+     Oscillator strength = 7.407365e-03
+     Orbital overlap = 3.669835e-01
+     r-index = 6.158929e-01
+     (Gamma-r)-index = 2.976616e+00
+     Gamma-index = 3.592509e+00
+     Eigenvalue contribution = 3.705622e-01
+       305:   -9.375577e-01 (  13 to   21), (Eigval = 1.007241e+01 eV, overlap = 3.670984e-01)
+       280:    2.178482e-01 (  12 to   21), (Eigval = 1.011629e+01 eV, overlap = 3.631052e-01)
+       307:    1.623685e-01 (  13 to   23), (Eigval = 1.017413e+01 eV, overlap = 3.483840e-01)
+       306:    1.351086e-01 (  13 to   22), (Eigval = 1.016733e+01 eV, overlap = 3.666131e-01)
+       281:    1.021720e-01 (  12 to   22), (Eigval = 1.021121e+01 eV, overlap = 3.293397e-01)
+       253:    7.614923e-02 (  11 to   19), (Eigval = 1.007618e+01 eV, overlap = 2.873233e-01)
+       176:   -5.558998e-02 (   8 to   17), (Eigval = 9.997663e+00 eV, overlap = 5.593376e-01)
+       362:   -5.261875e-02 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       282:   -5.045325e-02 (  12 to   23), (Eigval = 1.021801e+01 eV, overlap = 3.370533e-01)
+       150:    2.594224e-02 (   7 to   16), (Eigval = 1.018319e+01 eV, overlap = 5.437109e-01)
+       254:   -1.989831e-02 (  11 to   20), (Eigval = 1.011458e+01 eV, overlap = 2.950128e-01)
+       227:   -1.979808e-02 (  10 to   18), (Eigval = 1.052826e+01 eV, overlap = 4.413902e-01)
+       251:    1.831486e-02 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       361:    1.478297e-02 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       202:    1.345017e-02 (   9 to   18), (Eigval = 1.056080e+01 eV, overlap = 4.476689e-01)
+       229:   -1.332497e-02 (  10 to   20), (Eigval = 1.135477e+01 eV, overlap = 4.585779e-01)
+       175:    1.248534e-02 (   8 to   16), (Eigval = 9.927696e+00 eV, overlap = 5.591618e-01)
+       359:    1.019191e-02 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       179:   -9.985443e-03 (   8 to   20), (Eigval = 1.204716e+01 eV, overlap = 2.666679e-01)
+       333:   -9.939279e-03 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+       337:    8.968769e-03 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       338:    7.308372e-03 (  14 to   29), (Eigval = 1.052685e+01 eV, overlap = 3.369317e-01)
+       153:   -7.286676e-03 (   7 to   19), (Eigval = 1.226425e+01 eV, overlap = 3.964638e-01)
+       304:    7.223829e-03 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       310:   -6.691946e-03 (  13 to   26), (Eigval = 1.145240e+01 eV, overlap = 3.241792e-01)
+       365:    6.650848e-03 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       363:   -6.296076e-03 (  15 to   29), (Eigval = 1.048063e+01 eV, overlap = 4.649330e-01)
+       350:    6.074080e-03 (  15 to   16), (Eigval = 5.194346e+00 eV, overlap = 6.754462e-01)
+       326:   -6.061205e-03 (  14 to   17), (Eigval = 5.310529e+00 eV, overlap = 7.465707e-01)
+       102:    5.723458e-03 (   5 to   18), (Eigval = 1.510301e+01 eV, overlap = 4.156365e-01)
+ #46: Excitation energy = 0.371941 Hartree = 10.121023 eV
+     <x> = 1.448846e-03
+     <y> = 5.068947e-03
+     <z> = -5.077678e-02
+     Oscillator strength = 1.737383e-03
+     Orbital overlap = 3.114790e-01
+     r-index = 6.001233e-01
+     (Gamma-r)-index = 3.742266e+00
+     Gamma-index = 4.342389e+00
+     Eigenvalue contribution = 3.714586e-01
+       254:    9.676583e-01 (  11 to   20), (Eigval = 1.011458e+01 eV, overlap = 2.950128e-01)
+       176:   -2.437277e-01 (   8 to   17), (Eigval = 9.997663e+00 eV, overlap = 5.593376e-01)
+       150:    3.700164e-02 (   7 to   16), (Eigval = 1.018319e+01 eV, overlap = 5.437109e-01)
+       337:   -2.460583e-02 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       362:   -1.710390e-02 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       200:   -1.291106e-02 (   9 to   16), (Eigval = 9.267845e+00 eV, overlap = 4.362740e-01)
+       201:    1.275784e-02 (   9 to   17), (Eigval = 9.337812e+00 eV, overlap = 5.552965e-01)
+       151:   -1.251167e-02 (   7 to   17), (Eigval = 1.025315e+01 eV, overlap = 5.631129e-01)
+       226:    1.229162e-02 (  10 to   17), (Eigval = 9.305269e+00 eV, overlap = 4.507636e-01)
+       338:   -1.216640e-02 (  14 to   29), (Eigval = 1.052685e+01 eV, overlap = 3.369317e-01)
+       363:   -1.203001e-02 (  15 to   29), (Eigval = 1.048063e+01 eV, overlap = 4.649330e-01)
+       225:    1.197276e-02 (  10 to   16), (Eigval = 9.235302e+00 eV, overlap = 5.584002e-01)
+       339:    9.218727e-03 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+       365:   -8.131734e-03 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       257:    8.129376e-03 (  11 to   23), (Eigval = 1.097353e+01 eV, overlap = 4.853923e-01)
+       306:    7.996011e-03 (  13 to   22), (Eigval = 1.016733e+01 eV, overlap = 3.666131e-01)
+       361:   -7.218830e-03 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       332:    7.129835e-03 (  14 to   23), (Eigval = 8.218981e+00 eV, overlap = 4.356707e-01)
+       175:    6.879819e-03 (   8 to   16), (Eigval = 9.927696e+00 eV, overlap = 5.591618e-01)
+       282:   -6.086159e-03 (  12 to   23), (Eigval = 1.021801e+01 eV, overlap = 3.370533e-01)
+       227:    5.378638e-03 (  10 to   18), (Eigval = 1.052826e+01 eV, overlap = 4.413902e-01)
+       366:   -5.046935e-03 (  15 to   32), (Eigval = 1.093425e+01 eV, overlap = 2.918212e-01)
+       325:   -4.936752e-03 (  14 to   16), (Eigval = 5.240562e+00 eV, overlap = 8.677941e-01)
+       304:   -4.756415e-03 (  13 to   20), (Eigval = 9.315175e+00 eV, overlap = 4.117898e-01)
+       252:   -4.497867e-03 (  11 to   18), (Eigval = 9.288070e+00 eV, overlap = 3.787867e-01)
+       308:    3.815794e-03 (  13 to   24), (Eigval = 1.088035e+01 eV, overlap = 2.459497e-01)
+       309:   -3.554211e-03 (  13 to   25), (Eigval = 1.132972e+01 eV, overlap = 3.305548e-01)
+       359:   -3.516563e-03 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       285:    3.469371e-03 (  12 to   26), (Eigval = 1.149628e+01 eV, overlap = 3.138865e-01)
+       255:    3.183415e-03 (  11 to   21), (Eigval = 1.087181e+01 eV, overlap = 3.755869e-01)
+ #47: Excitation energy = 0.373314 Hartree = 10.158402 eV
+     <x> = -3.958973e-02
+     <y> = -5.529176e-02
+     <z> = 7.367281e-03
+     Oscillator strength = 3.119201e-03
+     Orbital overlap = 3.647456e-01
+     r-index = 5.987712e-01
+     (Gamma-r)-index = 3.080345e+00
+     Gamma-index = 3.679116e+00
+     Eigenvalue contribution = 3.724738e-01
+       280:   -8.347177e-01 (  12 to   21), (Eigval = 1.011629e+01 eV, overlap = 3.631052e-01)
+       306:    4.836833e-01 (  13 to   22), (Eigval = 1.016733e+01 eV, overlap = 3.666131e-01)
+       281:   -1.787336e-01 (  12 to   22), (Eigval = 1.021121e+01 eV, overlap = 3.293397e-01)
+       305:   -1.470055e-01 (  13 to   21), (Eigval = 1.007241e+01 eV, overlap = 3.670984e-01)
+       337:   -7.168437e-02 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       282:    5.734402e-02 (  12 to   23), (Eigval = 1.021801e+01 eV, overlap = 3.370533e-01)
+       362:   -3.057263e-02 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       336:    2.797548e-02 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       203:    2.697627e-02 (   9 to   19), (Eigval = 1.134891e+01 eV, overlap = 4.622633e-01)
+       359:   -2.200433e-02 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       253:   -2.111924e-02 (  11 to   19), (Eigval = 1.007618e+01 eV, overlap = 2.873233e-01)
+       363:    1.932902e-02 (  15 to   29), (Eigval = 1.048063e+01 eV, overlap = 4.649330e-01)
+       250:   -1.840475e-02 (  11 to   16), (Eigval = 7.995114e+00 eV, overlap = 8.350853e-01)
+       334:    1.590796e-02 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       340:   -1.557817e-02 (  14 to   31), (Eigval = 1.064002e+01 eV, overlap = 3.624559e-01)
+       178:   -1.429069e-02 (   8 to   19), (Eigval = 1.200877e+01 eV, overlap = 2.662157e-01)
+       365:   -1.185449e-02 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       229:   -1.160867e-02 (  10 to   20), (Eigval = 1.135477e+01 eV, overlap = 4.585779e-01)
+       277:    1.116462e-02 (  12 to   18), (Eigval = 8.532542e+00 eV, overlap = 4.386912e-01)
+       202:   -1.108904e-02 (   9 to   18), (Eigval = 1.056080e+01 eV, overlap = 4.476689e-01)
+       154:    1.097973e-02 (   7 to   20), (Eigval = 1.230265e+01 eV, overlap = 3.968588e-01)
+       258:    1.014378e-02 (  11 to   24), (Eigval = 1.167976e+01 eV, overlap = 3.342388e-01)
+       361:   -9.748726e-03 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       339:   -9.461571e-03 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+       150:    8.917931e-03 (   7 to   16), (Eigval = 1.018319e+01 eV, overlap = 5.437109e-01)
+       302:    8.890788e-03 (  13 to   18), (Eigval = 8.488663e+00 eV, overlap = 4.592261e-01)
+       360:    8.755559e-03 (  15 to   26), (Eigval = 9.451040e+00 eV, overlap = 2.728609e-01)
+       342:   -8.236871e-03 (  14 to   33), (Eigval = 1.104940e+01 eV, overlap = 3.631872e-01)
+       196:   -7.724603e-03 (   8 to   37), (Eigval = 1.715518e+01 eV, overlap = 4.661884e-01)
+       279:   -7.707733e-03 (  12 to   20), (Eigval = 9.359055e+00 eV, overlap = 3.274451e-01)
+ #48: Excitation energy = 0.374995 Hartree = 10.204139 eV
+     <x> = 4.803925e-02
+     <y> = -1.614541e-02
+     <z> = -6.239786e-03
+     Oscillator strength = 1.738253e-03
+     Orbital overlap = 3.460098e-01
+     r-index = 4.949720e-01
+     (Gamma-r)-index = 3.224307e+00
+     Gamma-index = 3.719279e+00
+     Eigenvalue contribution = 3.745788e-01
+       281:   -7.567207e-01 (  12 to   22), (Eigval = 1.021121e+01 eV, overlap = 3.293397e-01)
+       306:   -5.781677e-01 (  13 to   22), (Eigval = 1.016733e+01 eV, overlap = 3.666131e-01)
+       305:   -2.091520e-01 (  13 to   21), (Eigval = 1.007241e+01 eV, overlap = 3.670984e-01)
+       280:   -1.414331e-01 (  12 to   21), (Eigval = 1.011629e+01 eV, overlap = 3.631052e-01)
+       307:   -1.092343e-01 (  13 to   23), (Eigval = 1.017413e+01 eV, overlap = 3.483840e-01)
+       282:   -9.122379e-02 (  12 to   23), (Eigval = 1.021801e+01 eV, overlap = 3.370533e-01)
+       362:   -5.582444e-02 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       337:    4.010234e-02 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       229:   -2.829900e-02 (  10 to   20), (Eigval = 1.135477e+01 eV, overlap = 4.585779e-01)
+       340:   -1.842102e-02 (  14 to   31), (Eigval = 1.064002e+01 eV, overlap = 3.624559e-01)
+       150:   -1.788590e-02 (   7 to   16), (Eigval = 1.018319e+01 eV, overlap = 5.437109e-01)
+       203:    1.634020e-02 (   9 to   19), (Eigval = 1.134891e+01 eV, overlap = 4.622633e-01)
+       175:   -1.447573e-02 (   8 to   16), (Eigval = 9.927696e+00 eV, overlap = 5.591618e-01)
+       334:    1.367137e-02 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       359:   -1.270368e-02 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       361:   -1.177549e-02 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       179:   -1.083938e-02 (   8 to   20), (Eigval = 1.204716e+01 eV, overlap = 2.666679e-01)
+       339:   -1.061195e-02 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+       336:    1.024013e-02 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       333:   -9.914203e-03 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+       227:   -9.731118e-03 (  10 to   18), (Eigval = 1.052826e+01 eV, overlap = 4.413902e-01)
+       127:   -8.529494e-03 (   6 to   18), (Eigval = 1.326990e+01 eV, overlap = 5.040118e-01)
+       277:    8.421561e-03 (  12 to   18), (Eigval = 8.532542e+00 eV, overlap = 4.386912e-01)
+       178:    8.092733e-03 (   8 to   19), (Eigval = 1.200877e+01 eV, overlap = 2.662157e-01)
+       151:   -8.070241e-03 (   7 to   17), (Eigval = 1.025315e+01 eV, overlap = 5.631129e-01)
+       202:   -6.801856e-03 (   9 to   18), (Eigval = 1.056080e+01 eV, overlap = 4.476689e-01)
+       161:   -6.650945e-03 (   7 to   27), (Eigval = 1.447186e+01 eV, overlap = 4.920846e-01)
+       102:    6.524551e-03 (   5 to   18), (Eigval = 1.510301e+01 eV, overlap = 4.156365e-01)
+       338:   -6.382504e-03 (  14 to   29), (Eigval = 1.052685e+01 eV, overlap = 3.369317e-01)
+       365:   -6.370502e-03 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+ #49: Excitation energy = 0.376415 Hartree = 10.242778 eV
+     <x> = -6.021912e-02
+     <y> = 4.222392e-02
+     <z> = 2.828612e-02
+     Oscillator strength = 4.139538e-03
+     Orbital overlap = 3.498699e-01
+     r-index = 1.768114e-01
+     (Gamma-r)-index = 1.855509e+00
+     Gamma-index = 2.032320e+00
+     Eigenvalue contribution = 3.742257e-01
+       307:   -9.721289e-01 (  13 to   23), (Eigval = 1.017413e+01 eV, overlap = 3.483840e-01)
+       305:   -1.423550e-01 (  13 to   21), (Eigval = 1.007241e+01 eV, overlap = 3.670984e-01)
+       281:    1.402584e-01 (  12 to   22), (Eigval = 1.021121e+01 eV, overlap = 3.293397e-01)
+       337:   -5.016665e-02 (  14 to   28), (Eigval = 1.028454e+01 eV, overlap = 6.184307e-01)
+       306:    4.106116e-02 (  13 to   22), (Eigval = 1.016733e+01 eV, overlap = 3.666131e-01)
+       336:    3.516084e-02 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       340:   -2.645422e-02 (  14 to   31), (Eigval = 1.064002e+01 eV, overlap = 3.624559e-01)
+       302:    2.643995e-02 (  13 to   18), (Eigval = 8.488663e+00 eV, overlap = 4.592261e-01)
+       282:    2.640076e-02 (  12 to   23), (Eigval = 1.021801e+01 eV, overlap = 3.370533e-01)
+       318:   -2.564305e-02 (  13 to   34), (Eigval = 1.374621e+01 eV, overlap = 4.937308e-01)
+       334:    2.449579e-02 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       280:    2.278282e-02 (  12 to   21), (Eigval = 1.011629e+01 eV, overlap = 3.631052e-01)
+       365:    2.141692e-02 (  15 to   31), (Eigval = 1.059381e+01 eV, overlap = 3.578969e-01)
+       339:   -2.134059e-02 (  14 to   30), (Eigval = 1.060371e+01 eV, overlap = 4.974146e-01)
+       229:   -2.037988e-02 (  10 to   20), (Eigval = 1.135477e+01 eV, overlap = 4.585779e-01)
+       359:    1.983031e-02 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       203:   -1.861270e-02 (   9 to   19), (Eigval = 1.134891e+01 eV, overlap = 4.622633e-01)
+       363:   -1.719767e-02 (  15 to   29), (Eigval = 1.048063e+01 eV, overlap = 4.649330e-01)
+       364:    1.456570e-02 (  15 to   30), (Eigval = 1.055750e+01 eV, overlap = 4.291519e-01)
+       239:    1.372380e-02 (  10 to   30), (Eigval = 1.459845e+01 eV, overlap = 4.451692e-01)
+       213:    1.242331e-02 (   9 to   29), (Eigval = 1.455413e+01 eV, overlap = 4.310109e-01)
+       338:    1.151239e-02 (  14 to   29), (Eigval = 1.052685e+01 eV, overlap = 3.369317e-01)
+       228:   -1.129773e-02 (  10 to   19), (Eigval = 1.131637e+01 eV, overlap = 3.002503e-01)
+       335:   -1.063148e-02 (  14 to   26), (Eigval = 9.497256e+00 eV, overlap = 2.587717e-01)
+       204:    9.775780e-03 (   9 to   20), (Eigval = 1.138731e+01 eV, overlap = 3.117998e-01)
+       164:    9.676171e-03 (   7 to   30), (Eigval = 1.554634e+01 eV, overlap = 4.277166e-01)
+       333:   -9.595113e-03 (  14 to   24), (Eigval = 8.925207e+00 eV, overlap = 3.230842e-01)
+       321:    9.020453e-03 (  13 to   37), (Eigval = 1.442319e+01 eV, overlap = 5.060925e-01)
+       320:    8.405760e-03 (  13 to   36), (Eigval = 1.413685e+01 eV, overlap = 4.163729e-01)
+       360:   -7.911953e-03 (  15 to   26), (Eigval = 9.451040e+00 eV, overlap = 2.728609e-01)
+ #50: Excitation energy = 0.377489 Hartree = 10.272000 eV
+     <x> = 2.714966e-02
+     <y> = -2.280580e-02
+     <z> = -6.391785e-03
+     Oscillator strength = 8.653755e-04
+     Orbital overlap = 3.484846e-01
+     r-index = 4.168625e-01
+     (Gamma-r)-index = 2.785209e+00
+     Gamma-index = 3.202071e+00
+     Eigenvalue contribution = 3.749854e-01
+       282:   -5.451613e-01 (  12 to   23), (Eigval = 1.021801e+01 eV, overlap = 3.370533e-01)
+       281:    5.269382e-01 (  12 to   22), (Eigval = 1.021121e+01 eV, overlap = 3.293397e-01)
+       306:   -4.785924e-01 (  13 to   22), (Eigval = 1.016733e+01 eV, overlap = 3.666131e-01)
+       280:   -4.075812e-01 (  12 to   21), (Eigval = 1.011629e+01 eV, overlap = 3.631052e-01)
+       305:   -7.233621e-02 (  13 to   21), (Eigval = 1.007241e+01 eV, overlap = 3.670984e-01)
+       203:    6.881824e-02 (   9 to   19), (Eigval = 1.134891e+01 eV, overlap = 4.622633e-01)
+       359:   -5.726690e-02 (  15 to   25), (Eigval = 9.328362e+00 eV, overlap = 4.058179e-01)
+       229:   -4.629888e-02 (  10 to   20), (Eigval = 1.135477e+01 eV, overlap = 4.585779e-01)
+       307:    4.272229e-02 (  13 to   23), (Eigval = 1.017413e+01 eV, overlap = 3.483840e-01)
+       334:    3.739791e-02 (  14 to   25), (Eigval = 9.374578e+00 eV, overlap = 3.231178e-01)
+       362:    3.617643e-02 (  15 to   28), (Eigval = 1.023832e+01 eV, overlap = 5.526880e-01)
+       361:   -3.421783e-02 (  15 to   27), (Eigval = 9.483024e+00 eV, overlap = 4.168674e-01)
+       336:    2.419919e-02 (  14 to   27), (Eigval = 9.529240e+00 eV, overlap = 4.127416e-01)
+       251:   -2.178433e-02 (  11 to   17), (Eigval = 8.065081e+00 eV, overlap = 8.453768e-01)
+       360:    2.176411e-02 (  15 to   26), (Eigval = 9.451040e+00 eV, overlap = 2.728609e-01)
+       204:    2.151673e-02 (   9 to   20), (Eigval = 1.138731e+01 eV, overlap = 3.117998e-01)
+       127:   -2.124260e-02 (   6 to   18), (Eigval = 1.326990e+01 eV, overlap = 5.040118e-01)
+       364:   -2.100261e-02 (  15 to   30), (Eigval = 1.055750e+01 eV, overlap = 4.291519e-01)
+       293:   -1.945001e-02 (  12 to   34), (Eigval = 1.379009e+01 eV, overlap = 4.693563e-01)
+       227:   -1.895341e-02 (  10 to   18), (Eigval = 1.052826e+01 eV, overlap = 4.413902e-01)
+       277:    1.714093e-02 (  12 to   18), (Eigval = 8.532542e+00 eV, overlap = 4.386912e-01)
+       258:    1.690737e-02 (  11 to   24), (Eigval = 1.167976e+01 eV, overlap = 3.342388e-01)
+       161:   -1.671706e-02 (   7 to   27), (Eigval = 1.447186e+01 eV, overlap = 4.920846e-01)
+       228:   -1.663911e-02 (  10 to   19), (Eigval = 1.131637e+01 eV, overlap = 3.002503e-01)
+       363:    1.597313e-02 (  15 to   29), (Eigval = 1.048063e+01 eV, overlap = 4.649330e-01)
+       202:    1.574317e-02 (   9 to   18), (Eigval = 1.056080e+01 eV, overlap = 4.476689e-01)
+       335:   -1.485354e-02 (  14 to   26), (Eigval = 9.497256e+00 eV, overlap = 2.587717e-01)
+       151:   -1.327656e-02 (   7 to   17), (Eigval = 1.025315e+01 eV, overlap = 5.631129e-01)
+       163:   -1.160514e-02 (   7 to   29), (Eigval = 1.546947e+01 eV, overlap = 3.660096e-01)
+       340:   -1.145779e-02 (  14 to   31), (Eigval = 1.064002e+01 eV, overlap = 3.624559e-01)
+
+================ Computation Time (mpi, resolution: 1.000e-06) ================
+print_excitation                                            :    0.041 s (1)
+===============================================================================
+
+
+================ Computation Time (mpi, resolution: 1.000e-06) ================
+TDDFT_print                                                 :    0.041 s (1)
+===============================================================================
+
+
+================ Computation Time (mpi, resolution: 1.000e-06) ================
+TDDFT postprocessing                                        :    4.424 s (1)
+===============================================================================
+
+#---------------------------------------------------------------------
+Computation routine 3 time profile:
+
+! total energy  -37.778146
+orbital occupations / energies
+SPIN 0
+2.0000	    -0.783488
+2.0000	    -0.680381
+2.0000	    -0.679630
+2.0000	    -0.548389
+2.0000	    -0.548274
+2.0000	    -0.480908
+2.0000	    -0.414989
+2.0000	    -0.405600
+2.0000	    -0.381351
+2.0000	    -0.380155
+2.0000	    -0.334579
+2.0000	    -0.306814
+2.0000	    -0.305201
+2.0000	    -0.233351
+2.0000	    -0.231652
+0.0000	    -0.040764
+0.0000	    -0.038193
+0.0000	     0.006751
+0.0000	     0.035714
+0.0000	     0.037125
+0.0000	     0.064953
+0.0000	     0.068441
+0.0000	     0.068691
+0.0000	     0.094644
+0.0000	     0.111158
+0.0000	     0.115667
+0.0000	     0.116842
+0.0000	     0.144599
+0.0000	     0.153504
+0.0000	     0.156328
+0.0000	     0.157663
+0.0000	     0.170174
+0.0000	     0.172707
+0.0000	     0.199963
+0.0000	     0.210418
+0.0000	     0.214318
+0.0000	     0.224841
+0.0000	     0.237453
+0.0000	     0.244572
+0.0000	     0.267094
+TDDFT Time Profile
+
+================ Computation Time (mpi, resolution: 1.000e-06) ================
+TDDFT CTcal                                                 :    1.286 s (1)
+TDDFT postprocessing                                        :    4.424 s (1)
+TDDFT::compute diagonalize                                  :    0.203 s (1)
+TDDFT::compute oscillator strength                          :    3.096 s (1)
+TDDFT::construct_matrix                                     :    169.324 s (1)
+TDDFT_print                                                 :    0.041 s (1)
+fill time                                                   :    0.207 s (70500)
+get_iajb                                                    :    93.517 s (1)
+i-loop                                                      :    74.679 s (15)
+kernel                                                      :    48.274 s (70500)
+print_excitation                                            :    0.041 s (1)
+===============================================================================
+
+====== Final parameters ======
+= There are 3 calculation step : 
+====== Final parameters for step #0 ======
+BasicInformation -> 
+ Scaling = 0.4
+ Grid = Atoms
+ AbsoluteRadius = 1
+ KineticMatrix = Finite_Difference
+ DerivativesOrder = 9
+ Radius = {4.0}
+ InpName = /EDISON/LDAP/DATA/edisonadm/repository/2019-05-14-15-12-13.981/inp   [unused]
+ VerboseLevel = 0   [default]
+ GeometryFilename = /EDISON/LDAP/DATA/edisonadm/repository/2019-05-14-14-56-13.964/xyz
+ Mode = Sp   [default]
+ Type = Scaling   [default]
+ UseDefaultValues = 1   [default]
+ Basis = Sinc   [default]
+ ScalingX = 0.4
+ ScalingY = 0.4
+ ScalingZ = 0.4
+ GeometryFormat = xyz   [default]
+ Charge = 0   [default]
+ NumElectrons = 30
+ SpinMultiplicity = 1   [default]
+ Polarize = 0   [default]
+ Centered = 1   [default]
+ ShallowCopyOrbitals = 0   [default]
+ CellDimensionX = 12.0175   [unused]
+ CellDimensionY = 12.1016   [unused]
+ CellDimensionZ = 7.56909   [unused]
+ PointX = 60
+ PointY = 60
+ PointZ = 38
+ Pseudopotential -> 
+  Pseudopotential = 1   [default]
+  Format = upf   [default]
+  PSFilePath = libraries/PSEUDOPOTENTIALS_NC   [default]
+  PSFileSuffix = .pbe-n-nc.UPF   [default]
+  PSFilenames = {libraries/PSEUDOPOTENTIALS_NC/H.pbe-n-nc.UPF, libraries/PSEUDOPOTENTIALS_NC/C.pbe-n-nc.UPF}   [default]
+Guess -> 
+ InitialGuess = 1
+ InitialFilePath = libraries/PSEUDOPOTENTIALS_NC   [default]
+ InitialFileSuffix = .pbe-n-nc.UPF   [default]
+ InitialFilenames = {libraries/PSEUDOPOTENTIALS_NC/H.pbe-n-nc.UPF, libraries/PSEUDOPOTENTIALS_NC/C.pbe-n-nc.UPF}
+ ErrorTermination = 0   [default]
+
+
+
+====== Final parameters for step #1 ======
+BasicInformation -> 
+ Scaling = 0.4
+ Grid = Atoms
+ AbsoluteRadius = 1
+ KineticMatrix = Finite_Difference
+ DerivativesOrder = 9
+ Radius = {4.0}
+ InpName = /EDISON/LDAP/DATA/edisonadm/repository/2019-05-14-15-12-13.981/inp   [unused]
+ VerboseLevel = 0   [default]
+ GeometryFilename = /EDISON/LDAP/DATA/edisonadm/repository/2019-05-14-14-56-13.964/xyz
+ Mode = Sp   [default]
+ Type = Scaling   [default]
+ UseDefaultValues = 1   [default]
+ Basis = Sinc   [default]
+ ScalingX = 0.4
+ ScalingY = 0.4
+ ScalingZ = 0.4
+ GeometryFormat = xyz   [default]
+ Charge = 0   [default]
+ NumElectrons = 30
+ SpinMultiplicity = 1   [default]
+ Polarize = 0   [default]
+ Centered = 1   [default]
+ ShallowCopyOrbitals = 0   [default]
+ CellDimensionX = 12.0175   [unused]
+ CellDimensionY = 12.1016   [unused]
+ CellDimensionZ = 7.56909   [unused]
+ PointX = 60
+ PointY = 60
+ PointZ = 38
+ StoreCoreHamiltonian = 0   [default]
+ Pseudopotential -> 
+  Pseudopotential = 1   [default]
+  Format = upf   [default]
+  PSFilePath = libraries/PSEUDOPOTENTIALS_NC   [default]
+  PSFileSuffix = .pbe-n-nc.UPF   [default]
+  PSFilenames = {libraries/PSEUDOPOTENTIALS_NC/H.pbe-n-nc.UPF, libraries/PSEUDOPOTENTIALS_NC/C.pbe-n-nc.UPF}   [default]
+  HamiltonianCutoff = 1e-07   [default]
+  NonlocalThreshold = 1e-06   [default]
+  LocalThreshold = 1e-07   [default]
+  UsingDoubleGrid = 0   [default]
+  UsingFiltering = 0   [default]
+Scf -> 
+ ConvergenceType = Density
+ ConvergenceTolerance = 0.001
+ EnergyDecomposition = 0
+ IterateMaxCycle = 128   [default]
+ StepSizeForReduceDiagonalizeTol = 5   [default]
+ ComputeInitialEnergy = 0   [default]
+ DiagonalizeShouldNotBeConverged = 1   [default]
+ MakingHamiltonianMatrix = 1   [default]
+ MicroIter = 0   [default]
+ _Seed = -1   [default]
+ NumberOfEigenvalues = 15
+ IgnoreInternalInit = 0   [default]
+ ErrorTermination = 0   [default]
+ ExchangeCorrelation -> 
+  CFunctional = {GGA_C_PBE}
+  XFunctional = {GGA_X_PBE}
+  NGPU = 0   [default]
+  PDcutoff = -1   [default]
+  AutoEXXPortion = 1   [default]
+ Diagonalize -> 
+  FullOrthogonalize = 1
+  Tolerance = 1e-08
+  Solver = Pure   [default]
+  EigenSolver = LOBPCG   [default]
+  DiagonalizeMaxIter = 40   [default]
+  BlockSize = 0   [default]
+  PrecOverlapLevel = 1   [default]
+  DiagonalizeVerbosity = Simple   [default]
+  Locking = 0   [default]
+  Redistribution = 0   [default]
+  PartitioningMethod = block   [default]
+  Balancing_Tolerance = 2   [default]
+  DiagonalizeSolverPrec = None   [default]
+ FinalDiagonalize -> 
+  FullOrthogonalize = 1
+  MaxIter = 5000   [unused]
+  NumberOfEigenvalues = 40
+  Solver = Pure   [default]
+  EigenSolver = LOBPCG   [default]
+  DiagonalizeMaxIter = 40   [default]
+  Tolerance = 1e-06   [default]
+  BlockSize = 0   [default]
+  PrecOverlapLevel = 1   [default]
+  DiagonalizeVerbosity = Simple   [default]
+  Locking = 0   [default]
+  Redistribution = 0   [default]
+  PartitioningMethod = block   [default]
+  Balancing_Tolerance = 2   [default]
+  DiagonalizeSolverPrec = None   [default]
+ Output -> 
+  Prefix = result/   [default]
+  Orbitals = cube   [default]
+ Mixing -> 
+  MixingType = Potential   [default]
+  MixingMethod = 1   [default]
+  MixingParameter = 0.3   [default]
+  UpdatePawMatrix = 0   [default]
+  PulayMixingParameter = 0.3   [default]
+  MixingStart = 6   [default]
+  MixingHistory = 4   [default]
+  MaxHistory = 0   [default]
+ ISF -> 
+  Ti = 0   [default]
+  Tl = 2   [default]
+  Tf = 1000   [default]
+  Num_Points1 = 25   [default]
+  Num_Points2 = 10   [default]
+  NGPU = 0   [default]
+
+
+
+====== Final parameters for step #2 ======
+BasicInformation -> 
+ Scaling = 0.4
+ Grid = Atoms
+ AbsoluteRadius = 1
+ KineticMatrix = Finite_Difference
+ DerivativesOrder = 9
+ Radius = {4.0}
+ InpName = /EDISON/LDAP/DATA/edisonadm/repository/2019-05-14-15-12-13.981/inp   [unused]
+ VerboseLevel = 0   [default]
+ GeometryFilename = /EDISON/LDAP/DATA/edisonadm/repository/2019-05-14-14-56-13.964/xyz
+ Mode = Sp   [default]
+ Type = Scaling   [default]
+ UseDefaultValues = 1   [default]
+ Basis = Sinc   [default]
+ ScalingX = 0.4
+ ScalingY = 0.4
+ ScalingZ = 0.4
+ GeometryFormat = xyz   [default]
+ Charge = 0   [default]
+ NumElectrons = 30
+ SpinMultiplicity = 1   [default]
+ Polarize = 0   [default]
+ Centered = 1   [default]
+ ShallowCopyOrbitals = 0   [default]
+ CellDimensionX = 12.0175   [unused]
+ CellDimensionY = 12.1016   [unused]
+ CellDimensionZ = 7.56909   [unused]
+ PointX = 60
+ PointY = 60
+ PointZ = 38
+ Pseudopotential -> 
+  Pseudopotential = 1   [default]
+  Format = upf   [default]
+  PSFilePath = libraries/PSEUDOPOTENTIALS_NC   [default]
+  PSFileSuffix = .pbe-n-nc.UPF   [default]
+  PSFilenames = {libraries/PSEUDOPOTENTIALS_NC/H.pbe-n-nc.UPF, libraries/PSEUDOPOTENTIALS_NC/C.pbe-n-nc.UPF}   [default]
+TDDFT -> 
+ SortOrbital = Order
+ MaximumOrder = 30
+ NumberOfStates = 50
+ TheoryLevel = Casida   [default]
+ RestrictedTriplet = 0   [default]
+ ExchangeKernel = 
+ TruncationCriteria = 1e-15   [default]
+ Root = 1   [default]
+ Gradient = 1   [default]
+ MemorySaveMode = 0   [default]
+ ErrorTermination = 0   [default]
+ ExchangeCorrelation -> 
+  CFunctional = {GGA_C_PBE}
+  XFunctional = {GGA_X_PBE}
+  NGPU = 0   [default]
+  PDcutoff = -1   [default]
+  AutoEXXPortion = 1   [default]
+ Diagonalize -> 
+  Solver = Direct   [default]
+  SymmReal = 1   [default]
+  EigenSolver = LOBPCG   [default]
+  DiagonalizeMaxIter = 40   [default]
+  Tolerance = 1e-06   [default]
+ ISF -> 
+  Ti = 0   [default]
+  Tl = 2   [default]
+  Tf = 1000   [default]
+  Num_Points1 = 25   [default]
+  Num_Points2 = 10   [default]
+  NGPU = 0   [default]
+
+
+
+
+================ Computation Time (mpi, resolution: 1.000e-06) ================
+Total Time                                                  :    472.804 s (1)
+===============================================================================
+

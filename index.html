@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <style rel="stylesheet" type="text/css" href="css/dat.gui.css"></style>
+  <style>
+    html, body { width: 100%; height: 100%; overflow: hidden; margin: 0; padding: 0; }
+  </style>
+</head>
+<body>
+    <!-- edison portlet
+    <script src="<%=request.getContextPath()%>/js/ngl.js"></script>
+    <script src="<%=request.getContextPath()%>/js/dat.gui.min.js"></script>
+    -->
+    
+    <script src="js/ngl.js"></script>
+    <script src="js/dat.gui.js"></script>
+    <script>
+    /*
+        edison workbench call list ::
+        var namespace
+        function cleanCanvas()
+        function listupFiles(fileLists)
+        cubeView (filename, datas)
+        structureView (filename, datas) 
+    */
+    // 
+    // edison portlet
+    var namespace;
+        function setNamespace( ns ){
+            namespace = ns;
+        }
+    var fileList = [];
+    var firstFile = "";
+    var fileGUI = {
+      File : ""
+    }
+    var firstAutoView = false;
+
+    var fileStructureText = createElement("span", {
+      innerText: "structure file: none"
+    }, { bottom: "0px", right: "12px", color: "lightgrey" })
+
+
+    var surfaceGUI = {
+      ShowIsosurface: true,
+      isolevelType: "sigma",
+      isolevel: 1.5,
+      Wireframe: false,
+      wrap: false,
+      boxSize: 0,
+      opacity: 0.7,
+      opaqueBack: false
+    }
+    var structureGUI = {
+      Style: "ball+stick",
+      visible: true
+    }
+    
+    var gui;
+
+    var settingGUI = function(){
+      this.backgroundColor = "#000000";
+      this.downloadImage = function () {
+        stage.makeImage({
+          factor: 1,
+          antialias: false,
+          trim: false,
+          transparent: false
+        }).then(function (blob) {
+          NGL.download(blob, 'cube_screenshot.png')
+        })
+      }
+    }
+
+    var settingObj = new settingGUI();
+
+    var stage;
+    var surface1, surface2, structure; 
+
+
+
+    function setSetting (){
+      stage.setParameters({backgroundColor : settingObj.backgroundColor})
+    }
+
+    function setSurfaceValue() {
+      surface1.setParameters({contour: surfaceGUI.Wireframe});
+      surface2.setParameters({contour: surfaceGUI.Wireframe});
+      surface1.setVisibility(surfaceGUI.ShowIsosurface);
+      surface2.setVisibility(surfaceGUI.ShowIsosurface);
+      surface1.setParameters({isolevel: surfaceGUI.isolevel});
+      surface2.setParameters({isolevel: -surfaceGUI.isolevel}); 
+    }
+    function setStructure() {
+      structureOrigin.removeAllRepresentations();
+      structureOrigin.addRepresentation( structureGUI.Style );
+      structureOrigin.setVisibility(structureGUI.visible);
+    }
+
+    function guiSetup() {
+      //gui setting
+      gui.add(fileGUI, 'File', fileList).onChange(setFileValue);
+
+      var surfaceMenu = gui.addFolder('Surface');
+      surfaceMenu.add(surfaceGUI, 'ShowIsosurface').onChange( setSurfaceValue );
+      surfaceMenu.add(surfaceGUI, 'Wireframe').onChange(setSurfaceValue);
+      surfaceMenu.add(surfaceGUI, 'isolevel', 0.5, 3).onChange(setSurfaceValue);
+      surfaceMenu.open();
+
+      var stuctureMenu = gui.addFolder('Structure');
+      stuctureMenu.add(structureGUI, 'visible').onChange( setStructure );
+      stuctureMenu.add(structureGUI, 'Style', [ "ball+stick", "hyperball", "licorice", "line", "spacefill"]).onChange( setStructure );
+      stuctureMenu.open();
+
+      var settingMenu = gui.addFolder('Setting');
+      settingMenu.addColor(settingObj, 'backgroundColor').onChange( setSetting );
+      settingMenu.add(settingObj, 'downloadImage');
+      settingMenu.open();
+    }
+
+
+    function listupFiles(fileLists){
+      fileList = fileLists;
+      firstFile = fileLists[0];
+      fileGUI.File = firstFile;
+      guiSetup();
+      
+    }
+
+    function cleanCanvas(){
+      gui.destroy();
+      document.getElementById("viewport").innerHTML = "";
+      stage.removeAllComponents();
+      stage = new NGL.Stage("viewport");
+      gui = new dat.GUI( { width: 300 } );
+    }
+
+
+    function createElement (name, properties, style) {
+      var el = document.createElement(name)
+      Object.assign(el, properties)
+      Object.assign(el.style, style)
+      return el
+    }
+
+    function addElement (el) {
+      Object.assign(el.style, {
+        position: 'absolute',
+        zIndex: 10
+      })
+      stage.viewer.container.appendChild(el)
+    }
+
+
+    // Handle window resizing
+    window.addEventListener( "resize", function( event ){
+        stage.handleResize();
+    }, false );
+
+
+
+    function setFileValue (){
+        cubeView(fileGUI.File);
+    }
+// edison portlet 
+/*
+  function setFileValue (){
+
+        var function_name = namespace + 'innerLoadDataEventHandler';
+        parent[function_name](fileGUI.File);
+        stage.removeComponent(stage.compList[1])
+    }
+*/
+
+
+// edison portlet 
+//    function cubeView (filename, datas) {
+    function cubeView (filename) {
+      console.log("start cubeView");
+      // clean pre cube component
+      for (index in stage.compList ) {
+        if(stage.compList[index].parameters.ext == "cube") {
+            stage.removeComponent(stage.compList[index])
+        }
+      }
+// edison portlet 
+//      var stringBlob = new Blob( [ datas ], { type: 'text/plain'} );
+//      fileStructureText.innerText = "surface file: " + filename;
+//      stage.loadFile( stringBlob, { ext: "cube" } ).then(function (o) {
+
+      stage.loadFile( filename, { ext: "cube" } ).then(function (o) {
+        surface1 = o.addRepresentation("surface", {
+          isolevelType: surfaceGUI.isolevelType,
+          isolevel: surfaceGUI.isolevel,
+          contour: surfaceGUI.Wireframe,
+          wrap: false,
+          color: "blue",
+          opacity: surfaceGUI.opacity,
+          opaqueBack: false
+        });
+        surface2 = o.addRepresentation("surface",  {
+          isolevelType: surfaceGUI.isolevelType,
+          isolevel: -surfaceGUI.isolevel,
+          contour: surfaceGUI.Wireframe,
+          wrap: false,
+          color: "red",
+          opacity: surfaceGUI.opacity,
+          opaqueBack: false
+        });
+        if(!firstAutoView){
+            o.autoView();
+            firstAutoView =true;
+        }
+        addElement(fileStructureText)
+
+      })
+    }
+// edison portlet 
+//    function structureView (filename, datas) {
+    function structureView (filename) {
+      console.log("start structureViewView");
+// edison portlet 
+//      var stringBlob = new Blob( [ datas ], { type: 'text/plain'} );
+//      var extention = filename.split('.').pop();
+//      stage.loadFile( stringBlob, { ext: extention } ).then(function (o) {
+      stage.loadFile( filename ).then(function (o) {
+        structureOrigin = o;
+        structure = o.addRepresentation("ball+stick")
+        o.autoView()
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      stage = new NGL.Stage("viewport");
+      gui = new dat.GUI( { width: 300 } );
+
+// Local test 
+      var cubeFileList = ["result/Scf.orbitals.s0.ind01.cube","result/Scf.orbitals.s0.ind02.cube","result/Scf.orbitals.s0.ind03.cube","result/Scf.orbitals.s0.ind04.cube","result/Scf.orbitals.s0.ind05.cube",
+                    "result/Scf.orbitals.s0.ind06.cube","result/Scf.orbitals.s0.ind07.cube","result/Scf.orbitals.s0.ind08.cube","result/Scf.orbitals.s0.ind09.cube","result/Scf.orbitals.s0.ind10.cube",
+                    "result/Scf.orbitals.s0.ind11.cube","result/Scf.orbitals.s0.ind12.cube","result/Scf.orbitals.s0.ind13.cube","result/Scf.orbitals.s0.ind14.cube","result/Scf.orbitals.s0.ind15.cube",
+                    "result/Scf.orbitals.s0.ind16.cube","result/Scf.orbitals.s0.ind17.cube","result/Scf.orbitals.s0.ind18.cube","result/Scf.orbitals.s0.ind19.cube","result/Scf.orbitals.s0.ind20.cube"]
+      var structureFileName = "result/benzene.sdf";
+      listupFiles(cubeFileList);
+      structureView(structureFileName);
+      cubeView(cubeFileList[0]);
+
+    });
+
+
+  </script>
+  <div id="viewport" style="width:100%; height:100%;"></div>
+</body>
+</html>
